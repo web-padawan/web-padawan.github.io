@@ -4,5 +4,6 @@ group :development do
 
   # Jekyll
   gem 'github-pages'
+  gem 'wdm'
 
 end
