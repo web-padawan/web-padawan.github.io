@@ -1,8 +1,7 @@
 # Site settings
 title: Сергей Куликов
 email: serguey.kulikov@gmail.com
-description: >
-  Junior front-end developer living in Dnipropetrovsk, Ukraine.
+description: "Junior front-end developer living in Dnipropetrovsk, Ukraine."
 baseurl: ""
 url: "http://web-padawan.github.io"
 twitter_username: kulikov_dp
