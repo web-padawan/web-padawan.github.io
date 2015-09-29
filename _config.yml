@@ -11,3 +11,7 @@ exclude: ["Gemfile", "Gemfile.lock"]
 
 # Build settings
 markdown: kramdown
+
+# Plugins
+gems:
+- jekyll-compass
