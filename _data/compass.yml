@@ -3,7 +3,8 @@ require:
 - jekyll-compass
 - breakpoint
 - susy
-project_path: D:/SK/Code/web-padawan.github.io/.
+- toolkit
+- sass-globbing
 http_path: /
 css_dir: assets/css
 sass_dir: _scss

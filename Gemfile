@@ -9,7 +9,9 @@ group :development do
 
   # Compass extensions
   gem 'compass'
+  gem 'sass-globbing'
   gem 'breakpoint'
   gem 'susy'
+  gem 'toolkit'
 
 end
