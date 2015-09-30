@@ -4,7 +4,6 @@ email: serguey.kulikov@gmail.com
 description: "Junior front-end developer living in Dnipropetrovsk, Ukraine."
 baseurl: ""
 url: "http://web-padawan.github.io"
-twitter_username: kulikov_dp
 github_username:  web-padawan
 exclude: ["Gemfile", "Gemfile.lock", "node_modules", "gulpfile.js", "package.json"]
 

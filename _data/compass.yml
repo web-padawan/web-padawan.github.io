@@ -8,6 +8,6 @@ http_path: /
 css_dir: assets/css
 sass_dir: _scss
 images_dir: assets/images
-javascripts_dir: assets/javascript
+javascripts_dir: assets/js
 sass_options:
   line_comments: false
