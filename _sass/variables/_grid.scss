@@ -1,0 +1,13 @@
+$vert-spacing-unit: 24px;
+$horz-spacing-unit: 1rem;
+
+$sm: 768px;
+$md: 960px;
+
+$susy: (
+  columns: 12,
+  container: 75rem,
+  debug: (
+    image: hide,
+  )
+);
