@@ -1,0 +1,6 @@
+{
+  "name": "web-padawan",
+  "dependencies": {
+    "normalize-scss": "~3.0.3"
+  }
+}

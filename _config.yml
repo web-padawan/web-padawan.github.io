@@ -5,7 +5,7 @@ description: "Junior front-end developer living in Dnipropetrovsk, Ukraine."
 baseurl: ""
 url: "http://web-padawan.github.io"
 github_username:  web-padawan
-exclude: ["Gemfile", "Gemfile.lock", "node_modules", "gulpfile.js", "package.json"]
+exclude: ["Gemfile", "Gemfile.lock", "node_modules", "gulpfile.js", "package.json", "bower_components", "bower.json"]
 
 # Build settings
 markdown: kramdown

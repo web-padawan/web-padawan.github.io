@@ -12,3 +12,5 @@ images_dir: assets/images
 javascripts_dir: assets/js
 sass_options:
   line_comments: false
+import_paths:
+- bower_components/normalize-scss
