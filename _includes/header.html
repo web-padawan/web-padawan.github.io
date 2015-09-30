@@ -1,11 +1,11 @@
-<header class="l-header">
-  <div class="l-container">
+<header class="header">
+  <div class="container">
 
-    <h1>
+    <h1 class="header__title">
       <a href="{{ site.baseurl }}/">{{ site.title }}</a>
     </h1>
 
-    <nav>
+    <nav class="header__nav">
       {% for page in site.pages %}
         {% if page.title %}
         <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
