@@ -9,10 +9,10 @@ end
 # Location of the theme's resources.
 css_dir = "assets/css"
 sass_dir = "sass"
-images_dir = "images"
+images_dir = "assets/images"
 generated_images_dir = images_dir + "/generated"
-javascripts_dir = "js"
-fonts_dir = "fonts"
+javascripts_dir = "assets/js"
+fonts_dir = "assets/fonts"
 
 # Require any additional compass plugins installed on your system.
 require 'toolkit'
