@@ -3,6 +3,7 @@
 
   &-card {
     display: inline-block;
+    vertical-align: top;
 
     @include breakpoint($sm) {
       width: 48%;

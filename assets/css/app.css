@@ -694,6 +694,7 @@ h6 {
 }
 .portfolio-card {
   display: inline-block;
+  vertical-align: top;
 }
 @media (min-width: 768px) {
   .portfolio-card {
