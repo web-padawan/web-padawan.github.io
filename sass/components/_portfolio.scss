@@ -9,7 +9,8 @@
       width: 48%;
     }
     @include breakpoint($md) {
-      width: 24%;
+      width: 23%;
+      margin: 0 .5%;
     }
 
     &__description {

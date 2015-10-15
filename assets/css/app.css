@@ -703,7 +703,8 @@ h6 {
 }
 @media (min-width: 960px) {
   .portfolio-card {
-    width: 24%;
+    width: 23%;
+    margin: 0 .5%;
   }
 }
 .portfolio-card__description {
