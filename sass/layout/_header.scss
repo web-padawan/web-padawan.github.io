@@ -4,12 +4,14 @@
   border-bottom: 1px solid #d9d9d9;
 
   &__title {
-    font-size: 24px;
     @include span(4 of 12);
+    font-size: 24px;
+
     a {
       @include hover-link;
     }
   }
+
   &__nav {
     @include span(last 8 of 12);
   }

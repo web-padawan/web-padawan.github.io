@@ -14,4 +14,7 @@ group :development do
   gem 'susy'
   gem 'toolkit'
 
+  # Development
+  gem 'scss_lint'
+
 end
