@@ -706,6 +706,10 @@ h6 {
     width: 24%;
   }
 }
+.portfolio-card__description {
+  max-width: 285px;
+  margin: 0 auto;
+}
 
 .social {
   margin: 0;
