@@ -3,11 +3,24 @@
   border-bottom: 1px solid #d9d9d9;
 
   &__left {
-    @include span(8 of 12);
+    text-align: center;
+
+    @include breakpoint ($md) {
+      @include span(8 of 12);
+      text-align: left;
+    }
+  }
+
+  &__right {
+    text-align: center;
+
+    @include breakpoint ($md) {
+      @include span(last 4 of 12);
+      text-align: left;
+    }
   }
 
   &__title {
-
     font-size: 24px;
 
     a {
@@ -17,9 +30,5 @@
 
   &__addition {
     font-weight: normal;
-  }
-
-  &__nav {
-    @include span(last 4 of 12);
   }
 }
