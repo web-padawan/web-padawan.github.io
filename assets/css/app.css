@@ -712,6 +712,17 @@ h6 {
   margin: 0 auto;
 }
 
+.skills {
+  padding: 20px;
+}
+@media (min-width: 960px) {
+  .skills {
+    width: 74.57627%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+}
+
 .social {
   margin: 0;
   list-style: none;
@@ -737,6 +748,7 @@ h6 {
   border-bottom: 1px solid #d9d9d9;
 }
 .header__left {
+  padding-left: 20px;
   text-align: center;
 }
 @media (min-width: 960px) {

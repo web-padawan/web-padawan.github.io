@@ -1,0 +1,7 @@
+.skills {
+  padding: 20px;
+
+  @include breakpoint($md) {
+    @include span(9 of 12);
+  }
+}
