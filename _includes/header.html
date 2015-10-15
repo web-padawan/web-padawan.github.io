@@ -1,17 +1,32 @@
 <header class="header">
   <div class="container">
 
-    <h1 class="header__title">
-      <a href="{{ site.baseurl }}/">{{ site.title }}</a>
-    </h1>
+    <div class="header__left">
 
-    <nav class="header__nav">
-      {% for page in site.pages %}
-        {% if page.title %}
-        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-        {% endif %}
-      {% endfor %}
-    </nav>
+      <h1 class="header__title">
+        <a href="{{ site.baseurl }}/">{{ site.title }}<span class="header__addition"> - веб-разработчик</span></a>
+      </h1>
+
+      <div class="header__description">Верстаю и разрабатываю сайты на Drupal. Живу и работаю в Днепропетровске.</div>
+
+    </div>
+
+    <div class="header__right">
+      <ul class="social">
+        <li class="social__item">
+          <a class="social__link social__link--tel" href="tel:+380502417050" title="Позвонить: +38 (050) 241-70-50">Телефон</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--email" href="mailto:serguey.kulikov@gmail.com" title="Написать на почту: serguey.kulikov@gmail.com">Почта</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--skype" href="skype:dn201187ksa?add" title="Добавить в контакты в Скайпе: dn201187ksa">Скайп</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--github" href="https://github.com/web-padawan" title="Профиль на Гитхабе">GitHub</a>
+        </li>
+      </ul>
+    </div>
 
   </div>
 </header>

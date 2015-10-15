@@ -1,10 +1,13 @@
 .header {
-  line-height: 3rem;
   background: #f0f0f0;
   border-bottom: 1px solid #d9d9d9;
 
+  &__left {
+    @include span(8 of 12);
+  }
+
   &__title {
-    @include span(4 of 12);
+
     font-size: 24px;
 
     a {
@@ -12,7 +15,11 @@
     }
   }
 
+  &__addition {
+    font-weight: normal;
+  }
+
   &__nav {
-    @include span(last 8 of 12);
+    @include span(last 4 of 12);
   }
 }

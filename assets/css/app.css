@@ -689,6 +689,14 @@ h6 {
   background-color: transparent;
 }
 
+.social {
+  margin: 0;
+  list-style: none;
+}
+.social__item {
+  display: inline-block;
+}
+
 .container {
   max-width: 1200px;
   max-width: 75rem;
@@ -702,14 +710,15 @@ h6 {
 }
 
 .header {
-  line-height: 3rem;
   background: #f0f0f0;
   border-bottom: 1px solid #d9d9d9;
 }
-.header__title {
-  width: 32.20339%;
+.header__left {
+  width: 66.10169%;
   float: left;
   margin-right: 1.69492%;
+}
+.header__title {
   font-size: 24px;
 }
 .header__title a {
@@ -718,8 +727,11 @@ h6 {
 .header__title a:hover, .header__title a:focus {
   text-decoration: underline;
 }
+.header__addition {
+  font-weight: normal;
+}
 .header__nav {
-  width: 66.10169%;
+  width: 32.20339%;
   float: right;
   margin-right: 0;
 }
