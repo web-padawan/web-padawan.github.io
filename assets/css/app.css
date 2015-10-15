@@ -689,6 +689,23 @@ h6 {
   background-color: transparent;
 }
 
+.portfolio {
+  text-align: center;
+}
+.portfolio-card {
+  display: inline-block;
+}
+@media (min-width: 768px) {
+  .portfolio-card {
+    width: 48%;
+  }
+}
+@media (min-width: 960px) {
+  .portfolio-card {
+    width: 24%;
+  }
+}
+
 .social {
   margin: 0;
   list-style: none;

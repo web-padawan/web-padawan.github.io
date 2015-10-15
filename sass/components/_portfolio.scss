@@ -1,0 +1,14 @@
+.portfolio {
+  text-align: center;
+
+  &-card {
+    display: inline-block;
+
+    @include breakpoint($sm) {
+      width: 48%;
+    }
+    @include breakpoint($md) {
+      width: 24%;
+    }
+  }
+}
