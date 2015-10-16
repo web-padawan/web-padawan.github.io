@@ -1,10 +1,15 @@
 .portfolio {
-  text-align: center;
+  padding-top: $vert-spacing-unit;
   max-width: 900px;
   margin: 0 auto;
+  text-align: center;
 
   @include breakpoint($md) {
     max-width: 100%;
+  }
+
+  &__title {
+    margin-bottom: $vert-spacing-unit;
   }
 
   &-card {
@@ -21,9 +26,15 @@
         vertical-align: top;
       }
     }
+
+    &__company {
+      font-weight: bold;
+    }
+
     &__description {
       max-width: 285px;
       margin: 0 auto;
     }
+
   }
 }

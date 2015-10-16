@@ -786,14 +786,18 @@ h6 {
 }
 
 .portfolio {
-  text-align: center;
+  padding-top: 24px;
   max-width: 900px;
   margin: 0 auto;
+  text-align: center;
 }
 @media (min-width: 960px) {
   .portfolio {
     max-width: 100%;
   }
+}
+.portfolio__title {
+  margin-bottom: 24px;
 }
 .portfolio-card {
   display: inline-block;
@@ -807,6 +811,9 @@ h6 {
 }
 .portfolio-card__thumb img {
   vertical-align: top;
+}
+.portfolio-card__company {
+  font-weight: bold;
 }
 .portfolio-card__description {
   max-width: 285px;
