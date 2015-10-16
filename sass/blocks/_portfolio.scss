@@ -14,7 +14,13 @@
 
   &-card {
     display: inline-block;
+    padding: $vert-spacing-unit / 2;
     margin: 0 $horz-spacing-unit;
+
+    &:hover {
+      border-color: $shadow-box;
+      box-shadow: 0 0 1pc rgba($shadow-drop,.4);
+    }
 
     @include breakpoint($md) {
       width: 23%;

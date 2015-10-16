@@ -801,7 +801,12 @@ h6 {
 }
 .portfolio-card {
   display: inline-block;
+  padding: 12px;
   margin: 0 1rem;
+}
+.portfolio-card:hover {
+  border-color: #a9a9a9;
+  box-shadow: 0 0 1pc rgba(57, 56, 61, 0.4);
 }
 @media (min-width: 960px) {
   .portfolio-card {
