@@ -1,12 +1,16 @@
 .portfolio {
   text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+
+  @include breakpoint($md) {
+    max-width: 100%;
+  }
 
   &-card {
     display: inline-block;
+    margin: 0 $horz-spacing-unit;
 
-    @include breakpoint($sm) {
-      width: 48%;
-    }
     @include breakpoint($md) {
       width: 23%;
       margin: 0 .5%;

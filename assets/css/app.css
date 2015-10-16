@@ -787,14 +787,17 @@ h6 {
 
 .portfolio {
   text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+@media (min-width: 960px) {
+  .portfolio {
+    max-width: 100%;
+  }
 }
 .portfolio-card {
   display: inline-block;
-}
-@media (min-width: 768px) {
-  .portfolio-card {
-    width: 48%;
-  }
+  margin: 0 1rem;
 }
 @media (min-width: 960px) {
   .portfolio-card {
