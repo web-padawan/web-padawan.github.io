@@ -1,5 +1,5 @@
 # Site settings
-title: Сергей Куликов
+title: Сергей Куликов — фронтенд-разработчик
 description: "Junior front-end developer living in Dnipropetrovsk, Ukraine."
 url: "http://web-padawan.github.io"
 exclude: ["Gemfile", "Gemfile.lock", "node_modules", "gulpfile.js", "package.json", "bower_components", "bower.json", 'sass', 'config.rb']
