@@ -1,0 +1,13 @@
+// regular
+@include font-face('PTSans', font-files('ptsans-regular.woff', woff));
+
+// bold
+@include font-face('PTSans', font-files('ptsans-bold.woff', woff), $weight: bold);
+
+// italic
+@include font-face('PTSans', font-files('ptsans-italic.woff', woff), $style: italic);
+
+// bold + italic
+@include font-face('PTSans', font-files('ptsans-bolditalic.woff', woff), $weight: bold, $style: italic);
+
+$ptsans : 'PTSans', Helvetica, Arial, sans-serif;

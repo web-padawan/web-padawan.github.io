@@ -426,6 +426,26 @@ video {
   height: auto;
 }
 
+@font-face {
+  font-family: "PTSans";
+  src: url('../fonts/ptsans-regular.woff?1444985380') format('woff');
+}
+@font-face {
+  font-family: "PTSans";
+  src: url('../fonts/ptsans-bold.woff?1444985380') format('woff');
+  font-weight: bold;
+}
+@font-face {
+  font-family: "PTSans";
+  src: url('../fonts/ptsans-italic.woff?1444985380') format('woff');
+  font-style: italic;
+}
+@font-face {
+  font-family: "PTSans";
+  src: url('../fonts/ptsans-bolditalic.woff?1444985380') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
 .container {
   max-width: 75rem;
   margin-left: auto;
@@ -435,11 +455,6 @@ video {
   content: " ";
   display: block;
   clear: both;
-}
-
-html {
-  font-size: 100%;
-  line-height: 1.5em;
 }
 
 .highlight {
@@ -649,8 +664,14 @@ html {
   background-color: transparent;
 }
 
+html {
+  font-size: 100%;
+  line-height: 1.5em;
+}
+
 body, html {
   color: #313131;
+  font-family: "PTSans", Helvetica, Arial, sans-serif;
 }
 
 a {
