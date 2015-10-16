@@ -11,6 +11,7 @@ gulp.task('compile', function() {
     .pipe(compass({
       config_file: './config.rb',
       css: 'assets/css',
+      images: 'assets/images',
       bundle_exec: true
     }))
     .pipe(gulp.dest('assets/css'))

@@ -1,8 +1,35 @@
+$social: phone, email, skype, github;
+
 .social {
-  margin: 0;
+  margin: $vert-spacing-unit 0;
+  padding: 0;
   list-style: none;
+
+  @include breakpoint ($md) {
+    float: right;
+  }
 
   &__item {
     display: inline-block;
+    margin-right: $horz-spacing-unit;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border: none;
+    &:hover {
+      border: none;
+    }
+  }
+}
+
+@each $s in $social {
+  .social__link--#{$s} {
+    @include si(#{$s});
   }
 }

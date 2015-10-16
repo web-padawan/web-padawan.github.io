@@ -835,9 +835,44 @@ h6 {
 }
 
 .social {
-  margin: 0;
+  margin: 24px 0;
+  padding: 0;
   list-style: none;
+}
+@media (min-width: 960px) {
+  .social {
+    float: right;
+  }
 }
 .social__item {
   display: inline-block;
+  margin-right: 1rem;
+}
+.social__item:last-child {
+  margin-right: 0;
+}
+.social__link {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: none;
+}
+.social__link:hover {
+  border: none;
+}
+
+.social__link--phone {
+  background: url('../images/generated/icons-sca97a017d8.png') 0 -68px no-repeat;
+}
+
+.social__link--email {
+  background: url('../images/generated/icons-sca97a017d8.png') 0 0 no-repeat;
+}
+
+.social__link--skype {
+  background: url('../images/generated/icons-sca97a017d8.png') 0 -102px no-repeat;
+}
+
+.social__link--github {
+  background: url('../images/generated/icons-sca97a017d8.png') 0 -34px no-repeat;
 }
