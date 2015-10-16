@@ -8,10 +8,10 @@ $susy: (
   columns: 12,
   container: 75rem,
   debug: (
-    image: hide,
+    // image: show,
   )
 );
 
-.container {
+%container {
   @include container();
 }

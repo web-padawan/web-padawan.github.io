@@ -4,4 +4,8 @@
   @include breakpoint($md) {
     @include span(9 of 12);
   }
+
+  &__title {
+    margin: $vert-spacing-unit / 2 0;
+  }
 }

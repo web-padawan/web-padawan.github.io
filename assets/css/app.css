@@ -446,12 +446,12 @@ video {
   font-weight: bold;
   font-style: italic;
 }
-.container {
+.header__container, .main__container {
   max-width: 75rem;
   margin-left: auto;
   margin-right: auto;
 }
-.container:after {
+.header__container:after, .main__container:after {
   content: " ";
   display: block;
   clear: both;
@@ -690,6 +690,11 @@ p {
   margin-bottom: 24px;
 }
 
+ul {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
 h1,
 h2,
 h3,
@@ -742,6 +747,10 @@ h6 {
 }
 
 .header {
+  padding-top: 24px;
+  padding-top: 1.5rem;
+  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
   background: #f0f0f0;
   border-bottom: 1px solid #d9d9d9;
 }
@@ -810,6 +819,9 @@ h6 {
     float: left;
     margin-right: 1.69492%;
   }
+}
+.skills__title {
+  margin: 12px 0;
 }
 
 .social {
