@@ -1,7 +1,5 @@
 # Site settings
 title: Сергей Куликов
-email: serguey.kulikov@gmail.com
 description: "Junior front-end developer living in Dnipropetrovsk, Ukraine."
 url: "http://web-padawan.github.io"
-github_username:  web-padawan
 exclude: ["Gemfile", "Gemfile.lock", "node_modules", "gulpfile.js", "package.json", "bower_components", "bower.json", 'sass', 'config.rb']
