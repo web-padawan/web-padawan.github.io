@@ -6,6 +6,8 @@
 
   @include breakpoint($md) {
     max-width: 100%;
+    padding: $vert-spacing-unit $horz-spacing-unit 0 $horz-spacing-unit;;
+    @include container();
   }
 
   &__title {
@@ -22,9 +24,18 @@
       box-shadow: 0 0 1pc rgba($shadow-drop,.4);
     }
 
+    // large screen - display 4 cards in row
     @include breakpoint($md) {
-      width: 23%;
-      margin: 0 .5%;
+      margin: 0;
+      display: block;
+      @include span(3 of 12 nest);
+    }
+
+    // last card
+    &:last-child {
+      @include breakpoint($md) {
+        @include span(last 3 of 12 nest);
+      }
     }
 
     &__thumb {
