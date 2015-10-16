@@ -1,3 +1,19 @@
+body, html {
+  color: $text-default;
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: $link-default;
+  border-bottom: 1px solid rgba($link-default, .25);
+
+  &:hover {
+    color: $link-hover;
+    border-bottom: 1px solid rgba($link-hover, .25);
+  }
+}
+
 h1,
 h2,
 h3,

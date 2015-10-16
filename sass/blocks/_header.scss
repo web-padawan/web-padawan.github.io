@@ -24,10 +24,6 @@
 
   &__title {
     font-size: 24px;
-
-    a {
-      @include hover-link;
-    }
   }
 
   &__addition {

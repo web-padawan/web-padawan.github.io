@@ -11,3 +11,7 @@ $susy: (
     image: hide,
   )
 );
+
+.container {
+  @include container();
+}
