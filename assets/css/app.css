@@ -811,7 +811,7 @@ h6 {
 }
 .portfolio-card {
   display: inline-block;
-  padding: 12px;
+  padding: 24px 12px;
   margin: 0 1rem;
 }
 .portfolio-card:hover {
