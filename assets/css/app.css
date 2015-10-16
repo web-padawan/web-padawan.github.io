@@ -807,7 +807,7 @@ h6 {
   }
 }
 .portfolio__title {
-  margin-bottom: 24px;
+  margin: 12px 0;
 }
 .portfolio-card {
   display: inline-block;
