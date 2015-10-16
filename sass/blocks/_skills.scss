@@ -1,5 +1,5 @@
 .skills {
-  padding: 20px;
+  padding: $vert-spacing-unit;
 
   @include breakpoint($md) {
     @include span(9 of 12);

@@ -3,7 +3,6 @@
 
   &-card {
     display: inline-block;
-    vertical-align: top;
 
     @include breakpoint($sm) {
       width: 48%;
@@ -13,6 +12,11 @@
       margin: 0 .5%;
     }
 
+    &__thumb {
+      img {
+        vertical-align: top;
+      }
+    }
     &__description {
       max-width: 285px;
       margin: 0 auto;

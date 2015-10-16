@@ -15,6 +15,11 @@ a {
   }
 }
 
+p {
+  margin-top: 0;
+  margin-bottom: $vert-spacing-unit;
+}
+
 h1,
 h2,
 h3,

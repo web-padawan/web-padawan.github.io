@@ -685,6 +685,11 @@ a:hover {
   border-bottom: 1px solid rgba(244, 67, 54, 0.25);
 }
 
+p {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
 h1,
 h2,
 h3,
@@ -776,7 +781,6 @@ h6 {
 }
 .portfolio-card {
   display: inline-block;
-  vertical-align: top;
 }
 @media (min-width: 768px) {
   .portfolio-card {
@@ -789,13 +793,16 @@ h6 {
     margin: 0 .5%;
   }
 }
+.portfolio-card__thumb img {
+  vertical-align: top;
+}
 .portfolio-card__description {
   max-width: 285px;
   margin: 0 auto;
 }
 
 .skills {
-  padding: 20px;
+  padding: 24px;
 }
 @media (min-width: 960px) {
   .skills {
