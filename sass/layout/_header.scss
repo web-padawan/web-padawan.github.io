@@ -13,6 +13,7 @@
   }
 
   &__right {
+    padding-right: 20px;
     text-align: center;
 
     @include breakpoint ($md) {

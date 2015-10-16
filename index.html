@@ -2,48 +2,6 @@
 layout: default
 ---
 
-  <div class="portfolio">
+  {% include portfolio.html %}
 
-    <h2 class="portfolio__title">Портфолио</h2>
-
-    <div class="portfolio-card">
-      <div class="portfolio-card__thumb">
-        <img src="/assets/images/portfolio/barsky_frontpage.jpg" alt="barsky.furniture: Главная страница" title="barsky.furniture: Главная страница">
-      </div>
-      <div class="portfolio-card__company">barsky.furniture</div>
-      <div class="portfolio-card__title"><a href="http://barsky.furniture" target="_blank">Главная страница</a></div>
-    </div>
-
-    <div class="portfolio-card">
-      <div class="portfolio-card__thumb">
-        <img src="/assets/images/portfolio/barsky_sportdrive.jpg" alt="barsky.furniture: Кресла Sport Drive" title="barsky.furniture: Кресла Sport Drive">
-      </div>
-      <div class="portfolio-card__company">barsky.furniture</div>
-      <div class="portfolio-card__title">Лендинг &laquo;<a href="http://barsky.furniture/goods/armchairs/sport_drive" target="_blank">Кресла Sport Drive</a>&raquo;</div>
-    </div>
-
-    <div class="portfolio-card">
-      <div class="portfolio-card__thumb">
-        <img src="/assets/images/portfolio/barsky_catalog.jpg" alt="barsky.furniture: Каталог" title="barsky.furniture: Каталог">
-      </div>
-      <div class="portfolio-card__company">barsky.furniture</div>
-      <div class="portfolio-card__title">Лендинг &laquo;<a href="http://barsky.furniture/catalog" target="_blank">Каталог</a>&raquo;</div>
-    </div>
-
-    <div class="portfolio-card">
-      <div class="portfolio-card__thumb">
-        <img src="/assets/images/portfolio/barsky_dongwei.jpg" alt="barsky.furniture: Dongwei" title="barsky.furniture: Dongwei">
-      </div>
-      <div class="portfolio-card__company">barsky.furniture</div>
-      <div class="portfolio-card__title">Страница &laquo;<a href="http://barsky.furniture/dongwei" target="_blank">Dongwei</a>&raquo;</div>
-    </div>
-
-  </div>
-
-  <div class="skills">
-    <h2>Навыки</h2>
-    <p>Верстаю сайты с использованием HTML5 и CSS3. Знаю JavaScript на уровне применения готовых решений, пишу скрипты для несложных манипуляций. Для стилей использую препроцессор Sass. Знаком с приемами адаптивной и отзывчивой верстки. Придерживаюсь именования классов согласно БЭМ.</p>
-    <p>Использую Compass для генерации спрайтов, Grunt или Gulp для сборки проекта, Bower для подключения библиотек. Знаком с фреймворками Bootstrap и Foundation на уровне подключения компонентов из исходников (но предпочитаю обходиться без них). Для раскладки по сетке использую Susy.</p>
-    <p>Интегрирую верстку в Drupal, владею навыками темизации, включая создание темы с нуля на основе фреймворка Omega. Имею опыт разработки собственных модулей для реализации несложного функционала с использованием Drupal API, в том числе решений для кастомизации Drupal Commerce.</p>
-    <p>Знаю английский на уровне свободного понимания технической литературы и документации и успешного поиска решений проблем на stackoverflow и drupal.org. В течение 5 месяцев посещал курсы разговорного английского от компании Logos, имею сертификат о достижении уровня pre-intermediate.</p>
-  </div>
+  {% include skills.html %}
