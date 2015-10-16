@@ -16,7 +16,7 @@
 
   &-card {
     display: inline-block;
-    padding: $vert-spacing-unit $vert-spacing-unit / 2;
+    padding: $vert-spacing-unit $vert-spacing-unit / 2 $vert-spacing-unit / 2 $vert-spacing-unit / 2;
     margin: 0 $horz-spacing-unit;
 
     &:hover {
@@ -45,6 +45,7 @@
     }
 
     &__company {
+      margin-top: $vert-spacing-unit / 2;
       font-weight: bold;
     }
 

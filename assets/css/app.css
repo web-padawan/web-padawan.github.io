@@ -811,7 +811,7 @@ h6 {
 }
 .portfolio-card {
   display: inline-block;
-  padding: 24px 12px;
+  padding: 24px 12px 12px 12px;
   margin: 0 1rem;
 }
 .portfolio-card:hover {
@@ -838,6 +838,7 @@ h6 {
   vertical-align: top;
 }
 .portfolio-card__company {
+  margin-top: 12px;
   font-weight: bold;
 }
 .portfolio-card__description {
