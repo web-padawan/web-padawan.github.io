@@ -1,0 +1,57 @@
+.experience {
+  padding: $vert-spacing-unit;
+  padding-bottom: 0;
+
+  @include breakpoint($md) {
+    @include span(last 3 of 12);
+  }
+
+  &__title {
+    margin: $vert-spacing-unit / 2 0;
+  }
+
+  &-company {
+    float: left;
+    margin-right: $horz-spacing-unit * 2;
+
+    @include breakpoint($md) {
+      float: none;
+      margin-right: 0;
+      margin-bottom: $vert-spacing-unit;
+    }
+
+    &__icon {
+      float: left;
+      margin-right: $horz-spacing-unit / 2;
+      width: 24px;
+      height: 24px;
+
+      &--paradiz {
+        @include si(paradiz);
+      }
+      &--privat {
+        @include si(privat);
+      }
+    }
+
+    &__title {
+      display: inline-block;
+      margin-bottom: $vert-spacing-unit / 2;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    &__job {
+      font-weight: bold;
+    }
+
+    &__note {
+      font-style: italic;
+    }
+
+    &__description {
+      padding-left: $horz-spacing-unit;
+      font-size: 13px;
+    }
+  }
+}

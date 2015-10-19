@@ -1,5 +1,6 @@
 .skills {
   padding: $vert-spacing-unit;
+  padding-bottom: 0;
 
   @include breakpoint($md) {
     @include span(9 of 12);
@@ -7,5 +8,11 @@
 
   &__title {
     margin: $vert-spacing-unit / 2 0;
+  }
+
+  &__text {
+    &:last-child {
+      margin: 0;
+    }
   }
 }
