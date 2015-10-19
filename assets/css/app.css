@@ -747,14 +747,14 @@ h6 {
 }
 
 .experience {
-  padding: 24px;
-  padding-bottom: 0;
+  padding: 24px 24px 0 24px;
 }
 @media (min-width: 1024px) {
   .experience {
     width: 23.72881%;
     float: right;
     margin-right: 0;
+    padding-left: 0;
   }
 }
 .experience__title {

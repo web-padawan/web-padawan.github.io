@@ -1,9 +1,9 @@
 .experience {
-  padding: $vert-spacing-unit;
-  padding-bottom: 0;
+  padding: $vert-spacing-unit $vert-spacing-unit 0 $vert-spacing-unit;
 
   @include breakpoint($md) {
     @include span(last 3 of 12);
+    padding-left: 0;
   }
 
   &__title {
