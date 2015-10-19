@@ -1,6 +1,7 @@
 .skills {
   padding: $vert-spacing-unit;
   padding-bottom: 0;
+  animation: fadein 1s;
 
   @include breakpoint($md) {
     @include span(9 of 12);

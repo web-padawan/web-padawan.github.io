@@ -1,5 +1,6 @@
 .experience {
   padding: $vert-spacing-unit;
+  animation: fadein 1s;
 
   @include breakpoint($md) {
     @include span(last 3 of 12);

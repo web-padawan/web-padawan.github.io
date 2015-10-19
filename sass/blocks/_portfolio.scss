@@ -3,6 +3,7 @@
   max-width: 900px;
   margin: 0 auto;
   text-align: center;
+  animation: fadein 1s;
 
   @include breakpoint($md) {
     max-width: 100%;
