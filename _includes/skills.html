@@ -1,30 +1,64 @@
   <div class="skills">
     <h2 class="skills__title">Навыки</h2>
-    <p class="skills__text">
-      <span>Кроссбраузерно верстаю сайты на HTML5 и CSS3. Знаю JavaScript на уровне применения готовых решений, пишу скрипты на jQuery.</span>
-      <span>Для стилей использую Sass. Знаком с приёмами адаптивной вёрстки, умею и люблю верстать пиксель-перфект.</span>
-      <span>В именовании классов придерживаюсь методологии БЭМ.</span>
-    </p>
-    <p class="skills__text">
-      <span>Использую Gulp для сборки проекта, Compass для генерации спрайтов, Bower для подключения библиотек.</span>
-      <span>Знаком с фреймворками Bootstrap и Foundation на уровне работы с исходниками (но предпочитаю обходиться без них).</span>
-      <span>Для раскладки по сетке использую Susy.</span>
-    </p>
-    <p class="skills__text">
-      <span>Интегрирую вёрстку в Drupal, владею приёмами темизации, включая создание темы с нуля на основе фреймворка Omega.</span>
-      <span>Знаю PHP на уровне написания кастомных модулей с использованием Drupal API, есть наработки для Drupal Commerce.</span>
-      <span>Работал также с <a href="http://ngcms.ru" target="_blank">Next Generation CMS</a>, для которой написал</span>
-      <span>пару <a href="https://github.com/web-padawan/ngplugins" target="_blank">плагинов</a>.</span>
-    </p>
-    <p class="skills__text">
-      <span>Работаю с Git-репозиториями, использую Trello для управления проектами и Grindstone — для учёта времени.</span>
-      <span>Имею опыт работы с SVN и трекером задач Redmine.</span>
-      <span>Опытный пользователь Linux (Ubuntu): ориентируюсь в настройке, сборке софта из исходников, написании shell-скриптов.</span>
-    </p>
-    <p class="skills__text">
-      <span>Знаю английский на уровне свободного понимания технической литературы и документации и поиска решений проблем.</span>
-      <span>Прошел пятимесячный курс разговорного английского <a href="http://esl.apslogos.com" target="_blank">ESL</a></span>
-      <span>и получил сертификат о достижении уровня intermediate (сентрябрь 2015).</span>
-      <span>Сейчас посещаю курсы <a href="http://www.yappicorp.com.ua" target="_blank">Yappi Corporate</a>.</span>
-    </p>
+
+    <div class="skills__tabs">
+      <a class="skills__tab" href="#short">Кратко</a> / <a class="skills__tab skills__tab--active" href="#full">Подробно</a>
+
+      <div class="skills__content" id="short">
+        <p class="skills__group">Языки</p>
+        <ul class="skills__list">
+          <li>HTML + CSS: 5 лет опыта — от табличной вёрстки до FlexBox</li>
+          <li>JavaScript: адаптация готовых решений, jQuery, AJAX, JSON</li>
+          <li>PHP: разработка модулей для CMS Drupal и Next Generation CMS</li>
+          <li>SQL (MySQL, T-SQL): написание запросов различной сложности</li>
+        </ul>
+        <p class="skills__group">Приёмы</p>
+        <ul class="skills__list">
+          <li>кроссбраузерная вёрстка: IE10+ (при неободимости IE8+)</li>
+          <li>резиновая и адаптивная вёрстка, mobile-first</li>
+          <li>вёрстка pixel-perfect (погрешность до 5px)</li>
+          <li>вёрстка и структурирование кода по методологии БЭМ</li>
+          <li>спрайты, оптимизация кода и ресурсов для production</li>
+        </ul>
+        <p class="skills__group">Окружение</p>
+        <ul class="skills__list">
+          <li>препроцессор: Sass (SCSS) + Compass</li>
+          <li>фреймворки: Susy, Bootstrap, Foundation</li>
+          <li>автоматизация: Gulp, Grunt, Bower</li>
+          <li>управление проектами: Trello, Redmine</li>
+          <li>репозитории: Git, SVN</li>
+        </ul>
+      </div>
+
+      <div class="skills__content" id="full">
+        <p class="skills__text">
+          <span>Кроссбраузерно верстаю сайты на HTML5 и CSS3. Знаю JavaScript на уровне применения готовых решений, пишу скрипты на jQuery.</span>
+          <span>Для стилей использую Sass. Знаком с приёмами адаптивной вёрстки, умею и люблю верстать пиксель-перфект.</span>
+          <span>В именовании классов придерживаюсь методологии БЭМ.</span>
+        </p>
+        <p class="skills__text">
+          <span>Использую Gulp для сборки проекта, Compass для компиляции стилей и генерации спрайтов, Bower для подключения библиотек.</span>
+          <span>Знаком с фреймворками Bootstrap и Foundation на уровне работы с исходниками (но предпочитаю обходиться без них).</span>
+          <span>Для раскладки по сетке использую Susy.</span>
+        </p>
+        <p class="skills__text">
+          <span>Интегрирую вёрстку в Drupal, владею приёмами темизации, включая создание темы с нуля на основе фреймворка Omega.</span>
+          <span>Знаю PHP на уровне написания кастомных модулей с использованием Drupal API, есть наработки для Drupal Commerce.</span>
+          <span>Работал также с <a href="http://ngcms.ru" target="_blank">Next Generation CMS</a>, для которой написал</span>
+          <span>пару <a href="https://github.com/web-padawan/ngplugins" target="_blank">плагинов</a>.</span>
+        </p>
+        <p class="skills__text">
+          <span>Работаю с Git-репозиториями, использую Trello для управления проектами и Grindstone — для учёта времени.</span>
+          <span>Имею опыт работы с SVN и трекером задач Redmine.</span>
+          <span>Опытный пользователь Linux (Ubuntu): ориентируюсь в настройке, сборке софта из исходников, написании shell-скриптов.</span>
+        </p>
+        <p class="skills__text">
+          <span>Знаю английский на уровне свободного понимания технической литературы и документации и поиска решений проблем.</span>
+          <span>Прошел пятимесячный курс разговорного английского <a href="http://esl.apslogos.com" target="_blank">ESL</a></span>
+          <span>и получил сертификат о достижении уровня intermediate (сентрябрь 2015).</span>
+          <span>Сейчас посещаю курсы <a href="http://www.yappicorp.com.ua" target="_blank">Yappi Corporate</a>.</span>
+        </p>
+      </div>
+    </div>
+
   </div>

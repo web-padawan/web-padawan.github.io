@@ -747,7 +747,7 @@ h6 {
 }
 
 .experience {
-  padding: 24px 24px 0 24px;
+  padding: 24px;
 }
 @media (min-width: 1024px) {
   .experience {
@@ -909,6 +909,7 @@ h6 {
     width: 74.57627%;
     float: left;
     margin-right: 1.69492%;
+    padding-bottom: 24px;
   }
 }
 .skills__title {
@@ -916,6 +917,36 @@ h6 {
 }
 .skills__text:last-child {
   margin: 0;
+}
+.skills__tab {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+}
+.skills__tab--active {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+  border: none;
+}
+.skills__tab--active:active, .skills__tab--active:focus {
+  outline: none;
+}
+.skills__tab--active:hover {
+  color: inherit;
+  border: none;
+  cursor: default;
+}
+.skills__content {
+  margin-top: 24px;
+  margin-top: 1.5rem;
+}
+.skills__group {
+  margin: 0;
+  font-weight: bold;
+}
+.skills__list {
+  margin-top: 0;
+  margin-bottom: 24px;
 }
 
 .social {

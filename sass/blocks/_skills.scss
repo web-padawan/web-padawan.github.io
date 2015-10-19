@@ -4,6 +4,7 @@
 
   @include breakpoint($md) {
     @include span(9 of 12);
+    padding-bottom: $vert-spacing-unit;
   }
 
   &__title {
@@ -14,5 +15,34 @@
     &:last-child {
       margin: 0;
     }
+  }
+
+  &__tab {
+    @include trailer;
+
+    &--active {
+      @include unstyled-link;
+      border: none;
+
+      &:hover {
+        color: inherit;
+        border: none;
+        cursor: default;
+      }
+    }
+  }
+
+  &__content {
+    @include leader;
+  }
+
+  &__group {
+    margin: 0;
+    font-weight: bold;
+  }
+
+  &__list {
+    margin-top: 0;
+    margin-bottom: $vert-spacing-unit;
   }
 }
