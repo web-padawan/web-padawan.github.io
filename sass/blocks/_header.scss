@@ -1,8 +1,8 @@
 .header {
   @include padding-leader();
   @include padding-trailer();
-  background: #f0f0f0;
-  border-bottom: 1px solid #d9d9d9;
+  background: $header-bg;
+  border-bottom: 1px solid $header-line;
 
   &__container {
     @extend %container;
