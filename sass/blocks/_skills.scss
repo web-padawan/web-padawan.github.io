@@ -45,5 +45,8 @@
   &__list {
     margin-top: 0;
     margin-bottom: $vert-spacing-unit;
+    &:last-child {
+      margin: 0;
+    }
   }
 }

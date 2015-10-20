@@ -959,6 +959,9 @@ h6 {
   margin-top: 0;
   margin-bottom: 24px;
 }
+.skills__list:last-child {
+  margin: 0;
+}
 
 .social {
   margin: 24px 0;
