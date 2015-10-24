@@ -1241,10 +1241,11 @@ h6 {
 }
 
 .slick-arrow {
+  top: 45%;
   height: 30px;
   width: 30px;
   background: #ccc;
-  border-radius: 50%;
+  border-radius: 15%;
 }
 .slick-arrow:hover {
   background: #b3b3b3;
@@ -1263,5 +1264,5 @@ h6 {
   right: -24px;
 }
 .slick-next:before {
-  left: 2px;
+  left: 1px;
 }

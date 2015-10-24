@@ -8,10 +8,11 @@ $slick-next-character: "›";
 @import 'slick-theme';
 
 .slick-arrow {
+  top: 45%;
   height: 30px;
   width: 30px;
   background: $slick-arrow;
-  border-radius: 50%;
+  border-radius: 15%;
 
   &:hover {
     background: darken($slick-arrow, 10%);
@@ -32,6 +33,6 @@ $slick-next-character: "›";
   right: -24px;
 
   &:before {
-    left: 2px;
+    left: 1px;
   }
 }
