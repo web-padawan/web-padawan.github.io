@@ -1,0 +1,11 @@
+.post {
+  &__date {
+    font-weight: bold;
+  }
+  &__preview {
+    margin-top: $vert-spacing-unit;
+  }
+  &__content {
+    margin-top: $vert-spacing-unit;
+  }
+}

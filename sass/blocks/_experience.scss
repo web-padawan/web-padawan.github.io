@@ -1,5 +1,5 @@
 .experience {
-  padding: $vert-spacing-unit;
+  padding: $vert-spacing-unit $horz-spacing-unit;
   animation: fadein 1s;
 
   @include breakpoint($md) {

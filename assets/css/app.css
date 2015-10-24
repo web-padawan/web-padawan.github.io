@@ -842,7 +842,7 @@ h6 {
 }
 
 .experience {
-  padding: 24px;
+  padding: 24px 1rem;
   animation: fadein 1s;
 }
 @media (min-width: 1024px) {
@@ -905,7 +905,7 @@ h6 {
   border-bottom: 1px solid #d9d9d9;
 }
 .header__left {
-  padding-left: 20px;
+  padding-left: 1rem;
   text-align: center;
 }
 @media (min-width: 1024px) {
@@ -917,7 +917,7 @@ h6 {
   }
 }
 .header__right {
-  padding-right: 20px;
+  padding-right: 1rem;
   text-align: center;
 }
 @media (min-width: 1024px) {
@@ -933,6 +933,10 @@ h6 {
 }
 .header__addition {
   font-weight: normal;
+}
+
+.page {
+  padding: 24px 1rem;
 }
 
 .portfolio {
@@ -1006,8 +1010,18 @@ h6 {
   }
 }
 
+.post__date {
+  font-weight: bold;
+}
+.post__preview {
+  margin-top: 24px;
+}
+.post__content {
+  margin-top: 24px;
+}
+
 .skills {
-  padding: 24px;
+  padding: 24px 1rem;
   padding-bottom: 0;
   animation: fadein 1s;
 }
