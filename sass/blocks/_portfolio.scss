@@ -16,7 +16,10 @@
   }
 
   &-cards {
-    max-width: 90%;
+    max-width: 85%;
+    @include breakpoint($xs) {
+      max-width: 90%;
+    }
     @include breakpoint($sm) {
       max-width: 93%;
     }

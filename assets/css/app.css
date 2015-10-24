@@ -961,9 +961,14 @@ h6 {
   margin: 12px 0;
 }
 .portfolio-cards {
-  max-width: 90%;
+  max-width: 85%;
   margin-left: auto;
   margin-right: auto;
+}
+@media (min-width: 600px) {
+  .portfolio-cards {
+    max-width: 90%;
+  }
 }
 @media (min-width: 768px) {
   .portfolio-cards {
