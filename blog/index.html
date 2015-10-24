@@ -4,15 +4,16 @@ title: Blog
 permalink: /blog/
 ---
 
-<ul>
   {% for post in site.posts %}
-    <li>
-      <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+  <div class="post">
+    <h2 class="post__title">
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </h2>
+    <div class="post__date">{{ post.date | localize: "%d %B %Y" }}</div>
 
-      <h2>
-        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </h2>
+    <div class="post__preview">
       {{ post.excerpt }}
-    </li>
+    </div>
+  </div>
   {% endfor %}
-</ul>
+
