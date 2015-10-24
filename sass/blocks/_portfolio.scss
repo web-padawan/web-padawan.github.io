@@ -32,7 +32,7 @@
 
   &-card {
     padding: $vert-spacing-unit $vert-spacing-unit / 2 $vert-spacing-unit / 2 $vert-spacing-unit / 2;
-    margin: 0 $horz-spacing-unit;
+    margin: $vert-spacing-unit / 2 $horz-spacing-unit;
     outline: none;
 
     &:hover {
@@ -52,9 +52,11 @@
       font-weight: bold;
     }
 
-    &__description {
-      max-width: 285px;
-      margin: 0 auto;
+    &__title {
+      font-size: 13px;
+      @include breakpoint($lg) {
+        font-size: 14px;
+      }
     }
 
   }

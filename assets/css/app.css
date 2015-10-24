@@ -982,7 +982,7 @@ h6 {
 }
 .portfolio-card {
   padding: 24px 12px 12px 12px;
-  margin: 0 1rem;
+  margin: 12px 1rem;
   outline: none;
 }
 .portfolio-card:hover {
@@ -997,9 +997,13 @@ h6 {
   margin-top: 12px;
   font-weight: bold;
 }
-.portfolio-card__description {
-  max-width: 285px;
-  margin: 0 auto;
+.portfolio-card__title {
+  font-size: 13px;
+}
+@media (min-width: 1200px) {
+  .portfolio-card__title {
+    font-size: 14px;
+  }
 }
 
 .skills {
@@ -1238,6 +1242,10 @@ h6 {
 .slick-dots li.slick-active button:before {
   color: black;
   opacity: 0.75;
+}
+
+.slick-slider {
+  margin-bottom: 0;
 }
 
 .slick-arrow {

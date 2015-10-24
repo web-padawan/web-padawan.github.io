@@ -7,6 +7,10 @@ $slick-next-character: "›";
 
 @import 'slick-theme';
 
+.slick-slider {
+  margin-bottom: 0;
+}
+
 .slick-arrow {
   top: 45%;
   height: 30px;
