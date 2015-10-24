@@ -536,6 +536,11 @@ video {
   src: url('../fonts/ptsans-bold.woff?1444985380') format('woff');
   font-weight: bold;
 }
+@font-face {
+  font-family: "PTSans";
+  src: url('../fonts/ptsans-italic.woff?1444985380') format('woff');
+  font-style: italic;
+}
 .header__container, .main__container {
   max-width: 1200px;
   margin-left: auto;
