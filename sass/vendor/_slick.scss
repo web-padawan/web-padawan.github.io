@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+$slick-font-path: './assets/fonts';
+$slick-font-family: 'PTSans';
+$slick-prev-character: "‹";
+$slick-next-character: "›";
+
+@import 'slick-theme';
+
+.slick-arrow {
+  height: 30px;
+  width: 30px;
+  background: $slick-arrow;
+  border-radius: 50%;
+
+  &:hover {
+    background: darken($slick-arrow, 10%);
+  }
+
+  &:before {
+    position: relative;
+    top: -6px;
+    font-size: 34px;
+  }
+}
+
+.slick-prev {
+  left: -20px;
+}
+
+.slick-next {
+  right: -24px;
+
+  &:before {
+    left: 2px;
+  }
+}

@@ -1,6 +1,7 @@
 {
   "name": "web-padawan",
   "dependencies": {
-    "normalize-scss": "~3.0.3"
+    "normalize-scss": "~3.0.3",
+    "slick-carousel": "~1.5.8"
   }
 }

@@ -15,32 +15,31 @@
     margin: $vert-spacing-unit / 2 0;
   }
 
+  &-cards {
+    max-width: 90%;
+    @include breakpoint($sm) {
+      max-width: 93%;
+    }
+    @include breakpoint($md) {
+      max-width: 96%;
+    }
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   &-card {
-    display: inline-block;
     padding: $vert-spacing-unit $vert-spacing-unit / 2 $vert-spacing-unit / 2 $vert-spacing-unit / 2;
     margin: 0 $horz-spacing-unit;
+    outline: none;
 
     &:hover {
       border-color: $shadow-box;
       box-shadow: 0 0 1pc rgba($shadow-drop,.4);
     }
 
-    // large screen - display 4 cards in row
-    @include breakpoint($md) {
-      margin: 0;
-      display: block;
-      @include span(3 of 12 nest);
-    }
-
-    // last card
-    &:last-child {
-      @include breakpoint($md) {
-        @include span(last 3 of 12 nest);
-      }
-    }
-
     &__thumb {
       img {
+        margin: 0 auto;
         vertical-align: top;
       }
     }
