@@ -874,6 +874,7 @@ h6 {
 }
 .portfolio-cards {
   max-width: 85%;
+  overflow: hidden;
   margin-left: auto;
   margin-right: auto;
 }
@@ -893,9 +894,15 @@ h6 {
   }
 }
 .portfolio-card {
+  float: left;
   padding: 24px 12px 12px 12px;
   margin: 12px 1rem;
   outline: none;
+}
+@media (min-width: 1024px) {
+  .portfolio-card {
+    max-width: 25%;
+  }
 }
 .portfolio-card:hover {
   border-color: #a9a9a9;
@@ -1114,6 +1121,10 @@ h6 {
 
 .slick-arrow.slick-hidden {
   display: none;
+}
+
+.slick-slider {
+  overflow: visible;
 }
 
 .slick-loading .slick-list {

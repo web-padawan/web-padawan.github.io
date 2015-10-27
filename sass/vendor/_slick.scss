@@ -7,6 +7,10 @@ $slick-opacity-default: 0.75;
 $slick-opacity-on-hover: 1;
 $slick-opacity-not-active: 0.25;
 
+.slick-slider {
+  overflow: visible;
+}
+
 .slick-list {
   .slick-loading & {
     background: #fff image-url("ajax-loader.gif") center center no-repeat;
