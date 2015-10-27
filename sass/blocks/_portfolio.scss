@@ -16,7 +16,9 @@
   }
 
   &-cards {
+    display: none;
     max-width: 85%;
+
     @include breakpoint($xs) {
       max-width: 90%;
     }
@@ -31,7 +33,6 @@
   }
 
   &-card {
-    float: left;
     padding: $vert-spacing-unit $vert-spacing-unit / 2 $vert-spacing-unit / 2 $vert-spacing-unit / 2;
     margin: $vert-spacing-unit / 2 $horz-spacing-unit;
     outline: none;
