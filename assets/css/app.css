@@ -985,6 +985,7 @@ h6 {
   }
 }
 .portfolio-card {
+  float: left;
   padding: 24px 12px 12px 12px;
   margin: 12px 1rem;
   outline: none;
