@@ -1,42 +1,67 @@
 @charset "UTF-8";
 
-$slick-font-path: './assets/fonts';
-$slick-font-family: 'PTSans';
 $slick-prev-character: "‹";
 $slick-next-character: "›";
+$slick-arrow-color: white;
+$slick-opacity-default: 0.75;
+$slick-opacity-on-hover: 1;
+$slick-opacity-not-active: 0.25;
 
-@import 'slick-theme';
-
-.slick-slider {
-  margin-bottom: 0;
+.slick-list {
+  .slick-loading & {
+    background: #fff image-url("ajax-loader.gif") center center no-repeat;
+  }
 }
 
-.slick-arrow {
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: block;
   top: 45%;
   height: 30px;
   width: 30px;
+  margin-top: -10px;
+  padding: 0;
+  cursor: pointer;
   background: $slick-arrow;
   border-radius: 15%;
-
-  &:hover {
-    background: darken($slick-arrow, 10%);
-  }
+  border: none;
+  outline: none;
+  line-height: 0;
+  font-size: 0;
 
   &:before {
     position: relative;
     top: -6px;
     font-size: 34px;
+    line-height: 1;
+    color: $slick-arrow-color;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  &:hover, &:focus {
+    background: darken($slick-arrow, 10%);
+    outline: none;
+    &:before {
+      opacity: $slick-opacity-on-hover;
+    }
+  }
+  &.slick-disabled:before {
+    opacity: $slick-opacity-not-active;
   }
 }
 
 .slick-prev {
   left: -20px;
+  &:before {
+    content: $slick-prev-character;
+  }
 }
 
 .slick-next {
   right: -24px;
-
   &:before {
+    content: $slick-next-character;
     left: 1px;
   }
 }
