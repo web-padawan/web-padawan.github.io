@@ -5,7 +5,25 @@ layout: default
   <div class="post">
     <header>
       <h2 class="post__title">{{ page.title }}</h2>
-      <div class="post__date">{{ page.date | localize: "%d %B %Y" }}</div>
+      {% assign m = page.date | date: "%-m" %}
+      <div class="post__date">
+        <span>{{ page.date | date: "%-d" }}</span>
+          {% case m %}
+            {% when '1' %}<span>января</span>
+            {% when '2' %}<span>февраля</span>
+            {% when '3' %}<span>марта</span>
+            {% when '4' %}<span>апреля</span>
+            {% when '5' %}<span>мая</span>
+            {% when '6' %}<span>июня</span>
+            {% when '7' %}<span>июля</span>
+            {% when '8' %}<span>августа</span>
+            {% when '9' %}<span>сентября</span>
+            {% when '10' %}<span>октября</span>
+            {% when '11' %}<span>ноября</span>
+            {% when '12' %}<span>декабря</span>
+          {% endcase %}
+          <span>{{ page.date | date: "%Y" }}</span>
+      </div>
     </header>
 
     <article class="post__content">
