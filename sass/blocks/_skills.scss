@@ -20,6 +20,10 @@
 
   &__tab {
     @include trailer;
+    border-bottom-style: dashed;
+    &:hover {
+      border-bottom-style: dashed;
+    }
 
     &--active {
       @include unstyled-link;

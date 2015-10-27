@@ -951,6 +951,10 @@ h6 {
 .skills__tab {
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
+  border-bottom-style: dashed;
+}
+.skills__tab:hover {
+  border-bottom-style: dashed;
 }
 .skills__tab--active {
   color: inherit;
