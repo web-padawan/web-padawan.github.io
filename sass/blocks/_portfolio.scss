@@ -16,7 +16,6 @@
   }
 
   &-cards {
-    display: none;
     max-width: 85%;
 
     @include breakpoint($xs) {
