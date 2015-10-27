@@ -32,10 +32,7 @@
   }
 
   &-card {
-    float: left;
-    @include breakpoint($md) {
-      max-width: 25%;
-    }
+    display: none;
     padding: $vert-spacing-unit $vert-spacing-unit / 2 $vert-spacing-unit / 2 $vert-spacing-unit / 2;
     margin: $vert-spacing-unit / 2 $horz-spacing-unit;
     outline: none;
