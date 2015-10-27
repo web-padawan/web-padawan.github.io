@@ -17,7 +17,6 @@
 
   &-cards {
     max-width: 85%;
-    overflow: hidden;
 
     @include breakpoint($xs) {
       max-width: 90%;

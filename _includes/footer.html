@@ -12,7 +12,14 @@
   });
 
   $(document).ready(function () {
+
+    $('.portfolio-cards').on('init', function(slick) {
+      $('.portfolio-cards').fadeIn(3000);
+    });
+
     $('.portfolio-cards').slick({
+      focusOnSelect: true,
+      lazyLoad: 'ondemand',
       slidesToShow: 4,
       slidesToScroll: 1,
       responsive: [
