@@ -848,11 +848,11 @@ h6 {
 }
 
 .portfolio {
-  padding-top: 24px;
   max-width: 900px;
   margin: 0 auto;
+  padding-top: 24px;
+  display: none;
   text-align: center;
-  animation: fadein 1s;
 }
 @media (min-width: 1024px) {
   .portfolio {
@@ -893,7 +893,6 @@ h6 {
   }
 }
 .portfolio-card {
-  display: none;
   padding: 24px 12px 12px 12px;
   margin: 12px 1rem;
   outline: none;

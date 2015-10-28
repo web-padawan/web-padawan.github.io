@@ -9,7 +9,7 @@
     var $p = $('.portfolio-cards');
 
     $p.on('init', function(slick) {
-      $p.fadeIn(3000);
+      $('.portfolio').fadeIn(1000);
     });
 
     $p.slick({

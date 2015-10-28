@@ -1,9 +1,9 @@
 .portfolio {
-  padding-top: $vert-spacing-unit;
   max-width: 900px;
   margin: 0 auto;
+  padding-top: $vert-spacing-unit;
+  display: none;
   text-align: center;
-  animation: fadein 1s;
 
   @include breakpoint($md) {
     max-width: 100%;
@@ -32,7 +32,6 @@
   }
 
   &-card {
-    display: none;
     padding: $vert-spacing-unit $vert-spacing-unit / 2 $vert-spacing-unit / 2 $vert-spacing-unit / 2;
     margin: $vert-spacing-unit / 2 $horz-spacing-unit;
     outline: none;
