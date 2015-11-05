@@ -9,12 +9,12 @@
     var $p = $('.portfolio-cards');
 
     $p.on('init', function(slick) {
-      $('.portfolio').fadeIn(1000);
+      $('.portfolio').fadeIn();
     });
 
     $p.slick({
       focusOnSelect: true,
-      lazyLoad: 'ondemand',
+      lazyLoad: 'progressive',
       slidesToShow: 4,
       slidesToScroll: 1,
       responsive: [
