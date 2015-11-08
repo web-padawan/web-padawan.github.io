@@ -9,12 +9,11 @@
     var $p = $('.portfolio-cards');
 
     $p.on('init', function(slick) {
-      $('.portfolio').fadeIn();
+      $p.find('.portfolio-card').fadeIn();
     });
 
     $p.slick({
       focusOnSelect: true,
-      lazyLoad: 'progressive',
       slidesToShow: 4,
       slidesToScroll: 1,
       responsive: [
@@ -41,25 +40,25 @@
         }
       ]
     });
+
+    $('#short').css('display', 'none');
+
+    $('.skills__tab').on('click', function(event) {
+      event.preventDefault();
+
+      var $this = $(this),
+          n = $this.attr('href')
+          o = (n === '#full') ? '#short' : '#full';
+
+      if (!$this.hasClass('skills__tab--active')) {
+
+        $(n).css('display', 'block');
+        $(o).css('display', 'none');
+
+        $this.addClass('skills__tab--active');
+        $('a[href="' + o + '"]').removeClass('skills__tab--active');
+      }
+    });
+
   });
-
-  $('#short').css('display', 'none');
-
-  $('.skills__tab').on('click', function(event) {
-    event.preventDefault();
-
-    var $this = $(this),
-        n = $this.attr('href')
-        o = (n === '#full') ? '#short' : '#full';
-
-    if (!$this.hasClass('skills__tab--active')) {
-
-      $(n).css('display', 'block');
-      $(o).css('display', 'none');
-
-      $this.addClass('skills__tab--active');
-      $('a[href="' + o + '"]').removeClass('skills__tab--active');
-    }
-  });
-
 })(jQuery);

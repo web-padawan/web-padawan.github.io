@@ -2,8 +2,8 @@
   max-width: 900px;
   margin: 0 auto;
   padding-top: $vert-spacing-unit;
-  display: none;
   text-align: center;
+  animation: fadein 1s;
 
   @include breakpoint($md) {
     max-width: 100%;
@@ -16,7 +16,9 @@
   }
 
   &-cards {
+    min-height: 200px;
     max-width: 85%;
+    background: image-url('ajax-loader.gif') no-repeat center center;
 
     @include breakpoint($xs) {
       max-width: 90%;
@@ -35,6 +37,7 @@
     padding: $vert-spacing-unit $vert-spacing-unit / 2 $vert-spacing-unit / 2 $vert-spacing-unit / 2;
     margin: $vert-spacing-unit / 2 $horz-spacing-unit;
     outline: none;
+    display: none;
 
     &:hover {
       border-color: $shadow-box;
