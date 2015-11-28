@@ -1,0 +1,30 @@
+.footer {
+  @include padding-leader();
+  @include padding-trailer();
+  overflow: hidden;
+  clear: both;
+  background: $footer-bg;
+  border-top: 1px solid $footer-line;
+  @include breakpoint (max-width $xs) {
+    text-align: center;
+  }
+
+  &__container {
+    @extend %container;
+  }
+
+  &__author {
+    @include breakpoint ($xs) {
+      float: left;
+      margin-left: $horz-spacing-unit;
+    }
+  }
+
+
+  &__poweredby {
+    @include breakpoint ($xs) {
+      float: right;
+      margin-right: $horz-spacing-unit * 4;
+    }
+  }
+}

@@ -449,12 +449,12 @@ video {
   src: url('../fonts/ptsans-italic.woff?1444985380') format('woff');
   font-style: italic;
 }
-.header__container, .main__container {
+.footer__container, .header__container, .main__container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
-.header__container:after, .main__container:after {
+.footer__container:after, .header__container:after, .main__container:after {
   content: " ";
   display: block;
   clear: both;
@@ -782,10 +782,10 @@ h6 {
   height: 24px;
 }
 .experience-company__icon--paradiz {
-  background: url('../images/generated/icons-scb68b88af2.png') 0 -68px no-repeat;
+  background: url('../images/generated/icons-s4986093d64.png') 0 -102px no-repeat;
 }
 .experience-company__icon--privat {
-  background: url('../images/generated/icons-scb68b88af2.png') 0 -136px no-repeat;
+  background: url('../images/generated/icons-s4986093d64.png') 0 -170px no-repeat;
 }
 .experience-company__title {
   display: inline-block;
@@ -802,6 +802,34 @@ h6 {
 .experience-company__description {
   padding-left: 1rem;
   font-size: 13px;
+}
+
+.footer {
+  padding-top: 24px;
+  padding-top: 1.5rem;
+  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
+  overflow: hidden;
+  clear: both;
+  background: #f0f0f0;
+  border-top: 1px solid #d9d9d9;
+}
+@media (max-width: 600px) {
+  .footer {
+    text-align: center;
+  }
+}
+@media (min-width: 600px) {
+  .footer__author {
+    float: left;
+    margin-left: 1rem;
+  }
+}
+@media (min-width: 600px) {
+  .footer__poweredby {
+    float: right;
+    margin-right: 4rem;
+  }
 }
 
 .header {
@@ -1016,19 +1044,23 @@ h6 {
 }
 
 .social__link--phone {
-  background: url('../images/generated/icons-scb68b88af2.png') 0 -102px no-repeat;
+  background: url('../images/generated/icons-s4986093d64.png') 0 -136px no-repeat;
 }
 
 .social__link--email {
-  background: url('../images/generated/icons-scb68b88af2.png') 0 0 no-repeat;
+  background: url('../images/generated/icons-s4986093d64.png') 0 0 no-repeat;
 }
 
 .social__link--skype {
-  background: url('../images/generated/icons-scb68b88af2.png') 0 -170px no-repeat;
+  background: url('../images/generated/icons-s4986093d64.png') 0 -204px no-repeat;
 }
 
 .social__link--github {
-  background: url('../images/generated/icons-scb68b88af2.png') 0 -34px no-repeat;
+  background: url('../images/generated/icons-s4986093d64.png') 0 -34px no-repeat;
+}
+
+.social__link--linkedin {
+  background: url('../images/generated/icons-s4986093d64.png') 0 -68px no-repeat;
 }
 
 /* Slider */
