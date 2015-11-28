@@ -948,6 +948,9 @@ h6 {
     font-size: 14px;
   }
 }
+.portfolio-card a:active, .portfolio-card a:focus {
+  outline: none;
+}
 
 .post__date {
   font-weight: bold;
