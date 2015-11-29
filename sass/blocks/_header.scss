@@ -12,7 +12,7 @@
     padding-left: $horz-spacing-unit;
     text-align: center;
 
-    @include breakpoint ($md) {
+    @include breakpoint($md) {
       @include span(8 of 12);
       text-align: left;
     }
@@ -22,17 +22,31 @@
     padding-right: $horz-spacing-unit;
     text-align: center;
 
-    @include breakpoint ($md) {
+    @include breakpoint($md) {
       @include span(last 4 of 12);
       text-align: left;
     }
   }
 
   &__title {
-    font-size: 24px;
+    @include adjust-font-size-to(24px);
+    @include breakpoint(max-width $mb) {
+      line-height: 1.25;
+      margin-bottom: $vert-spacing-unit / 3;
+    }
+  }
+
+  &__dash {
+    font-weight: normal;
+    @include breakpoint(max-width $mb) {
+      display: none;
+    }
   }
 
   &__addition {
     font-weight: normal;
+    @include breakpoint(max-width $mb) {
+      display: block;
+    }
   }
 }

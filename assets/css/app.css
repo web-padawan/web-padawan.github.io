@@ -673,6 +673,7 @@ html {
 }
 
 body, html {
+  min-width: 320px;
   color: #313131;
   font-family: "PTSans", Helvetica, Arial, sans-serif;
 }
@@ -866,9 +867,31 @@ h6 {
 }
 .header__title {
   font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 48px;
+  line-height: 3rem;
+}
+@media (max-width: 480px) {
+  .header__title {
+    line-height: 1.25;
+    margin-bottom: 8px;
+  }
+}
+.header__dash {
+  font-weight: normal;
+}
+@media (max-width: 480px) {
+  .header__dash {
+    display: none;
+  }
 }
 .header__addition {
   font-weight: normal;
+}
+@media (max-width: 480px) {
+  .header__addition {
+    display: block;
+  }
 }
 
 .page {
