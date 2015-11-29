@@ -893,6 +893,11 @@ h6 {
     display: block;
   }
 }
+@media (max-width: 480px) {
+  .header__description {
+    padding: 0 1rem;
+  }
+}
 
 .page {
   padding: 24px 1rem;
