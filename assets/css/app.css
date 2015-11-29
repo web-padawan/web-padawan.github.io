@@ -782,10 +782,10 @@ h6 {
   height: 24px;
 }
 .experience-company__icon--paradiz {
-  background: url('../images/generated/icons-s4986093d64.png') 0 -102px no-repeat;
+  background: url('../images/generated/icons-s17be8a205a.png') 0 -102px no-repeat;
 }
 .experience-company__icon--privat {
-  background: url('../images/generated/icons-s4986093d64.png') 0 -170px no-repeat;
+  background: url('../images/generated/icons-s17be8a205a.png') 0 -204px no-repeat;
 }
 .experience-company__title {
   display: inline-block;
@@ -1047,23 +1047,27 @@ h6 {
 }
 
 .social__link--phone {
-  background: url('../images/generated/icons-s4986093d64.png') 0 -136px no-repeat;
+  background: url('../images/generated/icons-s17be8a205a.png') 0 -170px no-repeat;
 }
 
 .social__link--email {
-  background: url('../images/generated/icons-s4986093d64.png') 0 0 no-repeat;
+  background: url('../images/generated/icons-s17be8a205a.png') 0 0 no-repeat;
 }
 
 .social__link--skype {
-  background: url('../images/generated/icons-s4986093d64.png') 0 -204px no-repeat;
+  background: url('../images/generated/icons-s17be8a205a.png') 0 -238px no-repeat;
 }
 
 .social__link--github {
-  background: url('../images/generated/icons-s4986093d64.png') 0 -34px no-repeat;
+  background: url('../images/generated/icons-s17be8a205a.png') 0 -34px no-repeat;
 }
 
 .social__link--linkedin {
-  background: url('../images/generated/icons-s4986093d64.png') 0 -68px no-repeat;
+  background: url('../images/generated/icons-s17be8a205a.png') 0 -68px no-repeat;
+}
+
+.social__link--pdf {
+  background: url('../images/generated/icons-s17be8a205a.png') 0 -136px no-repeat;
 }
 
 /* Slider */
