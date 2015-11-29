@@ -9,11 +9,11 @@
   }
 
   &__left {
-    padding-left: $horz-spacing-unit;
     text-align: center;
 
     @include breakpoint($md) {
       @include span(8 of 12);
+      padding-left: $horz-spacing-unit;
       text-align: left;
     }
   }

@@ -842,7 +842,6 @@ h6 {
   border-bottom: 1px solid #d9d9d9;
 }
 .header__left {
-  padding-left: 1rem;
   text-align: center;
 }
 @media (min-width: 1024px) {
@@ -850,6 +849,7 @@ h6 {
     width: 66.10169%;
     float: left;
     margin-right: 1.69492%;
+    padding-left: 1rem;
     text-align: left;
   }
 }
