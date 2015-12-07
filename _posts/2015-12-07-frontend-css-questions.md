@@ -36,10 +36,10 @@ In the end, it all depends on the project requirements.
 
 #### 3. Describe Floats and how they work.
 
-+ Floated element are sent as far to the right or left (depending on which value is applied) of the parent element.
-+ Block level elements, unless they are positioned (floated) themselves, act as if the floated element is not there.
++ Floated elements are sent as far to the right or left (depending on which value is applied) of the parent element.
++ Block level elements, unless they are floated (or positioned) themselves, act as if the floated element is not there.
 + Inline elements (e. g., the text inside the paragraph) flow around the floated element.
-+ Floated elements can affect their parent element: if it only contains floated elements, its height would collapse to nothing.
-+ The most common methods to prevent collapsing are: setting an ```overflow``` property on parent element, and using ```::after``` pseudo-element.
++ Floated elements can affect their parent element: when it only contains floated elements, its height would collapse to nothing.
++ The most common methods to prevent collapsing are setting an ```overflow``` property on parent element, and using ```::after``` pseudo-element.
 
 *See also: [All About Floats](https://css-tricks.com/all-about-floats)*
