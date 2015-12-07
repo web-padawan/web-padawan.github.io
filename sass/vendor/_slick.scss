@@ -2,7 +2,7 @@
 
 $slick-prev-character: "‹";
 $slick-next-character: "›";
-$slick-arrow-color: white;
+$slick-arrow-color: #222;
 $slick-opacity-default: 0.75;
 $slick-opacity-on-hover: 1;
 $slick-opacity-not-active: 0.25;
@@ -21,33 +21,32 @@ $slick-opacity-not-active: 0.25;
 .slick-next {
   position: absolute;
   display: block;
-  top: 45%;
-  height: 30px;
-  width: 30px;
-  margin-top: -10px;
+  top: 42%;
+  height: 35px;
+  width: 20px;
   padding: 0;
   cursor: pointer;
-  background: $slick-arrow;
-  border-radius: 15%;
+  background: transparent;
   border: none;
   outline: none;
-  line-height: 0;
   font-size: 0;
 
   &:before {
-    position: relative;
-    top: -6px;
-    font-size: 34px;
-    line-height: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-size: 60px;
+    font-family: serif;
+    font-weight: bold;
     color: $slick-arrow-color;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  &:hover, &:focus {
-    background: darken($slick-arrow, 10%);
-    outline: none;
+  &:hover {
     &:before {
-      opacity: $slick-opacity-on-hover;
+      color: lighten($slick-arrow-color, 20%);
     }
   }
   &.slick-disabled:before {
@@ -56,16 +55,15 @@ $slick-opacity-not-active: 0.25;
 }
 
 .slick-prev {
-  left: -20px;
+  left: -10px;
   &:before {
     content: $slick-prev-character;
   }
 }
 
 .slick-next {
-  right: -24px;
+  right: -10px;
   &:before {
     content: $slick-next-character;
-    left: 1px;
   }
 }
