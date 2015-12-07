@@ -1,6 +1,6 @@
 .post {
-  &__date {
-    font-weight: bold;
+  &__title {
+    margin-bottom: $vert-spacing-unit / 4;
   }
   &__preview {
     margin-top: $vert-spacing-unit;

@@ -29,6 +29,7 @@
   }
 
   &__title {
+    margin-bottom: 0;
     @include adjust-font-size-to(24px);
     @include breakpoint(max-width $mb) {
       line-height: 1.25;
