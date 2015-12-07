@@ -9,7 +9,7 @@ Its main purpose is to understand certain things and to be able to explain them 
 My other goals are to strengthen knowledge of Markdown syntax, and to improve my level of English proficiency.
 I hope you'll find something new here - at least, a few useful links for reading and meditation.
 
-##### What is the difference between classes and ID's in CSS?
+#### 1. What is the difference between classes and ID's in CSS?
 
 There are couple of things, the main ones are as follows:
 
@@ -17,9 +17,9 @@ There are couple of things, the main ones are as follows:
 + Classes are not unique. The same class can be used (actually, it should be used) on multiple elements, and every element can have multiple classes.
 + ID's have much higher specificity than classes, and therefore are rarely used because such strong rules are difficult to override.
 
-See also: [The Difference Between ID and Class](https://css-tricks.com/the-difference-between-id-and-class)
+*See also: [The Difference Between ID and Class](https://css-tricks.com/the-difference-between-id-and-class)*
 
-##### What's the difference between "resetting" and "normalizing" CSS? Which would you choose, and why?
+#### 2. What's the difference between "resetting" and "normalizing" CSS? Which would you choose, and why?
 
 + **Resetting CSS** is typically used to remove all built-in browser styles.
   + This can be useful if you are going to define all styles for a separate independent block, as suggested by BEM mehodology.
@@ -29,7 +29,17 @@ See also: [The Difference Between ID and Class](https://css-tricks.com/the-diffe
 
 I have already used both [reset.css](https://github.com/shannonmoeller/reset-css) and [normalize.css](https://github.com/JohnAlbin/normalize-scss) in my projects.
 They both can be installed as bower packages and imported via SCSS.
-But, if I had to start a new project now, I'd rather have tried to use the third option, since it seems to be reasonable.
+But, if I had to start a new project now, I'd rather choose the third option, since it seems to be reasonable.
 In the end, it all depends on the project requirements.
 
-See also: [CSS: reset or normalize?](https://the-pastry-box-project.net/oli-studholme/2013-june-3)
+*See also: [CSS: reset or normalize?](https://the-pastry-box-project.net/oli-studholme/2013-june-3)*
+
+#### 3. Describe Floats and how they work.
+
++ Floated element are sent as far to the right or left (depending on which value is applied) of the parent element.
++ Block level elements, unless they are positioned (floated) themselves, act as if the floated element is not there.
++ Inline elements (e. g., the text inside the paragraph) flow around the floated element.
++ Floated elements can affect their parent element: if it only contains floated elements, its height would collapse to nothing.
++ The most common methods to prevent collapsing are: setting an ```overflow``` property on parent element, and using ```::after``` pseudo-element.
+
+*See also: [All About Floats](https://css-tricks.com/all-about-floats)*
