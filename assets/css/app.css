@@ -690,8 +690,8 @@ a:hover {
 }
 
 p {
-  margin-top: 0;
-  margin-bottom: 24px;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 ul {
@@ -705,8 +705,8 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0;
-  margin-bottom: 24px;
+  margin-top: 24px;
+  margin-bottom: 12px;
 }
 
 h1 {
@@ -774,7 +774,6 @@ h6 {
   .experience-company {
     float: none;
     margin-right: 0;
-    margin-bottom: 24px;
   }
 }
 .experience-company__icon {
@@ -867,7 +866,7 @@ h6 {
   }
 }
 .header__title {
-  margin-bottom: 0;
+  margin: 0;
   font-size: 24px;
   font-size: 1.5rem;
   line-height: 48px;
@@ -983,7 +982,7 @@ h6 {
 }
 
 .post__title {
-  margin-bottom: 6px;
+  margin: 0;
 }
 .post__preview {
   margin-top: 24px;
