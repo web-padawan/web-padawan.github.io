@@ -1,6 +1,5 @@
 .skills {
-  padding: $vert-spacing-unit $horz-spacing-unit;
-  padding-bottom: 0;
+  padding: $vert-spacing-unit $horz-spacing-unit 0;
   animation: fadein 1s;
 
   @include breakpoint($md) {
