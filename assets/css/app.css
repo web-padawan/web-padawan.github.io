@@ -992,8 +992,7 @@ h6 {
 }
 
 .skills {
-  padding: 24px 1rem;
-  padding-bottom: 0;
+  padding: 24px 1rem 0;
   animation: fadein 1s;
 }
 @media (min-width: 1024px) {
