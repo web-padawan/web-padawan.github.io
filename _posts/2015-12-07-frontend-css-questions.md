@@ -31,7 +31,7 @@ There are couple of things, the main ones are as follows:
 
 I have already used both [reset.css](https://github.com/shannonmoeller/reset-css) and [normalize.css](https://github.com/JohnAlbin/normalize-scss) in my projects.
 They both can be installed as bower packages and imported via SCSS. I also suggest paying attention to [sanitize.css](https://github.com/10up/sanitize.css).
-Eventually, I decided to put together the advantages of these approaches. The result can be found in my [starterkit](https://github.com/web-padawan/sky-starter-kit/blob/master/sass/helpers/_optimize.scss).
+Eventually, I decided to put together the advantages of these approaches. The result can be found in my [frontend project template](https://github.com/web-padawan/skystart/blob/master/sass/helpers/_optimize.scss).
 
 *See also: [CSS: reset or normalize?](https://the-pastry-box-project.net/oli-studholme/2013-june-3)*
 
