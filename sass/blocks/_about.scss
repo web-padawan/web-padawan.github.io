@@ -8,6 +8,7 @@
 
   @include breakpoint($md) {
     @include span(last 3 of 12);
+    padding-left: 0;
   }
 
   &__title {
