@@ -8,12 +8,15 @@
   }
 
   &__title {
-    margin: $vert-spacing-unit / 2 0;
+    margin: $vert-spacing-unit / 2 0 $vert-spacing-unit;
   }
 
   &-company {
     float: left;
-    margin-right: $horz-spacing-unit * 2;
+    margin: 0 $horz-spacing-unit * 2 $vert-spacing-unit 0;
+    &--last {
+      margin-bottom: 0;
+    }
 
     @include breakpoint($md) {
       float: none;
@@ -36,7 +39,7 @@
 
     &__title {
       display: inline-block;
-      margin-bottom: $vert-spacing-unit / 2;
+      margin-bottom: $vert-spacing-unit / 3;
       font-weight: bold;
       font-size: 18px;
     }
@@ -50,6 +53,7 @@
     }
 
     &__description {
+      margin: $vert-spacing-unit / 3 0 0 0;
       padding-left: $horz-spacing-unit;
       font-size: 13px;
     }

@@ -12,6 +12,7 @@
   }
 
   &__text {
+    margin: $vert-spacing-unit 0;
     &:last-child {
       margin: 0;
     }
