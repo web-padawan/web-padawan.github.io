@@ -751,6 +751,74 @@ h6 {
   line-height: 1.5rem;
 }
 
+.about {
+  padding: 24px 1rem 0;
+}
+@media (min-width: 600px) {
+  .about {
+    width: 49.15254%;
+    float: right;
+    margin-right: 0;
+    padding-bottom: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  .about {
+    width: 23.72881%;
+    float: right;
+    margin-right: 0;
+  }
+}
+.about__title {
+  margin: 0 0 24px;
+}
+.about__content {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+}
+
+.book {
+  padding: 24px 1rem 0;
+}
+@media (min-width: 600px) {
+  .book {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+    padding-bottom: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  .book {
+    width: 15.25424%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-left: 3.38983%;
+  }
+}
+.book__title {
+  margin: 0 0 24px;
+}
+.book__content {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+}
+.book__cover {
+  display: block;
+}
+.book__title {
+  font-weight: bold;
+}
+
+.bottom {
+  overflow: auto;
+  clear: both;
+}
+
 .experience {
   padding: 24px 1rem;
   animation: fadein 1s;
@@ -764,11 +832,14 @@ h6 {
   }
 }
 .experience__title {
-  margin: 12px 0;
+  margin: 12px 0 24px;
 }
 .experience-company {
   float: left;
-  margin-right: 2rem;
+  margin: 0 2rem 24px 0;
+}
+.experience-company--last {
+  margin-bottom: 0;
 }
 @media (min-width: 1024px) {
   .experience-company {
@@ -790,7 +861,7 @@ h6 {
 }
 .experience-company__title {
   display: inline-block;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   font-weight: bold;
   font-size: 18px;
 }
@@ -801,6 +872,7 @@ h6 {
   font-style: italic;
 }
 .experience-company__description {
+  margin: 8px 0 0 0;
   padding-left: 1rem;
   font-size: 13px;
 }
@@ -991,6 +1063,85 @@ h6 {
   margin-top: 24px;
 }
 
+.projects {
+  padding: 24px 1rem 0;
+}
+@media (min-width: 600px) {
+  .projects {
+    width: 49.15254%;
+    float: right;
+    margin-right: 0;
+    padding-bottom: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  .projects {
+    width: 23.72881%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+}
+.projects__title {
+  margin: 0 0 24px;
+}
+.projects__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.projects__item {
+  margin-bottom: 24px;
+}
+.projects__entry {
+  font-weight: bold;
+}
+.projects__descr {
+  margin: 0;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+}
+
+.recent {
+  padding: 24px 1rem 0;
+}
+@media (min-width: 600px) {
+  .recent {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+    padding-bottom: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  .recent {
+    width: 23.72881%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+}
+.recent__title {
+  margin: 0 0 24px;
+}
+.recent__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.recent__item {
+  margin-bottom: 24px;
+}
+.recent__entry {
+  font-weight: bold;
+}
+.recent__date {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+}
+
 .skills {
   padding: 24px 1rem 0;
   animation: fadein 1s;
@@ -1005,6 +1156,9 @@ h6 {
 }
 .skills__title {
   margin: 12px 0;
+}
+.skills__text {
+  margin: 24px 0;
 }
 .skills__text:last-child {
   margin: 0;

@@ -1,0 +1,20 @@
+.about {
+  padding: $vert-spacing-unit $horz-spacing-unit 0;
+
+  @include breakpoint($xs) {
+    @include span(last 6 of 12);
+    padding-bottom: $vert-spacing-unit;
+  }
+
+  @include breakpoint($md) {
+    @include span(last 3 of 12);
+  }
+
+  &__title {
+    margin: 0 0 $vert-spacing-unit;
+  }
+
+  &__content {
+    @include adjust-font-size-to(14px);
+  }
+}

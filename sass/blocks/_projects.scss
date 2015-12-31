@@ -1,0 +1,35 @@
+.projects {
+  padding: $vert-spacing-unit $horz-spacing-unit 0;
+
+  @include breakpoint($xs) {
+    @include span(last 6 of 12);
+    padding-bottom: $vert-spacing-unit;
+  }
+
+  @include breakpoint($md) {
+    @include span(3 of 12);
+  }
+
+  &__title {
+    margin: 0 0 $vert-spacing-unit;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__item {
+    margin-bottom: $vert-spacing-unit;
+  }
+
+  &__entry {
+    font-weight: bold;
+  }
+
+  &__descr {
+    margin: 0;
+    @include adjust-font-size-to(14px);
+  }
+}

@@ -1,0 +1,28 @@
+.book {
+  padding: $vert-spacing-unit $horz-spacing-unit 0;
+
+  @include breakpoint($xs) {
+    @include span(6 of 12);
+    padding-bottom: $vert-spacing-unit;
+  }
+
+  @include breakpoint($md) {
+    @include span(2 of 12);
+    margin-left: gutter() * 2;
+  }
+
+  &__title {
+    margin: 0 0 $vert-spacing-unit;
+  }
+
+  &__content {
+    @include adjust-font-size-to(14px);
+  }
+
+  &__cover {
+    display: block;
+  }
+  &__title {
+    font-weight: bold;
+  }
+}

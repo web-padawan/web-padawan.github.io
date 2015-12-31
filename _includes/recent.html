@@ -1,0 +1,29 @@
+<div class="recent">
+  <h3 class="recent__title">Блог</h3>
+  <ul class="recent__list">
+  {% for post in site.posts limit:3 %}
+    <li class="recent__item">
+      {% assign m = post.date | date: "%-m" %}
+      <div class="recent__date">
+        <span>{{ post.date | date: "%-d" }}</span>
+          {% case m %}
+            {% when '1' %}<span>января</span>
+            {% when '2' %}<span>февраля</span>
+            {% when '3' %}<span>марта</span>
+            {% when '4' %}<span>апреля</span>
+            {% when '5' %}<span>мая</span>
+            {% when '6' %}<span>июня</span>
+            {% when '7' %}<span>июля</span>
+            {% when '8' %}<span>августа</span>
+            {% when '9' %}<span>сентября</span>
+            {% when '10' %}<span>октября</span>
+            {% when '11' %}<span>ноября</span>
+            {% when '12' %}<span>декабря</span>
+          {% endcase %}
+          <span>{{ post.date | date: "%Y" }}</span>
+      </div>
+      <a class="recent__entry" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+</div>
