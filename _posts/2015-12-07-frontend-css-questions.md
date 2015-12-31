@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Front-end Job Interview: CSS questions"
+title:  "Front-end Job Interview answers. Part 1: CSS questions"
 date:   2015-12-07 14:21:00
 categories: juniorship
 ---
