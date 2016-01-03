@@ -1,6 +1,13 @@
 .experience {
   padding: $vert-spacing-unit $horz-spacing-unit;
+  overflow: hidden;
   animation: fadein 1s;
+
+  @include breakpoint($sm $md - 1) {
+    display: inline-block;
+    vertical-align: top;
+    width: 66%;
+  }
 
   @include breakpoint($md) {
     @include span(last 3 of 12);
@@ -8,19 +15,39 @@
   }
 
   &__title {
-    margin: $vert-spacing-unit / 2 0 $vert-spacing-unit;
+    text-align: center;
+    margin: 0 0 $vert-spacing-unit;
+
+    @include breakpoint($mb) {
+      text-align: left;
+    }
   }
 
   &-company {
-    float: left;
-    margin: 0 $horz-spacing-unit * 2 $vert-spacing-unit 0;
+    margin-top: $vert-spacing-unit;
+
+    @include breakpoint(max-width $mb) {
+      max-width: 225px;
+      margin: $vert-spacing-unit auto 0;
+    }
+
+    @include breakpoint($mb $md - 1) {
+      @include span(4 of 8);
+    }
+
     &--last {
-      margin-bottom: 0;
+      @include breakpoint($mb $md - 1) {
+        @include last;
+      }
+    }
+
+    @include breakpoint($sm $md - 1) {
+      margin-top: 0;
     }
 
     @include breakpoint($md) {
       float: none;
-      margin-right: 0;
+      width: 100%;
     }
 
     &__icon {
@@ -39,9 +66,9 @@
 
     &__title {
       display: inline-block;
-      margin-bottom: $vert-spacing-unit / 3;
+      margin-bottom: $vert-spacing-unit / 2;
       font-weight: bold;
-      font-size: 18px;
+      @include adjust-font-size-to(18px);
     }
 
     &__job {
@@ -53,7 +80,7 @@
     }
 
     &__description {
-      margin: $vert-spacing-unit / 3 0 0 0;
+      margin: $vert-spacing-unit / 2 0 0;
       padding-left: $horz-spacing-unit;
       font-size: 13px;
     }

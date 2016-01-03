@@ -1,9 +1,18 @@
 .recent {
   padding: $vert-spacing-unit $horz-spacing-unit 0;
 
-  @include breakpoint($xs) {
-    @include span(6 of 12);
+  @include breakpoint(max-width $mb) {
+    max-width: 240px;
+    margin: 0 auto;
+  }
+
+  @include breakpoint($mb $sm - 1) {
+    @include span(last 6 of 12);
     padding-bottom: $vert-spacing-unit;
+  }
+
+  @include breakpoint($sm $md - 1) {
+    @include span(4 of 12);
   }
 
   @include breakpoint($md) {

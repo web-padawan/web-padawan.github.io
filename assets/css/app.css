@@ -754,12 +754,25 @@ h6 {
 .about {
   padding: 24px 1rem 0;
 }
-@media (min-width: 600px) {
+@media (max-width: 480px) {
+  .about {
+    max-width: 240px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 480px) and (max-width: 736px) {
   .about {
     width: 49.15254%;
     float: right;
     margin-right: 0;
     padding-bottom: 24px;
+  }
+}
+@media (min-width: 737px) and (max-width: 1023px) {
+  .about {
+    width: 32.20339%;
+    float: right;
+    margin-right: 0;
   }
 }
 @media (min-width: 1024px) {
@@ -783,12 +796,25 @@ h6 {
 .book {
   padding: 24px 1rem 0;
 }
-@media (min-width: 600px) {
+@media (max-width: 480px) {
+  .book {
+    max-width: 240px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 480px) and (max-width: 736px) {
   .book {
     width: 49.15254%;
     float: left;
     margin-right: 1.69492%;
     padding-bottom: 24px;
+  }
+}
+@media (min-width: 737px) and (max-width: 1023px) {
+  .book {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
   }
 }
 @media (min-width: 1024px) {
@@ -822,7 +848,15 @@ h6 {
 
 .experience {
   padding: 24px 1rem;
+  overflow: hidden;
   animation: fadein 1s;
+}
+@media (min-width: 737px) and (max-width: 1023px) {
+  .experience {
+    display: inline-block;
+    vertical-align: top;
+    width: 66%;
+  }
 }
 @media (min-width: 1024px) {
   .experience {
@@ -833,19 +867,45 @@ h6 {
   }
 }
 .experience__title {
-  margin: 12px 0 24px;
+  text-align: center;
+  margin: 0 0 24px;
+}
+@media (min-width: 480px) {
+  .experience__title {
+    text-align: left;
+  }
 }
 .experience-company {
-  float: left;
-  margin: 0 2rem 24px 0;
+  margin-top: 24px;
 }
-.experience-company--last {
-  margin-bottom: 0;
+@media (max-width: 480px) {
+  .experience-company {
+    max-width: 225px;
+    margin: 24px auto 0;
+  }
+}
+@media (min-width: 480px) and (max-width: 1023px) {
+  .experience-company {
+    width: 48.71795%;
+    float: left;
+    margin-right: 2.5641%;
+  }
+}
+@media (min-width: 480px) and (max-width: 1023px) {
+  .experience-company--last {
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 737px) and (max-width: 1023px) {
+  .experience-company {
+    margin-top: 0;
+  }
 }
 @media (min-width: 1024px) {
   .experience-company {
     float: none;
-    margin-right: 0;
+    width: 100%;
   }
 }
 .experience-company__icon {
@@ -862,9 +922,12 @@ h6 {
 }
 .experience-company__title {
   display: inline-block;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   font-weight: bold;
   font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 24px;
+  line-height: 1.5rem;
 }
 .experience-company__job {
   font-weight: bold;
@@ -873,7 +936,7 @@ h6 {
   font-style: italic;
 }
 .experience-company__description {
-  margin: 8px 0 0 0;
+  margin: 12px 0 0;
   padding-left: 1rem;
   font-size: 13px;
 }
@@ -1014,7 +1077,7 @@ h6 {
     max-width: 90%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 737px) {
   .portfolio-cards {
     max-width: 93%;
   }
@@ -1067,12 +1130,25 @@ h6 {
 .projects {
   padding: 24px 1rem 0;
 }
-@media (min-width: 600px) {
+@media (max-width: 480px) {
+  .projects {
+    max-width: 240px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 480px) and (max-width: 736px) {
   .projects {
     width: 49.15254%;
-    float: right;
-    margin-right: 0;
+    float: left;
+    margin-right: 1.69492%;
     padding-bottom: 24px;
+  }
+}
+@media (min-width: 737px) and (max-width: 1023px) {
+  .projects {
+    display: inline-block;
+    vertical-align: top;
+    width: 33%;
   }
 }
 @media (min-width: 1024px) {
@@ -1095,6 +1171,10 @@ h6 {
 }
 .projects__entry {
   font-weight: bold;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 24px;
+  line-height: 1.5rem;
 }
 .projects__descr {
   margin: 0;
@@ -1107,12 +1187,25 @@ h6 {
 .recent {
   padding: 24px 1rem 0;
 }
-@media (min-width: 600px) {
+@media (max-width: 480px) {
+  .recent {
+    max-width: 240px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 480px) and (max-width: 736px) {
   .recent {
     width: 49.15254%;
+    float: right;
+    margin-right: 0;
+    padding-bottom: 24px;
+  }
+}
+@media (min-width: 737px) and (max-width: 1023px) {
+  .recent {
+    width: 32.20339%;
     float: left;
     margin-right: 1.69492%;
-    padding-bottom: 24px;
   }
 }
 @media (min-width: 1024px) {
@@ -1156,7 +1249,7 @@ h6 {
   }
 }
 .skills__title {
-  margin: 12px 0;
+  margin: 0 0 24px;
 }
 .skills__text {
   margin: 24px 0;
