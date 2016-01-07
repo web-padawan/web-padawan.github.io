@@ -953,6 +953,10 @@ h6 {
     text-align: center;
   }
 }
+.footer__container {
+  overflow: hidden;
+  margin-bottom: 12px;
+}
 @media (min-width: 600px) {
   .footer__author {
     float: left;
@@ -964,6 +968,15 @@ h6 {
     float: right;
     margin-right: 4rem;
   }
+}
+.footer__thanks {
+  clear: both;
+  padding: 0 1rem;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+  text-align: center;
 }
 
 .header {

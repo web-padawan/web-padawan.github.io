@@ -11,6 +11,8 @@
 
   &__container {
     @extend %container;
+    overflow: hidden;
+    margin-bottom: $vert-spacing-unit / 2;
   }
 
   &__author {
@@ -20,11 +22,17 @@
     }
   }
 
-
   &__poweredby {
     @include breakpoint ($xs) {
       float: right;
       margin-right: $horz-spacing-unit * 4;
     }
+  }
+
+  &__thanks {
+    clear: both;
+    padding: 0 $horz-spacing-unit;
+    @include adjust-font-size-to(14px);
+    text-align: center;
   }
 }
