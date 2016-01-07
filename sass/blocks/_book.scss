@@ -1,14 +1,17 @@
 .book {
-  padding: $vert-spacing-unit $horz-spacing-unit 0;
+  margin: $vert-spacing-unit 0;
+  padding: 0 $horz-spacing-unit;
 
   @include breakpoint(max-width $mb) {
     max-width: 240px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @include breakpoint($mb $sm - 1) {
-    @include span(6 of 12);
-    padding-bottom: $vert-spacing-unit;
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
   }
 
   @include breakpoint($sm $md - 1) {

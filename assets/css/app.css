@@ -752,20 +752,21 @@ h6 {
 }
 
 .about {
-  padding: 24px 1rem 0;
+  margin: 24px 0;
+  padding: 0 1rem;
 }
 @media (max-width: 480px) {
   .about {
     max-width: 240px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media (min-width: 480px) and (max-width: 736px) {
   .about {
-    width: 49.15254%;
-    float: right;
-    margin-right: 0;
-    padding-bottom: 24px;
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
   }
 }
 @media (min-width: 737px) and (max-width: 1023px) {
@@ -794,20 +795,21 @@ h6 {
 }
 
 .book {
-  padding: 24px 1rem 0;
+  margin: 24px 0;
+  padding: 0 1rem;
 }
 @media (max-width: 480px) {
   .book {
     max-width: 240px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media (min-width: 480px) and (max-width: 736px) {
   .book {
-    width: 49.15254%;
-    float: left;
-    margin-right: 1.69492%;
-    padding-bottom: 24px;
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
   }
 }
 @media (min-width: 737px) and (max-width: 1023px) {
@@ -839,11 +841,6 @@ h6 {
 }
 .book__title {
   font-weight: bold;
-}
-
-.bottom {
-  overflow: auto;
-  clear: both;
 }
 
 .experience {
@@ -1128,20 +1125,22 @@ h6 {
 }
 
 .projects {
-  padding: 24px 1rem 0;
+  margin: 24px 0;
+  padding: 0 1rem;
 }
 @media (max-width: 480px) {
   .projects {
     max-width: 240px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media (min-width: 480px) and (max-width: 736px) {
   .projects {
-    width: 49.15254%;
-    float: left;
-    margin-right: 1.69492%;
-    padding-bottom: 24px;
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+    margin-bottom: 0;
   }
 }
 @media (min-width: 737px) and (max-width: 1023px) {
@@ -1167,7 +1166,7 @@ h6 {
   list-style-type: none;
 }
 .projects__item {
-  margin-bottom: 24px;
+  margin-top: 24px;
 }
 .projects__entry {
   font-weight: bold;
@@ -1185,20 +1184,22 @@ h6 {
 }
 
 .recent {
-  padding: 24px 1rem 0;
+  margin: 24px 0;
+  padding: 0 1rem;
 }
 @media (max-width: 480px) {
   .recent {
     max-width: 240px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media (min-width: 480px) and (max-width: 736px) {
   .recent {
-    width: 49.15254%;
-    float: right;
-    margin-right: 0;
-    padding-bottom: 24px;
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+    margin-bottom: 0;
   }
 }
 @media (min-width: 737px) and (max-width: 1023px) {
