@@ -1,7 +1,7 @@
 <div class="recent">
   <h2 class="recent__title">Блог</h2>
   <ul class="recent__list">
-  {% for post in site.posts limit:3 %}
+  {% for post in site.posts limit:2 %}
     <li class="recent__item">
       {% assign m = post.date | date: "%-m" %}
       <div class="recent__date">
