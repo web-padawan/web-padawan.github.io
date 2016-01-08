@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Front-end Job Interview answers. Part 1: CSS questions"
+description: "A little review about the most typical CSS questions usually asked by interviewers."
 date:   2015-12-07 14:21:00
 categories: juniorship
 ---
