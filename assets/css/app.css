@@ -437,16 +437,21 @@ video {
 }
 @font-face {
   font-family: "PTSans";
-  src: url('../fonts/ptsans-regular.woff?1444985380') format('woff');
+  src: url('../fonts/ptsans-regular.eot?1456067983');
+  src: url('../fonts/ptsans-regular.eot?&1456067983#iefix') format('embedded-opentype'), url('../fonts/ptsans-regular.woff?1456067983') format('woff'), url('../fonts/ptsans-regular.ttf?1456067983') format('truetype');
 }
 @font-face {
   font-family: "PTSans";
-  src: url('../fonts/ptsans-bold.woff?1444985380') format('woff');
+  src: url('../fonts/ptsans-bold.eot?1456067983');
+  src: url('../fonts/ptsans-bold.eot?&1456067983#iefix') format('embedded-opentype'), url('../fonts/ptsans-bold.woff?1456067983') format('woff'), url('../fonts/ptsans-bold.ttf?1456067983') format('truetype');
   font-weight: bold;
+  font-style: normal;
 }
 @font-face {
   font-family: "PTSans";
-  src: url('../fonts/ptsans-italic.woff?1444985380') format('woff');
+  src: url('../fonts/ptsans-italic.eot?1456067983');
+  src: url('../fonts/ptsans-italic.eot?&1456067983#iefix') format('embedded-opentype'), url('../fonts/ptsans-italic.woff?1456067983') format('woff'), url('../fonts/ptsans-italic.ttf?1456067983') format('truetype');
+  font-weight: normal;
   font-style: italic;
 }
 .footer__container, .header__container, .main__container {
