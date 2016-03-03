@@ -10,6 +10,7 @@
     "gulp-compass": "^2.1.0",
     "gulp-csso": "^1.0.0",
     "gulp-postcss": "^6.0.1",
-    "gulp-rename": "^1.2.2"
+    "gulp-rename": "^1.2.2",
+    "magnific-popup": "^1.1.0"
   }
 }
