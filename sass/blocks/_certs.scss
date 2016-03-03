@@ -1,0 +1,57 @@
+.certs {
+  margin: $vert-spacing-unit 0;
+  padding: 0 $horz-spacing-unit;
+
+  @include breakpoint(max-width $mb) {
+    max-width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include breakpoint($mb $sm - 1) {
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+    margin-bottom: 0;
+  }
+
+  @include breakpoint($sm $md - 1) {
+    display: inline-block;
+    vertical-align: top;
+    width: 33%;
+  }
+
+  @include breakpoint($md) {
+    @include span(3 of 12);
+  }
+
+  &__title {
+    margin: 0 0 $vert-spacing-unit;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__item {
+    @include trailer(0.33);
+  }
+
+  &__entry {
+    @include adjust-font-size-to(14px);
+  }
+
+  &__level {
+    font-weight: bold;
+    &:focus {
+      outline: none
+    }
+  }
+
+  &__date {
+    @include adjust-font-size-to(13px);
+    font-style: italic;
+  }
+}

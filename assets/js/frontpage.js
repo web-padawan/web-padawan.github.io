@@ -60,5 +60,7 @@
       }
     });
 
+    $('.certs__level').magnificPopup({type:'image'});
+
   });
 })(jQuery);
