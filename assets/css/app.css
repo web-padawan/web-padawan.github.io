@@ -437,20 +437,20 @@ video {
 }
 @font-face {
   font-family: "PTSans";
-  src: url('../fonts/ptsans-regular.eot?1456071076');
-  src: url('../fonts/ptsans-regular.eot?&1456071076#iefix') format('embedded-opentype'), url('../fonts/ptsans-regular.woff?1456071076') format('woff'), url('../fonts/ptsans-regular.ttf?1456071076') format('truetype');
+  src: url('../fonts/ptsans-regular.eot?1457813513');
+  src: url('../fonts/ptsans-regular.eot?&1457813513#iefix') format('embedded-opentype'), url('../fonts/ptsans-regular.woff?1457813513') format('woff'), url('../fonts/ptsans-regular.ttf?1457813513') format('truetype');
 }
 @font-face {
   font-family: "PTSans";
-  src: url('../fonts/ptsans-bold.eot?1456071076');
-  src: url('../fonts/ptsans-bold.eot?&1456071076#iefix') format('embedded-opentype'), url('../fonts/ptsans-bold.woff?1456071076') format('woff'), url('../fonts/ptsans-bold.ttf?1456071076') format('truetype');
+  src: url('../fonts/ptsans-bold.eot?1457813513');
+  src: url('../fonts/ptsans-bold.eot?&1457813513#iefix') format('embedded-opentype'), url('../fonts/ptsans-bold.woff?1457813513') format('woff'), url('../fonts/ptsans-bold.ttf?1457813513') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "PTSans";
-  src: url('../fonts/ptsans-italic.eot?1456071076');
-  src: url('../fonts/ptsans-italic.eot?&1456071076#iefix') format('embedded-opentype'), url('../fonts/ptsans-italic.woff?1456071076') format('woff'), url('../fonts/ptsans-italic.ttf?1456071076') format('truetype');
+  src: url('../fonts/ptsans-italic.eot?1457813513');
+  src: url('../fonts/ptsans-italic.eot?&1457813513#iefix') format('embedded-opentype'), url('../fonts/ptsans-italic.woff?1457813513') format('woff'), url('../fonts/ptsans-italic.ttf?1457813513') format('truetype');
   font-weight: normal;
   font-style: italic;
 }
@@ -1148,7 +1148,7 @@ h6 {
 .portfolio-cards {
   min-height: 200px;
   max-width: 85%;
-  background: url('../images/ajax-loader.gif?1445662539') no-repeat center center;
+  background: url('../images/ajax-loader.gif?1457813513') no-repeat center center;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1434,8 +1434,8 @@ h6 {
 .slick-slider {
   position: relative;
   display: block;
-  box-sizing: border-box;
   -moz-box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -1964,7 +1964,7 @@ img.mfp-img {
 }
 
 .slick-loading .slick-list {
-  background: #fff url('../images/ajax-loader.gif?1445662539') center center no-repeat;
+  background: #fff url('../images/ajax-loader.gif?1457813513') center center no-repeat;
 }
 
 .slick-prev,
