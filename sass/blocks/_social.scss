@@ -1,5 +1,3 @@
-$social: phone, email, skype, github, linkedin, pdf;
-
 .social {
   margin: $vert-spacing-unit 0;
   padding: 0;
@@ -25,11 +23,13 @@ $social: phone, email, skype, github, linkedin, pdf;
     &:hover {
       border: none;
     }
-  }
-}
 
-@each $s in $social {
-  .social__link--#{$s} {
-    @include si(#{$s});
+    &--email {
+      @include si('email');
+    }
+
+    &--github {
+      @include si('github');
+    }
   }
 }

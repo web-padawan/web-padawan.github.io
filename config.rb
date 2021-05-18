@@ -20,8 +20,6 @@ require 'toolkit'
 require 'breakpoint'
 require 'susy'
 require 'sass-globbing'
-add_import_path 'bower_components/normalize-scss'
-add_import_path 'bower_components/slick-carousel/slick'
 
 # Select output style (:expanded, :nested, :compact, :compressed).
 output_style = (environment == :production) ? :compressed : :expanded
