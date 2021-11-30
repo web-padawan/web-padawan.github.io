@@ -1,0 +1,16 @@
+{
+  "name": "web-padawan-github.io",
+  "private": true,
+  "author": "Serhii Kulykov <iamkulykov@gmail.com>",
+  "scripts": {
+    "clean": "rm -rf build",
+    "build": "eleventy",
+    "format": "prettier source/**/*.{md,css} --write",
+    "start": "eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "markdown-it": "^12.2.0",
+    "prettier": "^2.5.0"
+  }
+}

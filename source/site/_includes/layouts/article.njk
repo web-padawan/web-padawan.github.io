@@ -1,0 +1,16 @@
+---
+layout: base
+---
+<article class="article">
+  <header class="article__header">
+    <time class="article__time" datetime="{{ date | dateToIsoString }}">
+      {% formatDate date %}
+    </time>
+
+    <h1>{{ title }}</h1>
+  </header>
+
+  <div class="content">
+    {{ content | safe }}
+  </div>
+</article>
