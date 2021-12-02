@@ -1,0 +1,45 @@
+---json
+{
+  "layout": "base",
+  "title": "Разработка"
+}
+---
+<div class="content">
+  <h1>{{ title }}</h1>
+
+  <section>
+    <h2>Подкасты</h2>
+
+    <p>Я не записываю подкасты, но пару раз меня приглашали в гости.</p>
+
+    <ul>
+      {%- for post in collections.podcast -%}
+      <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+      {%- endfor -%}
+    </ul>
+  </section>
+
+  <section>
+    <h2>JSUnderhood</h2>
+
+    <p>В ноябре 2020 года в течение недели вёл Twitter <a href="https://jsunderhood.ru/iamkulykov/">@jsunderhood</a>.</p>
+
+    <ul>
+      {%- for post in collections.jsunderhood -%}
+      <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+      {%- endfor -%}
+    </ul>
+  </section>
+
+  <h2>Post Mortem</h2>
+
+    <p>Раз в квартал делюсь в Twitter достижениями нашей команды.</p>
+
+    <ul>
+      {%- for post in collections.postmortem -%}
+      <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+      {%- endfor -%}
+    </ul>
+  </section>
+
+</div>
