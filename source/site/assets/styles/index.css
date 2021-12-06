@@ -97,8 +97,10 @@ blockquote p:last-of-type {
 
 blockquote,
 figure,
+hr,
 p {
   max-width: var(--readable-line-width);
+  letter-spacing: 0.01rem;
 }
 
 /* Headers */
