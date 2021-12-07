@@ -31,7 +31,7 @@
   --color-link-underline-hover: rgba(160, 48, 0, 0.2);
   --site-width: 60em;
   --readable-line-width: 32em;
-  --list-item-spacing: 0.875rem;
+  --list-item-spacing: 0.5rem;
 }
 
 /* Base */
@@ -141,6 +141,10 @@ h2 {
 h1:not(.visuallyhidden) + p,
 h2:not(.visuallyhidden) + p {
   margin-top: -0.5rem;
+}
+
+h3 {
+  margin-bottom: 0.5rem;
 }
 
 /* Lists */
