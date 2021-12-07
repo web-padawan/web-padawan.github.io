@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Ограничения и проблемы Shadow DOM · Сергей Куликов</title>
+    <meta name="description" content="">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ограничения и проблемы Shadow DOM">
+    <meta property="og:description" content="">
+
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+    <link rel="stylesheet" href="/assets/styles/index.css">
+  </head>
+
+  <body>
+    <div class="page">
+      <header class="header ">
+        <div class="header__title">
+          <a class="header__link" href="/">Сергей Куликов</a>
+        </div>
+      </header>
+
+      <main class="page__content">
+        <article class="article">
+  <header class="article__header">
+    <time class="article__time" datetime="2020-11-11T00:00:00.000Z">
+      11.11.2020
+    </time>
+
+    <h1>Ограничения и проблемы Shadow DOM</h1>
+  </header>
+
+  <div class="content">
+    <p>Тред из третьего дня моей недели в <a href="https://twitter.com/jsunderhood">@jsunderhood</a>.</p>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Тред про ограничения Shadow DOM и связанные с ними проблемы.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326581340565872645?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Как и кастомные элементы, Shadow DOM имеет ряд ограничений, наиболее важные из которых обусловлены самим устройством API, реализованного в браузерах. В том числе, природой изоляции.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326581544924950529?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Проблема № 1: та же, что и для кастомных элементов — Shadow DOM не работает с выключенным JS. Этот факт делает невозможными некоторые сценарии использования, прежде всего SSR.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326582696437551107?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Кроме того, это также означает проблемы с SEO. В качестве решения в Google советуют Rendertron на базе Puppeteer, который умеет отдавать роботам статику. Мои коллеги в Vaadin его используют.<a href="https://t.co/smcwXiBtwt">https://t.co/smcwXiBtwt</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326583163762728960?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Существует черновик API декларативного Shadow DOM, над которым работает Mason Freed из Google. Реализация есть в Chrome за флагом, недавно о ней вышла статья на <a href="https://t.co/O4bOplajxu">https://t.co/O4bOplajxu</a>.<a href="https://t.co/f4iTvUKXAE">https://t.co/f4iTvUKXAE</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326586617377722370?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Видео с примером использования декларативного Shadow DOM для изоляции стилей недавно опубликовал Вадим Макеев.<a href="https://t.co/z81jsVNtaa">https://t.co/z81jsVNtaa</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326587427201421313?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">К стабильной версии декларативный Shadow DOM еще не готов. Идет обсуждение рисков, связанных с XSS и санитайзерами. Также пока неясно, что будет с декларативными кастомными элементами.<a href="https://t.co/DjUeTISwyz">https://t.co/DjUeTISwyz</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326588319304732672?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Проблема № 2: изоляция Shadow DOM создает преграду для связей по ID. В итоге ARIA-атрибуты вроде aria-labelledby не работают для элементов, находящихся по разные стороны shadow root.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326589082428960773?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">О том, как эта проблема проявляется на практике, написал Devon Govett из Adobe. Он поделился выводами из своего эксперимента на тему использования хуков React Aria внутри веб-компонентов.<a href="https://t.co/irmMFNQZZG">https://t.co/irmMFNQZZG</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326589967737479168?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Решением может стать Accessibility Object Model (AOM). Это целый набор экспериментальных API, которые пока находятся в разработке. Подробнее можно почитать в статье Léonie Watson.<a href="https://t.co/oRCvUFjDUs">https://t.co/oRCvUFjDUs</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326593860043149313?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Одна из идей в рамках AOM — атрибут, позволяющий явно указывать ID элементов, к которым необходим доступ извне. Что-то вроде атрибута exportparts, который доступен для CSS Shadow Parts.<a href="https://t.co/4YmRuyeSdf">https://t.co/4YmRuyeSdf</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326595863972601864?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Проблема № 3: изоляция затрагивает также и элемент &lt;form&gt;. Если кнопка в форме находится внутри shadow root, отправлять форму она не сможет. Пример приводит в своей статье Poul H. Hansen.<a href="https://t.co/1Nfyr7E4AU">https://t.co/1Nfyr7E4AU</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326597533020381184?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Справедлива эта проблема и для элементов &lt;input&gt; внутри Shadow DOM. В прошлом Polymer предлагал компонент для сериализации форм с рекурсивным обходом вложенных shadow root.<a href="https://t.co/6VXm9laNuy">https://t.co/6VXm9laNuy</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326599590427172866?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Проблема № 4: отсутствие API для работы с выделенным текстом внутри Shadow DOM при использовании window.getSelection(). Это актуально для WYSIWYG-редакторов вроде CKEditor, Quill и Trix.<a href="https://t.co/x90qPWWmst">https://t.co/x90qPWWmst</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326600512519753729?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">В Chrome этот метод реализован на shadow root, в Firefox работает глобальный метод. Но в Safari действует изоляция, и getSelection() не возвращает данные об элементах внутри Shadow DOM.<a href="https://t.co/FOsVYk4kec">https://t.co/FOsVYk4kec</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326601534063472640?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Sam Thorogood из Google написал экспериментальный полифилл, позволяющий обойти это ограничение в Safari. Для одного из компонентов Vaadin я интегрировал этот полифилл в форк Quill.<a href="https://t.co/po2Zfvfzkb">https://t.co/po2Zfvfzkb</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326603730863742976?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Проблема № 5: проблемы с автозаполнением форм. В баг-трекере Chromium есть issue на эту тему, и ему уже больше трех лет. В общем, с формами у Shadow DOM как-то совсем не задалось.<a href="https://t.co/s9kl9XT1wA">https://t.co/s9kl9XT1wA</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326604692605046786?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Затрагивает эта проблема и браузерные расширения, прежде всего менеджеры паролей. Каждому из них потребуется соответствующий фикс. Например, в 1Password он уже реализован.<a href="https://t.co/RXgoKpkNvq">https://t.co/RXgoKpkNvq</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326606955322937346?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Проблема № 6: изоляция стилей не работает в случае с font-face и keyframes. Решение этой проблемы требует стандартизации. На данный момент font-face в Shadow DOM использовать нельзя.<a href="https://t.co/7VH7BT69Ht">https://t.co/7VH7BT69Ht</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326609263175872512?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Проблема № 7: сторонние скрипты. Google Tag Manager, A/B тесты, аналитика и все, что так любят добавлять на сайт маркетологи, очень плохо дружит с Shadow DOM. Об этом тоже важно помнить.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326610641138946048?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="und" dir="ltr">Проблема № 8: тестирование. На сегодняшний день Shadow DOM уже поддерживается в Cypress, TestCafe, WebdriverIO и Playwright. В Selenium поддержка пока не реализована.<a href="https://t.co/es2F7vfXOs">https://t.co/es2F7vfXOs</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326611905964888065?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Насчет WebdriverIO: поддержка Shadow DOM появилась в версии 5.5.0 и реализация у них своя (поскольку в протоколе WebDriver нет стандартизированного API).<a href="https://t.co/Yg7UJoyosO">https://t.co/Yg7UJoyosO</a><a href="https://t.co/oZ57v3ef1z">https://t.co/oZ57v3ef1z</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326613655153209345?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Есть issue на эту тему, где в том числе поделился опытом Diego Ferreiro Val из Salesforce. Согласиться на добавление API, которое бы нарушало изоляцию, разработчики браузеров не готовы.<a href="https://t.co/7494Gm0xDx">https://t.co/7494Gm0xDx</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326614123308838918?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Вроде бы, все основные проблемы перечислил. Есть и другие — например, в Chrome в Shadow DOM не работает перевод страницы.<a href="https://t.co/IxyIqDlHCa">https://t.co/IxyIqDlHCa</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326615667269885954?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Еще есть баг на iOS, связанный с кнопками быстрого перехода между полями формы в Shadow DOM. Он был исправлен совсем недавно.<a href="https://t.co/PF5SCBzcZn">https://t.co/PF5SCBzcZn</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326616562481106944?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">В качестве заключения: проблем у Shadow DOM по-прежнему много, и о них желательно знать заранее (или придется городить костыли). Неспроста YouTube использует полифилл даже в Chrome.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326617750639439874?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Да, чуть не забыл: реклама же! Мне однажды тоже довелось встретить div с shadow root в рекламном баннере Яндекс-почты. Для блокировщиков это проблема.<a href="https://t.co/H0oToP9mUf">https://t.co/H0oToP9mUf</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326618354065551367?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Так или иначе, статистика показов страниц в Chrome Platform Status говорит сама за себя: по сравнению с кастомными элементами, у которых около 10%, Shadow DOM почти вдвое менее популярен.<a href="https://t.co/PiS96eSZW4">https://t.co/PiS96eSZW4</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326619126773788673?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+</div>
+
+  </div>
+</article>
+
+      </main>
+
+      <footer class="footer">
+        <ul class="social">
+          <li class="social__item"><a rel="noopener noreferrer" href="https://facebook.com/iamkulykov">Facebook</a></li>
+          <li class="social__item"><a rel="noopener noreferrer" href="https://instahram.com/iamkulykov">Instagram</a></li>
+          <li class="social__item"><a rel="noopener noreferrer" href="https://twitter.com/iamkulykov">Twitter</a></li>
+          <li class="social__item"><a rel="noopener noreferrer" href="https://www.linkedin.com/in/iamkulykov/">LinkedIn</a></li>
+        </ul>
+
+        <p>Этот сайт не следит за вами и не собирает никакие данные.</p>
+      </footer>
+    </div>
+  </body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Разработка на ES-модулях в браузерах · Сергей Куликов</title>
+    <meta name="description" content="">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Разработка на ES-модулях в браузерах">
+    <meta property="og:description" content="">
+
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+    <link rel="stylesheet" href="/assets/styles/index.css">
+  </head>
+
+  <body>
+    <div class="page">
+      <header class="header ">
+        <div class="header__title">
+          <a class="header__link" href="/">Сергей Куликов</a>
+        </div>
+      </header>
+
+      <main class="page__content">
+        <article class="article">
+  <header class="article__header">
+    <time class="article__time" datetime="2020-11-12T00:00:00.000Z">
+      12.11.2020
+    </time>
+
+    <h1>Разработка на ES-модулях в браузерах</h1>
+  </header>
+
+  <div class="content">
+    <p>Тред из четвёртого дня моей недели в <a href="https://twitter.com/jsunderhood">@jsunderhood</a>.</p>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Тред о разработке на ES-модулях в браузерах.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326925160121831425?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Небольшое предисловие: Polymer всегда продвигал идею bundler-free разработки и HTML Imports в нее хорошо вписывались. Компоненты и целые приложения было принято разрабатывать без webpack.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326925411507462144?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Polymer 1 был полностью написан на ES5, поэтому Babel тоже не требовался — достаточно было поднять nginx. Идиллию нарушал режим &quot;F5 monkey&quot; и секунды ожидания обновления страницы.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326927687387131904?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Кстати, еще команда Polymer пыталась продвигать идею HTTP/2 server push с помощью prpl-server. Популярности этот подход не приобрел, а теперь HTTP/2 push и вовсе удаляют из Chrome.<a href="https://t.co/Nu81zJG00w">https://t.co/Nu81zJG00w</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326928750538317828?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">К моменту выхода Polymer 3 в 2017 году все основные браузеры реализовали поддержку ES-модулей. Переход на них был логичным решением, позволяющим не зависеть от бандлеров и в дальнейшем.<a href="https://t.co/HbBJPjdwCJ">https://t.co/HbBJPjdwCJ</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326929290823426049?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">На сегодняшний день ES-модули имеют более 90% поддержки. Они реализованы везде, кроме IE11 — для него многие советуют собирать отдельный ES5-бандл с атрибутом nomodule.<a href="https://t.co/bYH8fomWDP">https://t.co/bYH8fomWDP</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326930204795822083?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Единственная проблема — отсутствие поддержки bare module specifiers, стиля импортов Node.js. Браузеры понимают только относительные пути к файлам. Об этом написал Damien Seguin.<a href="https://t.co/8pZgbh0RwT">https://t.co/8pZgbh0RwT</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326931298276040705?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">В будущем эту проблему планируется решить с помощью Import Maps. Этот черновик предложил Domenic Denicola из Google, недавно о нем также позитивно высказались представители Mozilla.<a href="https://t.co/RED2Vwf3Ko">https://t.co/RED2Vwf3Ko</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326932229981941761?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Полифилл пропозала Import Maps для браузеров с поддержкой ES-модулей предоставляет пакет ES Module Shims.<a href="https://t.co/DolhFNNwQi">https://t.co/DolhFNNwQi</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326934368280059906?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="uk" dir="ltr">Две статьи о разработке на ES-модулях написал Lars Den Bakker из проекта Open Web Components. В первой из них он описывает их синтаксис, в том числе dynamic imports и import.meta.<a href="https://t.co/g3zsjSRg7U">https://t.co/g3zsjSRg7U</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326936164494958596?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Вторая часть статьи посвящена проекту es-dev-server. Это сервер для локальной разработки на Koa, который поддерживает ES-модули и предоставляет удобную систему плагинов.<a href="https://t.co/F8VLV9dwUI">https://t.co/F8VLV9dwUI</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326937597759909889?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">es-dev-server пользуется популярностью среди разработчиков веб-компонентов на lit-element. Команда Polymer рекомендует его как замену утилиты polymer-cli, поддержка которой прекращена.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326939273610878985?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Новая версия es-dev-server получила название Web Dev Server. Он поддерживает некоторые плагины Rollup, а также предоставляет плагин на базе esbuild для компиляции TypeScript на лету.<a href="https://t.co/Mgnj5k5eSN">https://t.co/Mgnj5k5eSN</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326943847604236290?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Есть и другие похожие инструменты. Пожалуй, самый известный — Snowpack, который разрабатывает Fred K. Schott. Между прочим, в прошлом он работал над бандлером и CLI в команде Polymer.<a href="https://t.co/LE1y8sAbcG">https://t.co/LE1y8sAbcG</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326944586581897219?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Идея Snowpack в двух словах — запустить Rollup один раз после npm install, скомпилировать все зависимости в папку web_modules и далее подключать их оттуда, используя относительные пути.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326946015761608705?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">С выходом версии 2.0 Snowpack превратился в систему сборки с поддержкой TypeScript, JSX, React, Vue и Svelte и бандлером для продакшна. Подробнее можно почитать в анонсе релиза.<a href="https://t.co/63vOmbKONu">https://t.co/63vOmbKONu</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326949730853720066?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Кроме Snowpack, Fred K. Schott также запустил Skypack — поисковую систему и CDN для пакетов, поддерживающих ES-модули. Проекту уже больше года, до ребрендинга он носил название Pika.<a href="https://t.co/YVpCUL4Xf5">https://t.co/YVpCUL4Xf5</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326951591270883328?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Опытом разработки на ES-модулях с использованием Snowpack поделился Bryan Braun. В статье описаны ряд аспектов: зависимости, CSS, кэширование. Отдельно упомянуты плюсы и минусы.<a href="https://t.co/LAr7SCjCKt">https://t.co/LAr7SCjCKt</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326954128145330176?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Теперь еще об одном проекте. В апреле идеей разработки на ES-модулях загорелся Эван Ю. Отсчет можно вести с этого твита. Ради этого проекта Эван даже отвлекся на время от работы над Vue 3.<a href="https://t.co/qPR0GoHPAh">https://t.co/qPR0GoHPAh</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326956091863863296?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Дальше, по-видимому, Эван увидел мой ретвит, где я упомянул es-dev-server. Вскоре в его проекте появились заимствованные оттуда идеи, вроде использования es-module-lexer и lru-cache.<a href="https://t.co/voSGvgoKGq">https://t.co/voSGvgoKGq</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326956486954782721?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Сегодня Vite находится в стадии release candidate. Его документация содержит упоминания es-dev-server и Snowpack с обзором отличий в решаемых задачах и используемых подходах, прежде всего HMR.<a href="https://t.co/bs9TdrW5Oj">https://t.co/bs9TdrW5Oj</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326957985936060416?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Кстати о HMR: авторы Vite и Snowpack при участии Jovi De Croock (Preact) работают над черновиком реализации соответствующего API для разработки на ES-модулях на основе import.meta.<a href="https://t.co/WqNboOaAGt">https://t.co/WqNboOaAGt</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326959409684213763?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Замечу, что эта спецификация HMR имеет ряд отличий от реализации Hot Module Replacement в webpack. Их сравнение приводит Tobias Koppers (автор webpack) в своем комментарии к этому issue.<a href="https://t.co/Khk14YY3zh">https://t.co/Khk14YY3zh</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326960896313274369?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Недавно экспериментальная поддержка HMR на основе этой спецификации появилась также и в Web Dev Server в качестве плагина. Советую взглянуть на примеры в документации.<a href="https://t.co/q6Y10Jlerw">https://t.co/q6Y10Jlerw</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326962750795477000?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">До сих пор я говорил об инструментах. Но есть и еще один момент: многие пакеты в npm до сих пор не имеют ESM-версии. В качестве возможного решения Joel Denning создал проект esm-bundle.<a href="https://t.co/ou7DKZAZiM">https://t.co/ou7DKZAZiM</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326964715466199040?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">В рамках esm-bundle для некоторых популярных пакетов настроена автоматическая публикация. Вот, например, версия Chai на ES-модулях, которую мы в Vaadin используем с Web Test Runner.<a href="https://t.co/vutJuLjkZR">https://t.co/vutJuLjkZR</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326966044389502980?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Также стоит упомянуть утилиту Dual Publish от Андрея Ситника. Она помогает настроить публикацию ESM и CommonJS версий.<a href="https://t.co/LIoMs59UVw">https://t.co/LIoMs59UVw</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326968465480179715?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Подводя итоги, скажу, что на сегодняшний день ES-модули можно использовать не только как compilation target, но и в процессе разработки. Думаю, этот подход будет развиваться и дальше.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326971508254773248?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">В комментариях поделились ссылкой на дискорд о ES-модулях.<a href="https://t.co/S6VGhT5cmQ">https://t.co/S6VGhT5cmQ</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1327145694356967424?ref_src=twsrc%5Etfw">November 13, 2020</a></blockquote>
+</div>
+
+  </div>
+</article>
+
+      </main>
+
+      <footer class="footer">
+        <ul class="social">
+          <li class="social__item"><a rel="noopener noreferrer" href="https://facebook.com/iamkulykov">Facebook</a></li>
+          <li class="social__item"><a rel="noopener noreferrer" href="https://instahram.com/iamkulykov">Instagram</a></li>
+          <li class="social__item"><a rel="noopener noreferrer" href="https://twitter.com/iamkulykov">Twitter</a></li>
+          <li class="social__item"><a rel="noopener noreferrer" href="https://www.linkedin.com/in/iamkulykov/">LinkedIn</a></li>
+        </ul>
+
+        <p>Этот сайт не следит за вами и не собирает никакие данные.</p>
+      </footer>
+    </div>
+  </body>
+
+</html>

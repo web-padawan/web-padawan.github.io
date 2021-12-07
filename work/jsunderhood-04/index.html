@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Нужны ли кастомным элементам библиотеки · Сергей Куликов</title>
+    <meta name="description" content="">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Нужны ли кастомным элементам библиотеки">
+    <meta property="og:description" content="">
+
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+    <link rel="stylesheet" href="/assets/styles/index.css">
+  </head>
+
+  <body>
+    <div class="page">
+      <header class="header ">
+        <div class="header__title">
+          <a class="header__link" href="/">Сергей Куликов</a>
+        </div>
+      </header>
+
+      <main class="page__content">
+        <article class="article">
+  <header class="article__header">
+    <time class="article__time" datetime="2020-11-10T00:00:00.000Z">
+      10.11.2020
+    </time>
+
+    <h1>Нужны ли кастомным элементам библиотеки</h1>
+  </header>
+
+  <div class="content">
+    <p>Тред из второго дня моей недели в <a href="https://twitter.com/jsunderhood">@jsunderhood</a>.</p>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Первый тред на сегодня — о том, нужны ли кастомным элементам библиотеки и в каких случаях можно обойтись vanilla JS.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326053256741662722?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">По моим наблюдениям, у статей о веб-компонентах есть общая проблема: библиотеки вроде lit-element и Stencil упоминаются часто, а вот о ванильных кастомных элементах материалов куда меньше.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326054041990950913?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">В итоге возникает ассоциация &quot;кастомные элементы = библиотека” и закономерный вопрос: так ли полезен стандарт, если без библиотек все равно никуда? Об этом однажды написал Chris Coyier.<a href="https://t.co/O2kSbDzTPu">https://t.co/O2kSbDzTPu</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326055141406101505?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">В комментариях к статье Rob Dodson заметил, что веб-компоненты — набор низкоуровневых примитивов. Библиотеки и фреймворки могли бы использовать их, чтобы изобретать меньше абстракций.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326057821998342144?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Так это выглядело на бумаге. Но на сегодняшний  день реальность такова, что авторы фреймворков не видят смысла использовать API кастомных элементов. Например, об этом говорил Evan You:<a href="https://t.co/YFL5RHdd53">https://t.co/YFL5RHdd53</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326059704490094592?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Для начала стоит определиться, какие задачи мы решаем. В моем понимании, задача фреймворков — обновление представления при изменении данных. Ответ на вопросы, когда и как рендерить DOM.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326060676725567489?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Веб-компоненты эту задачу не решают от слова совсем. Они ничего не говорят нам о том, как и когда рендерить — они предлагают, что именно рендерить (кастомные HTML-элементы).</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326061349701619712?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Об этом, в частности, говорит один из разделов документации React. Изложенная там позиция лишена критики в адрес веб-компонентов, но общий посыл очевиден: “скорее всего, вам это не нужно”.<a href="https://t.co/QGGnJOjzFC">https://t.co/QGGnJOjzFC</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326062991134101505?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Здесь мне видится некоторое столкновение интересов: фреймворки и кастомные элементы реализуют одну и ту же абстракцию компонентов, но разными путями и на разном уровне.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326064300327395330?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Отсюда и вбросы вроде “web components will replace your framework”. По-моему, от таких заголовков больше вреда, чем пользы. Увы, некоторые из сторонников веб-компонентов этим страдают.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326065205789462529?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">В ответ на это сторонники фреймворков справедливо замечают, что одних только кастомных элементов в любом случае недостаточно: нужен “клей”, чтобы строить приложения на их основе.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326066237252755463?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Но значит ли это, что библиотека / фреймворк нужны всегда? Я так не думаю. Бывают случаи, где тащить лишние килобайты JS вовсе не обязательно и вполне хватает нативных API на чистом JS.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326066656171290624?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Пример: компонент рендерит DOM один раз, в дальнейшем нужно обновлять только атрибуты или CSS-свойства. Я не вижу смысла для этого подключать библиотеку или фреймворк, даже “исчезающий”.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326071438714003456?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Когда-то у Polymer был слоган “jQuery для веб-компонентов” — то есть, набор костылей, потребность в которых со временем отпадет. Но годы идут, и что-то пока библиотек становится только больше.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326073307620397056?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Библиотеки позволяют писать меньше бойлерплейт-кода и не думать о некоторых нюансах, но в чем-то и ограничивают. Некоторые из них скрывают нативные API, взамен предлагая собственные.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326076819951513600?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Я бы выделил три основных типа библиотек:<br><br>— основанные на классах (lit-element, FAST),<br>— основанные на функциях (Haunted, Atomico),<br>— компиляторы (Stencil, LWC, Solid).</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326078479625019393?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">В этой статье перечислены более 40 способов написать один и тот же простой веб-компонент, с бенчмарками и сравнением размеров бандла. В том числе, представлены и фреймворки.<a href="https://t.co/f5mARoN5Xq">https://t.co/f5mARoN5Xq</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326080059732586497?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Статья демонстрирует, что при использовании ванильных кастомных элементов размер бандла быстро разрастается, когда компонентов в приложении становится больше (в приведенном примере их 30).</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326082356097191936?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Мне этот факт напоминает расхожую фразу: начнешь писать на чистом JS — рано или поздно напишешь свой фреймворк. Что не обязательно плохо, ведь в процессе можно многому научиться.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326085218810400769?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Если вы пишете на библиотеке — стоит понимать, как она работает. В этом помогает чтение исходников и особенно тестов. В свое время я изучал таким образом устройство Polymer и lit-element.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326087623765618689?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">О своем опыте применения этих знаний в написании кастомных элементов без зависимостей расскажу в следующем треде.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326088524790116353?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+
+  </div>
+</article>
+
+      </main>
+
+      <footer class="footer">
+        <ul class="social">
+          <li class="social__item"><a rel="noopener noreferrer" href="https://facebook.com/iamkulykov">Facebook</a></li>
+          <li class="social__item"><a rel="noopener noreferrer" href="https://instahram.com/iamkulykov">Instagram</a></li>
+          <li class="social__item"><a rel="noopener noreferrer" href="https://twitter.com/iamkulykov">Twitter</a></li>
+          <li class="social__item"><a rel="noopener noreferrer" href="https://www.linkedin.com/in/iamkulykov/">LinkedIn</a></li>
+        </ul>
+
+        <p>Этот сайт не следит за вами и не собирает никакие данные.</p>
+      </footer>
+    </div>
+  </body>
+
+</html>

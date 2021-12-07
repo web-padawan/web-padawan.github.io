@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Композиция и слоты в Shadow DOM · Сергей Куликов</title>
+    <meta name="description" content="">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Композиция и слоты в Shadow DOM">
+    <meta property="og:description" content="">
+
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+    <link rel="stylesheet" href="/assets/styles/index.css">
+  </head>
+
+  <body>
+    <div class="page">
+      <header class="header ">
+        <div class="header__title">
+          <a class="header__link" href="/">Сергей Куликов</a>
+        </div>
+      </header>
+
+      <main class="page__content">
+        <article class="article">
+  <header class="article__header">
+    <time class="article__time" datetime="2020-11-11T00:00:00.000Z">
+      11.11.2020
+    </time>
+
+    <h1>Композиция и слоты в Shadow DOM</h1>
+  </header>
+
+  <div class="content">
+    <p>Тред из третьего дня моей недели в <a href="https://twitter.com/jsunderhood">@jsunderhood</a>.</p>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">В завершение темы Shadow DOM — небольшой тред о слотах и композиции, которые я как-то обошел стороной.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326621151116873729?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Элемент &lt;slot&gt; является частью Shadow DOM и включен в стандарт WHATWG. Во времена “версии 0” в Chrome ему предшествовал элемент &lt;content&gt;, работавший несколько иначе.<a href="https://t.co/paEHC76He0">https://t.co/paEHC76He0</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326621429593497600?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Назначение &lt;slot&gt; — проекция контента из так называемого “light DOM” (снаружи) в определенную точку внутри Shadow DOM. За примерами в очередной раз отсылаю к учебнику Ильи Кантора.<a href="https://t.co/H2cble6PS1">https://t.co/H2cble6PS1</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326622253895872512?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Компонент с Shadow DOM может применять стили к переданным в слоты элементам с помощью псевдоэлемента ::slotted(). Важный момент: использование сложных селекторов не допускается.<a href="https://t.co/XAPedK6UVy">https://t.co/XAPedK6UVy</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326622975915945991?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">На практике это означает, что если внутрь слота передать элемент &lt;ul&gt;, то стили к самому списку с помощью ::slotted(ul) применить можно, а вот ::slotted(ul li) использовать не получится.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326623559226175499?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">При добавлении или удалении элементов на элементе &lt;slot&gt; возникает событие slotchange. Оно не является синхронным и срабатывает в конце микротаска, после Mutation Observer.<a href="https://t.co/4rlUn8mR6P">https://t.co/4rlUn8mR6P</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326625008341446657?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Кстати, лучший способ более детально ознакомиться с API, о которых я рассказываю (в том числе и слотами) — проект web-platform-tests. Для Shadow DOM там есть целый набор тест-кейсов.<a href="https://t.co/dg16DcVOrH">https://t.co/dg16DcVOrH</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326627043006681090?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Интересный факт: Svelte 3 отказался от нативных слотов, потому что контент в них попадает сразу, тогда как по мнению Rich Harris для фреймворка удобнее возможность отложенного рендеринга.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326628181034590210?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">На мой взгляд, это достаточно показательный момент: фреймворки предпочитают свою модель композиции, поскольку она лучше решает их задачи, и привносят свои абстракции (scoped slots).</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326628843755622405?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Vue поддерживает компиляцию в кастомные элементы, используя при этом нативные слоты (но scoped slots не поддерживаются). <a href="https://t.co/1TUUpdCbsh">https://t.co/1TUUpdCbsh</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326629792532271104?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Одна из возможных перспектив применения слотов — кастомизация нативных элементов (в первую очередь, select). Этой теме посвящен черновик Custom Control UI от разработчиков Edge.<a href="https://t.co/7zJQyS3aK9">https://t.co/7zJQyS3aK9</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326630860007804931?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Этот проект находится в стадии прототипирования (intent to prototype был опубликован в августе этого года). Кроме слотов, среди идей упоминаются и CSS Shadow Parts для нативных элементов.<a href="https://t.co/3EZccHwMUQ">https://t.co/3EZccHwMUQ</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326632252965588993?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Заодно стоит упомянуть проект Open UI, в рамках которого разработчики Edge, Salesforce и Chrome обсуждают улучшения стандартных элементов интерфейса, представленных в HTML.<a href="https://t.co/VlqJMuOCC1">https://t.co/VlqJMuOCC1</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326633828551712769?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+</div>
+
+  </div>
+</article>
+
+      </main>
+
+      <footer class="footer">
+        <ul class="social">
+          <li class="social__item"><a rel="noopener noreferrer" href="https://facebook.com/iamkulykov">Facebook</a></li>
+          <li class="social__item"><a rel="noopener noreferrer" href="https://instahram.com/iamkulykov">Instagram</a></li>
+          <li class="social__item"><a rel="noopener noreferrer" href="https://twitter.com/iamkulykov">Twitter</a></li>
+          <li class="social__item"><a rel="noopener noreferrer" href="https://www.linkedin.com/in/iamkulykov/">LinkedIn</a></li>
+        </ul>
+
+        <p>Этот сайт не следит за вами и не собирает никакие данные.</p>
+      </footer>
+    </div>
+  </body>
+
+</html>

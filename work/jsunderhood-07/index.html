@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Нерешённые проблемы кастомных элементов · Сергей Куликов</title>
+    <meta name="description" content="">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Нерешённые проблемы кастомных элементов">
+    <meta property="og:description" content="">
+
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+    <link rel="stylesheet" href="/assets/styles/index.css">
+  </head>
+
+  <body>
+    <div class="page">
+      <header class="header ">
+        <div class="header__title">
+          <a class="header__link" href="/">Сергей Куликов</a>
+        </div>
+      </header>
+
+      <main class="page__content">
+        <article class="article">
+  <header class="article__header">
+    <time class="article__time" datetime="2020-11-10T00:00:00.000Z">
+      10.11.2020
+    </time>
+
+    <h1>Нерешённые проблемы кастомных элементов</h1>
+  </header>
+
+  <div class="content">
+    <p>Тред из второго дня моей недели в <a href="https://twitter.com/jsunderhood">@jsunderhood</a>.</p>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Я обещал рассказать о не решенных проблемах кастомных элементов. В этом треде перечислю основные из них.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326241305547190273?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">В моем списке есть пробелы, требующие доработок и новых API в браузерах, но это еще полбеды. На мой взгляд, более существенные проблемы проистекают из самой природы кастомных элементов.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326241468747550727?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Проблема № 1: кастомные элементы не работают с выключенным JS. Это заметно ограничивает область их применения. Есть черновик декларативного синтаксиса, но пока в стадии наброска.<a href="https://t.co/xJPfpKx88X">https://t.co/xJPfpKx88X</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326242274137796608?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Проблема № 2: кастомные элементы не имеют кросс-браузерной поддержки форм. Form associated custom elements API уже добавлено в стандарт, но реализовано только в Chrome… Here we go again.<a href="https://t.co/5r84dRK4ZO">https://t.co/5r84dRK4ZO</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326243441655877637?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Проблема № 3: кастомный элемент с одним и тем же тегом можно определить только один раз. Это значит, что на странице нельзя использовать две версии одного компонента (будет exception).</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326244187747053576?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Это одна из причин, почему Polymer долго использовал Bower: там плоское дерево и установить две версии одного пакета невозможно. В npm нужно следить за версиями и надеяться на dedupe.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326245239980515329?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">В Vaadin мы обходим эту проблему с помощью pnpm. Там есть возможность гибкой настройки с помощью pnpmfile.js. Версии можно модифицировать в процессе установки в хуке readPackage.<a href="https://t.co/8Vfw2yBsYo">https://t.co/8Vfw2yBsYo</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326246384547336192?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Проблема № 4: поскольку переопределять кастомные элементы нельзя, hot module replacement не работает. Есть полифилл, который патчит customElements.define и методы жизненного цикла.<a href="https://t.co/vJFf6x597B">https://t.co/vJFf6x597B</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326247664674099201?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Проблема № 5: кастомные элементы регистрируются глобально. В сочетании с невозможностью их переопределения это критично для больших проектов, разрабатываемых многими командами.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326248319962767364?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Решить эту проблему призван черновик Scoped Custom Element Registries, над которым работают представители Google и Salesforce. Сейчас идет обсуждение аспектов, связанных с Shadow DOM.<a href="https://t.co/w9JLgmg7pS">https://t.co/w9JLgmg7pS</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326249167191203841?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Пробная реализация в виде миксина для lit-element есть в проекте Open Web Components. Имеется ряд ограничений, в частности требование не определять используемые элементы глобально.<a href="https://t.co/gbOUOVq2Vo">https://t.co/gbOUOVq2Vo</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326250152311595008?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Иногда базовые классы специально отделяют от определений кастомных элементов и выносят в отдельные файлы без сайд-эффектов. Я следую этому принципу. Статья на эту тему:<a href="https://t.co/8uHfoR4Xwp">https://t.co/8uHfoR4Xwp</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326251696213938177?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Из комментариев: проблема № 6, связанная с жизненным циклом. Мне с ней сталкиваться не приходилось, но реализованное в браузерах поведение выглядит сложным и создает риски.<a href="https://t.co/0KiGFYIyam">https://t.co/0KiGFYIyam</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326253527296045058?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Проект HowTo: Components для решения проблем с порядком загрузки использует Promise внутри connectedCallback. Как я понимаю, это единственный надежный способ. <a href="https://t.co/J6SoUZYG2p">pic.twitter.com/J6SoUZYG2p</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326256016829394946?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Напоследок упомяну некоторые черновики новых API, которые в перспективе могут облегчить жизнь разработчикам кастомных элементов. Прежде всего, это механизм обработки фокуса.<a href="https://t.co/FPO9UYU6TU">https://t.co/FPO9UYU6TU</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326256699003576320?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Второй пример — кастомные псевдо-классы, доступные за флагом в Chrome 79+. Скорее всего они, как и кастомные CSS свойства, будут требовать префикс из двух дефисов, например my-element:--active<a href="https://t.co/DTWheMImrh">https://t.co/DTWheMImrh</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326258748629913607?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Наконец, одно из недавних дополнений к стандарту — способность указывать ARIA-роли и поведение по умолчанию без использования атрибутов. Этот механизм появился в стабильном Chrome 81.<a href="https://t.co/F4jKppusJd">https://t.co/F4jKppusJd</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326260321347100672?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+
+  </div>
+</article>
+
+      </main>
+
+      <footer class="footer">
+        <ul class="social">
+          <li class="social__item"><a rel="noopener noreferrer" href="https://facebook.com/iamkulykov">Facebook</a></li>
+          <li class="social__item"><a rel="noopener noreferrer" href="https://instahram.com/iamkulykov">Instagram</a></li>
+          <li class="social__item"><a rel="noopener noreferrer" href="https://twitter.com/iamkulykov">Twitter</a></li>
+          <li class="social__item"><a rel="noopener noreferrer" href="https://www.linkedin.com/in/iamkulykov/">LinkedIn</a></li>
+        </ul>
+
+        <p>Этот сайт не следит за вами и не собирает никакие данные.</p>
+      </footer>
+    </div>
+  </body>
+
+</html>

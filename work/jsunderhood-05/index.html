@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Кастомные элементы без зависимостей · Сергей Куликов</title>
+    <meta name="description" content="">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Кастомные элементы без зависимостей">
+    <meta property="og:description" content="">
+
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+    <link rel="stylesheet" href="/assets/styles/index.css">
+  </head>
+
+  <body>
+    <div class="page">
+      <header class="header ">
+        <div class="header__title">
+          <a class="header__link" href="/">Сергей Куликов</a>
+        </div>
+      </header>
+
+      <main class="page__content">
+        <article class="article">
+  <header class="article__header">
+    <time class="article__time" datetime="2020-11-10T00:00:00.000Z">
+      10.11.2020
+    </time>
+
+    <h1>Кастомные элементы без зависимостей</h1>
+  </header>
+
+  <div class="content">
+    <p>Тред из второго дня моей недели в <a href="https://twitter.com/jsunderhood">@jsunderhood</a>.</p>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Тред про кастомные элементы без зависимостей, с примерами из личного опыта. И заодно немного о best practices.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326118178490036224?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Кастомные элементы без зависимостей писали еще 5 лет назад, на “версии 0”. Вот, например, популярный в то время компонент роутера (и один из первых проектов на GitHub, куда я контрибьютил).<a href="https://t.co/Wv0a03BJsK">https://t.co/Wv0a03BJsK</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326118975772700674?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Правда, долгое время была одна неявная зависимость: полифилл. Его нужно было подключать на страницу отдельным скриптом, размер которого в среднем составлял 5-6 KB (min + gzip).<a href="https://t.co/rU9WMwmZwk">https://t.co/rU9WMwmZwk</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326120281509933057?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="und" dir="ltr">Кроме “официального” полифилла от разработчиков Google, был еще document-register-element от Andrea Giammarchi. Он использовался в Angular и AMP. На данный момент deprecated и уже архивирован.<a href="https://t.co/PkbIOQxqeW">https://t.co/PkbIOQxqeW</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326122353118621696?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Еще один момент: кастомные элементы требуют нативных ES2015-классов. Это тоже своего рода зависимость. ES5-код, полученный с помощью Babel, не будет работать с customElements.define.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326124365579218945?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Решается эта проблема с помощью с помощью манки-патчинга HTMLElement с добавлением вызова Reflect.construct. В составе “официального” полифилла для этого есть отдельный скрипт.<a href="https://t.co/nxO3VmwUUy">https://t.co/nxO3VmwUUy</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326124675727036416?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">По вышеуказанной причине в сообществе веб-компонентов принято публиковать в npm исходный код кастомных элементов в ES2015. Примеры, которые будут в этом треде, следуют этому правилу.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326125626412118016?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Итак, рассказываю о двух своих недавних пет-проектах. Это “клоны” React-компонентов, написанные на ванильных кастомных элементах без зависимостей. Вся эта история началась с твита:<a href="https://t.co/XGi5j4Dxhw">https://t.co/XGi5j4Dxhw</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326129099220393984?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Так появился проект vanilla-colorful, порт колор-пикера react-colorful от <a href="https://twitter.com/Omgovich?ref_src=twsrc%5Etfw">@Omgovich</a> (если пропустили его неделю, обязательно почитайте).<a href="https://t.co/AI7EkMxyKL">https://t.co/AI7EkMxyKL</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326130019480051712?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">От идеи до реализации прошло всего несколько дней. Замечу, что опыта разработки на React у меня нет. Исходный код react-colorful хорошо оформлен и снабжен комментариями, это очень помогло.<a href="https://t.co/Zcxalu2PPz">https://t.co/Zcxalu2PPz</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326133762669862913?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Подробнее можно узнать в 248 выпуске подкаста Веб-стандарты, где мы с <a href="https://twitter.com/Omgovich?ref_src=twsrc%5Etfw">@Omgovich</a> обсуждали наши колор-пикеры и сравнивали плюсы и минусы используемых подходов.<a href="https://t.co/qIDRyPnNIz">https://t.co/qIDRyPnNIz</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326134289470251012?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Второй мой проект — vanilla-hamburger: набор гамбургер-кнопок с разными анимациями, порт библиотеки hamburger-react. В отличие от оригинала, под капотом использует &lt;button&gt;, а не &lt;div&gt;.<a href="https://t.co/V84J69a26p">https://t.co/V84J69a26p</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326137158370021381?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Оба проекта написаны на TypeScript и покрыты тестами. Об этом, пожалуй, сделаю чуть позже отдельный тред. А пока несколько слов о подходах, использованных при написании этих компонентов.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326138809352937473?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Как и стандартные HTML элементы, кастомный элемент может иметь атрибуты и свойства. По умолчанию они не связаны между собой. В качестве решения обычно используется пара геттер-сеттер.<a href="https://t.co/x2MHSydYbQ">https://t.co/x2MHSydYbQ</a> <a href="https://t.co/KsHgLHTYup">pic.twitter.com/KsHgLHTYup</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326141236525359104?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">В этом примере я использую Symbol, чтобы эмулировать приватное поле. Это полезно, поскольку иначе в автокомплите и браузерных DevTools будет много лишнего. Подробнее в статье Jan Miksovsky:<a href="https://t.co/mr3h6uIcUu">https://t.co/mr3h6uIcUu</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326143473469288449?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">В сеттерах свойств принято вызывать сайд-эффекты (например, обновлять DOM). Значения по умолчанию задаются в constructor, это позволяет переопределять их с помощью атрибутов.<a href="https://t.co/fajshARu6x">https://t.co/fajshARu6x</a> <a href="https://t.co/JqfZBfR6Xv">pic.twitter.com/JqfZBfR6Xv</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326147931125264384?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Свойство может быть установлено до того, как элемент связан с классом. При этом геттер и сеттер будут &quot;затенены&quot; (shadowed). Чтобы это исправить, вызываем сеттер в connectedCallback.<a href="https://t.co/H9pxNxEJrj">https://t.co/H9pxNxEJrj</a> <a href="https://t.co/lQrpYuzqbp">pic.twitter.com/lQrpYuzqbp</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326150145231249408?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">С помощью пары строк кода реализуем простейший асинхронный рендеринг. Этот подход (batch updates) позволяет обновлять DOM один раз за микротаск при изменении нескольких свойств.<a href="https://t.co/O32JLcj6jc">https://t.co/O32JLcj6jc</a> <a href="https://t.co/gokUzbJJCY">pic.twitter.com/gokUzbJJCY</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326152821461430273?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Насчет сравнения с “Angular первых версий” — на самом деле, намного больше все это похоже на lit-element. Если точнее, его базовый класс UpdatingElement, который не требует lit-html.<a href="https://t.co/cXNHIlmyRq">https://t.co/cXNHIlmyRq</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326154312775573506?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Еще один интересный прием — встроенный метод handleEvent для обработчиков событий. Он позволяет обойтись без использования .bind(this) или стрелочных функций в addEventListener.<a href="https://t.co/Xmbr3irqb9">https://t.co/Xmbr3irqb9</a> <a href="https://t.co/lLH15nfbxL">pic.twitter.com/lLH15nfbxL</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326156444270473222?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Некоторые из описанных приемов можно увидеть в проекте HowTo: Components от авторов Web Fundamentals. Он не обновлялся три года, но до сих пор актуален — одно из преимуществ стандартов.<a href="https://t.co/8lr5yXU4P6">https://t.co/8lr5yXU4P6</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326158564591800321?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Также на Web Fundamentals есть список best practices для кастомных элементов. Там достаточно подробно описаны атрибуты и свойства (и как при работе с ними избежать бесконечного цикла).<a href="https://t.co/0L7jE7WdBO">https://t.co/0L7jE7WdBO</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326159705329307650?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">В качестве более обзорного чтения советую Gold Standard Checklist от Jan Miksovky, на чьи работы я часто ссылаюсь. Он содержит ряд требований к API веб-компонентов, доступности и многое другое.<a href="https://t.co/f7NCZ3EDsO">https://t.co/f7NCZ3EDsO</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326161323764424704?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">И в завершение треда — еще один чеклист от Justin Fagnani о том, как публиковать кастомные элементы в npm. Есть полезные советы о структуре пакетов, важные поля package.json и так далее.<a href="https://t.co/mshN8ix5iS">https://t.co/mshN8ix5iS</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326162673340469250?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+</div>
+
+  </div>
+</article>
+
+      </main>
+
+      <footer class="footer">
+        <ul class="social">
+          <li class="social__item"><a rel="noopener noreferrer" href="https://facebook.com/iamkulykov">Facebook</a></li>
+          <li class="social__item"><a rel="noopener noreferrer" href="https://instahram.com/iamkulykov">Instagram</a></li>
+          <li class="social__item"><a rel="noopener noreferrer" href="https://twitter.com/iamkulykov">Twitter</a></li>
+          <li class="social__item"><a rel="noopener noreferrer" href="https://www.linkedin.com/in/iamkulykov/">LinkedIn</a></li>
+        </ul>
+
+        <p>Этот сайт не следит за вами и не собирает никакие данные.</p>
+      </footer>
+    </div>
+  </body>
+
+</html>
