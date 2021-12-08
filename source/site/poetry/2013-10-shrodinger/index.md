@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: poem
 tags: poetry
 title: Шрёдингер
 date: 2013-05-08

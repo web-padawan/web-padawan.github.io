@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: poem
 tags: poetry
 title: Uranium (венок сонетов)
 date: 2011-04-24

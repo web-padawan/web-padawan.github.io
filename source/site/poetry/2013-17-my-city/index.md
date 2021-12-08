@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: poem
 tags: poetry
 title: Мой город
 date: 2013-12-13

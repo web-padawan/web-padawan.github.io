@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: poem
 tags: poetry
 title: Carpe Diem
 date: 2021-11-13

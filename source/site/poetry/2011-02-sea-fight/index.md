@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: poem
 tags: poetry
 title: Морской бой
 date: 2011-01-21

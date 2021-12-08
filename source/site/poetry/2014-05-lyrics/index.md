@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: poem
 tags: poetry
 title: Л-Ире-ка
 date: 2014-05-20

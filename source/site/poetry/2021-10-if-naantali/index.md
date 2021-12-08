@@ -1,11 +1,12 @@
 ---
-layout: article
+layout: poem
 tags: poetry
 title: Если (Наантали)
 date: 2021-11-27
 ---
 
 > I throw myself into the Sea.
+>
 > <footer>Paul Bruce Dickinson</footer>
 
 Если шёл по статье «нелюбовь», но теперь — оправдан<br>

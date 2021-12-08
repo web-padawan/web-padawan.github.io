@@ -4,7 +4,7 @@ const embedTwitter = require("eleventy-plugin-embed-twitter");
 const { addNunjucksFilters } = require('./eleventy/nunjucks-filters');
 const { addNunjucksShortcodes } = require('./eleventy/nunjucks-shortcodes');
 
-const LAYOUTS = ['base', 'article'];
+const LAYOUTS = ['base', 'article', 'poem'];
 
 const source = path.resolve(__dirname, './source');
 const input = path.resolve(source, './site');

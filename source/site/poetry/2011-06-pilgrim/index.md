@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: poem
 tags: poetry
 title: Пилигрим (поэма)
 date: 2011-02-11

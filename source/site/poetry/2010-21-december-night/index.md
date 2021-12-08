@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: poem
 tags: poetry
 title: Декабрьская ночь
 date: 2010-12-02

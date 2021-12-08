@@ -217,7 +217,11 @@ section {
 }
 
 .article__time {
-  color: var(--color-text-muted);
+  color: var(--color-secondary);
+}
+
+.article__footer {
+  margin-top: 1rem;
 }
 
 /* Page */

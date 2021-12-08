@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: poem
 tags: poetry
 title: Ум-Иро-творение
 date: 2014-06-01
