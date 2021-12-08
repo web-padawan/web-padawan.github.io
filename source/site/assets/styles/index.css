@@ -212,6 +212,10 @@ section {
 }
 
 /* Article */
+.article {
+  margin: 0;
+}
+
 .article__header {
   margin-bottom: 1rem;
 }
