@@ -11,8 +11,13 @@ layout: base
   </div>
 
   <footer class="article__footer">
+    {% if date %}
     <time class="article__time" datetime="{{ date | dateToIsoString }}">
       {% formatDate date %}
     </time>
+    {% endif %}
+    {% if year %}
+    <div class="article__time">{{ year }}</div>
+    {% endif %}
   </footer>
 </article>
