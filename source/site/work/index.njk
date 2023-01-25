@@ -1,16 +1,16 @@
 ---json
 {
   "layout": "base",
-  "title": "Разработка"
+  "title": "Frontend"
 }
 ---
 <div class="content">
   <h1>{{ title }}</h1>
 
   <section>
-    <h2>Подкасты</h2>
+    <h2>Podcasts</h2>
 
-    <p>Я не записываю подкасты, но пару раз меня приглашали в гости.</p>
+    <p>I took part in two episodes of the Web Standards podcast by Vadim Makeev.</p>
 
     <ul>
       {%- for post in collections.podcast -%}
@@ -22,7 +22,7 @@
   <section>
     <h2>JSUnderhood</h2>
 
-    <p>В ноябре 2020 года в течение недели вёл Twitter <a href="https://jsunderhood.ru/iamkulykov/">@jsunderhood</a>.</p>
+    <p>In November 2020, I hosted the Russian speaking <a href="https://jsunderhood.ru/iamkulykov/">@jsunderhood</a> for a week.</p>
 
     <ul>
       {%- for post in collections.jsunderhood -%}
@@ -33,7 +33,7 @@
 
   <h2>Post Mortem</h2>
 
-    <p>Раз в квартал делюсь в Twitter достижениями нашей команды.</p>
+    <p>Every now and then I share my team's achievements on Twitter.</p>
 
     <ul>
       {%- for post in collections.postmortem -%}
