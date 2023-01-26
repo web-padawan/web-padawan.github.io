@@ -2,7 +2,7 @@
 layout: poem
 tags: archive
 title: Нервное
-year: 2006 (?)
+year: 2006
 ---
 
 После похорон нервной клетки<br>

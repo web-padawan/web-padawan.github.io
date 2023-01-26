@@ -2,7 +2,7 @@
 layout: poem
 tags: archive
 title: Ты приснишься
-year: 2006 (?)
+year: 2006
 ---
 
 Ты приснишься перед рассветом —<br>

@@ -2,7 +2,7 @@
 layout: poem
 tags: archive
 title: Троллейбус
-year: 2006 (?)
+year: 2006
 ---
 
 Погулять по полю потолка<br>

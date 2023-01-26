@@ -2,7 +2,7 @@
 layout: poem
 tags: archive
 title: Глупость
-year: 2007 (?)
+year: 2007
 ---
 
 Цепочку вечных ожиданий<br>

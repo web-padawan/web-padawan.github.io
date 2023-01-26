@@ -2,7 +2,7 @@
 layout: poem
 tags: archive
 title: Кола на воді
-year: 2006
+year: 2007
 ---
 
 Ну ось і все. Між нами знову — прірва.<br>

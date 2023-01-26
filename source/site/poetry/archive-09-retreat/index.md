@@ -2,7 +2,7 @@
 layout: poem
 tags: archive
 title: Передышка
-year: 2007 (?)
+year: 2007
 ---
 
 Превозмогая суетность сомнений,<br>

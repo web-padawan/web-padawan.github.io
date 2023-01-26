@@ -2,7 +2,7 @@
 layout: poem
 tags: archive
 title: Про нас
-year: 2006 (?)
+year: 2006
 ---
 
 Мы — карты разных мастей,<br>

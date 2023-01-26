@@ -2,7 +2,7 @@
 layout: poem
 tags: archive
 title: Злая весна
-year: 2007 (?)
+year: 2007
 ---
 
 Эта злая весна, с грязью снег перемешивая,<br>
