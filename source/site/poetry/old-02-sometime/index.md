@@ -1,6 +1,6 @@
 ---
 layout: poem
-tags: archive
+tags: old
 title: Колись
 year: 2007
 ---
