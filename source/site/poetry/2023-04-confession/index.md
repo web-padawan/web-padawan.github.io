@@ -1,6 +1,6 @@
 ---
 layout: poem
-tags: poetry
+tags: ['poetry', 'recent']
 title: Сповідь
 date: 2023-01-19
 ---

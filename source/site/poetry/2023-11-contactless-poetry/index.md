@@ -1,6 +1,6 @@
 ---
 layout: poem
-tags: poetry
+tags: ['poetry', 'recent']
 title: Безконтактна поезія
 date: 2023-02-09
 ---

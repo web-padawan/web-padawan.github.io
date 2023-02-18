@@ -1,6 +1,6 @@
 ---
 layout: poem
-tags: poetry
+tags: ['poetry', 'recent']
 title: Нічне
 date: 2023-01-13
 ---

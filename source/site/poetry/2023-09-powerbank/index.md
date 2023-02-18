@@ -1,6 +1,6 @@
 ---
 layout: poem
-tags: poetry
+tags: ['poetry', 'recent']
 title: Повербанк (пеон третій)
 date: 2023-02-06
 ---
