@@ -8,6 +8,27 @@
   <h1>{{ title }}</h1>
 
   <section>
+    <h2>Disclaimer</h2>
+
+    <p>
+      Some links from 2019-2020 shared below are in my mother tongue.<br>
+      I do have plans to translate most of it to Ukrainian later in 2023.
+    </p>
+  </section>
+
+  <section>
+    <h2>Post Mortem</h2>
+
+    <p>Every now and then I share my team's achievements on Twitter.</p>
+
+    <ul>
+      {%- for post in collections.postmortem -%}
+      <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+      {%- endfor -%}
+    </ul>
+  </section>
+
+  <section>
     <h2>Podcasts</h2>
 
     <p>I took part in two episodes of the Web Standards podcast by Vadim Makeev.</p>
@@ -26,17 +47,6 @@
 
     <ul>
       {%- for post in collections.jsunderhood -%}
-      <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
-      {%- endfor -%}
-    </ul>
-  </section>
-
-  <h2>Post Mortem</h2>
-
-    <p>Every now and then I share my team's achievements on Twitter.</p>
-
-    <ul>
-      {%- for post in collections.postmortem -%}
       <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
       {%- endfor -%}
     </ul>
