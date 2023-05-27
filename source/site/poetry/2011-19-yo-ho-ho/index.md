@@ -1,6 +1,6 @@
 ---
 layout: poem
-tags: poetry
+tags: ['poetry', 'evening']
 title: Йо-хо-хо!
 date: 2011-11-20
 ---

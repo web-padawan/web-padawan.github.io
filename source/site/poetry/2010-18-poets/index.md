@@ -1,6 +1,6 @@
 ---
 layout: poem
-tags: poetry
+tags: ['poetry', 'evening']
 title: Поэты
 date: 2010-11-17
 ---

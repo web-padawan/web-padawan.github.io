@@ -1,6 +1,6 @@
 ---
 layout: poem
-tags: poetry
+tags: ['poetry', 'evening']
 title: Thanksgiving
 date: 2021-11-25
 ---

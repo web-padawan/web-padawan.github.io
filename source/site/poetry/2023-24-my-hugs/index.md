@@ -1,6 +1,6 @@
 ---
 layout: poem
-tags: ['poetry', 'recent']
+tags: ['poetry', 'evening', 'recent']
 title: Мої обійми
 date: 2023-02-28
 ---
