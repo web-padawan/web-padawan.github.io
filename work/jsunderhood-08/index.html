@@ -38,40 +38,58 @@
   <div class="content">
     <p>Тред из третьего дня моей недели в <a href="https://twitter.com/jsunderhood">@jsunderhood</a>.</p>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Сегодняшняя тема — Shadow DOM, его возможности и ограничения. Начнем с треда о главной проблеме, которую Shadow DOM призван решить: глобальный неймспейс и отсутствие в CSS изоляции.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326419348211310594?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Этим летом я выступал на DevParty Russia с докладом “Shadow DOM: вдали от проторенных троп”. Тред отчасти написан по его мотивам.<a href="https://t.co/4GRbINugJT">https://t.co/4GRbINugJT</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326419924697362432?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">“Проторенной тропой” я называю способы инкапсуляции стилей, ставшие традиционными: БЭМ и другие методологии, CSS modules, CSS-in-JS. Все это — варианты именования или генерации классов.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326420997214498817?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Сразу определимся с терминами: инкапсуляция = стили компонента не протекают наружу. Изоляция = то же самое плюс отсутствие для внешних, глобальных стилей возможности проникнуть внутрь.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326422630946238464?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">В теории изоляция кажется полезной. Но как показала практика, в качестве универсального решения этот подход не работает (в том числе потому, что его реализация требует JS, но не только).</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326423627827384322?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">В статье на Web Fundamentals есть фраза “Shadow DOM fixes CSS and DOM”. Я бы сказал, все обстоит наоборот: он ломает некоторые привычные представления, требуя иначе структурировать код.<a href="https://t.co/HDj7lUpNww">https://t.co/HDj7lUpNww</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326424490935521280?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Пример: если на странице есть reset, normalize или глобальные стили для box-sizing, внутри shadow root они не применятся. Это, впрочем, не столь важно при использовании компонентного подхода.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326426476032430080?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Еще один момент: обычно, вне зависимости от выбранного способа инкапсуляции стилей, его принято строго придерживаться. Вряд ли имеет смысл смешивать в одном проекте несколько подходов.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326427934555566095?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Но повсеместное использование Shadow DOM чревато рядом последствий. Mattia Astorino приводит хорошую аналогию: завернуть приложение в shadow root — все равно что поместить его в &lt;input&gt;.<a href="https://t.co/BMYZ7vKo1c">https://t.co/BMYZ7vKo1c</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326428852684541958?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Это ключевой момент: изоляция Shadow DOM подобна той, которой обладают встроенные HTML-элементы. О том, как это выглядит на практике, можно почитать в статье Ire Aderinokun.<a href="https://t.co/Q4Q1v8V5l5">https://t.co/Q4Q1v8V5l5</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326429516236009472?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="und" dir="ltr">Кстати, заглянуть внутрь &lt;input type=“range”&gt; или &lt;video&gt; можно не только в браузерах на основе Chromium (галочка “show user agent shadow DOM” в настройках DevTools), но и в Safari.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326432067769561088?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Изоляция исключает конфликты из-за имен классов, селекторов по ID и тегам. Это полезно, но в реальных проектах регулярно возникает необходимость в сторонней библиотеке на CSS-классах.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326434042611380229?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Раньше в слаке Polymer регулярно звучал вопрос “как использовать Bootstrap внутри Shadow DOM” (стоп, а нужна ли тогда изоляция?). Сегодня тенденция поменялась: стали спрашивать про Tailwind.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326434365128273920?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Что примечательно, такие вопросы задают не только новички. То есть, причина не в отсутствии понимания принципов изоляции, а в желании сохранить удобные, устоявшиеся практики.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326435268342255618?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">С одной стороны, Shadow DOM позволяет забыть об именовании классов. Но, устраняя одну из причин появления CSS-методологий, изоляция не отменяет необходимости писать поддерживаемый код.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326439529159462913?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">В результате у Material Web Components мы можем внутри shadow DOM увидеть классы, именуемые по БЭМ (правда, это связано и с тем, что базовые стили подключаются из отдельного npm-пакета).<a href="https://t.co/25PNNarRsj">https://t.co/25PNNarRsj</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326440281437331456?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Подытожим: изоляция Shadow DOM предлагает решение одной из важных проблем CSS, но при этом приносит новые. Иногда его использование оправдано, но в целом этот подход не взлетел.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326443081437163520?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Добавлю, что Nicole Sullivan из Google уже зондирует почву на предмет альтернативной инкапсуляции на CSS media queries. В поддержку высказался Rich Harris, известный критик Shadow DOM.<a href="https://t.co/TKFagrEcTu">https://t.co/TKFagrEcTu</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326444193514971137?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+
 </div>
 
   </div>

@@ -38,28 +38,40 @@
   <div class="content">
     <p>Тред из третьего дня моей недели в <a href="https://twitter.com/jsunderhood">@jsunderhood</a>.</p>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Еще один важный аспект Shadow DOM — кастомизация стилей. При наличии изоляции это становится проблемой, поскольку некоторые стили надо переопределять. Небольшой тред на эту тему.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326506498088955906?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Первое, о чем стоит помнить: наследуемые свойства (color, font-family и другие) на элементе с shadow root проникают внутрь, то есть каскад работает. Некоторые считают это поведение проблемой.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326507133362434054?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Кастомные свойства (CSS-переменные) являются наследуемыми по умолчанию и тоже пересекают границы Shadow DOM. Если объявить свойство на html, оно будет доступно в любом shadow root.<a href="https://t.co/ZVjdtFkZDw">https://t.co/ZVjdtFkZDw</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326508212842074117?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Кастомные свойства можно комбинировать с селектором :host() и устанавливать их значения в зависимости от атрибута на элементе. Это позволяет поддерживать разные темы или варианты.<a href="https://t.co/y4NvxlNR4V">https://t.co/y4NvxlNR4V</a> <a href="https://t.co/MAAwTkb0SZ">pic.twitter.com/MAAwTkb0SZ</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326510980130549760?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">О селекторах :host и :host() можно почитать на MDN и в учебнике Ильи Кантора. Замечу, что :host-context() есть только в Chrome и, вероятно, будет удален из-за проблем с производительностью.<a href="https://t.co/3jBxMyecJ8">https://t.co/3jBxMyecJ8</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326511831662403586?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Долгое время кастомные свойства были единственным способом кастомизации в библиотеках веб-компонентов. Это было не так уж удобно: не делать же переменную для каждого CSS-свойства.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326512945908633601?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Polymer и компоненты Paper Elements использовали механизм CSS-миксинов. Они так и не стали стандартом и не были реализованы в браузерах. Tab Atkins в своем блоге объяснил, почему.<a href="https://t.co/fuJo1cbT3g">https://t.co/fuJo1cbT3g</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326514523445059586?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">При использовании кастомных элементов можно модифицировать стили с помощью наследования: класс-потомок переопределяет CSS родителя. Этот подход использовался в библиотеке Elix.<a href="https://t.co/qiTkWJkg3D">https://t.co/qiTkWJkg3D</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326517827667447810?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Не так давно (Firefox 72, Safari 13.1) появились CSS Shadow Parts. На сегодняшний день это рекомендуемый способ кастомизации Shadow DOM. О том, как он работает, у меня есть статья с примерами.<a href="https://t.co/o6FFhESz65">https://t.co/o6FFhESz65</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326518265158520832?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Вкратце, псевдоэлемент ::part() позволяет переопределять стили отдельных элементов в Shadow DOM, имеющих атрибут part — подобно тому, как это делает ::placeholder() для нативного input.<a href="https://t.co/Yiz3TDwZCg">https://t.co/Yiz3TDwZCg</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326519137640787968?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Изначально вместе с ::part() предлагался также селектор ::theme() для решения проблемы темизации компонентов. На данный момент он не реализован, идет обсуждение возможных альтернатив.<a href="https://t.co/AxjPzIqZwY">https://t.co/AxjPzIqZwY</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326521071919640576?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Единственным механизмом темизации пока остаются кастомные CSS свойства. Cassondra Roberts из Red Hat предложила подход к их именованию, применяемый в библиотеке PatternFly Elements.<a href="https://t.co/HIx4wUFAHn">https://t.co/HIx4wUFAHn</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326522343695507459?ref_src=twsrc%5Etfw">November 11, 2020</a></blockquote>
+
 </div>
 
   </div>

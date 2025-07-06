@@ -38,34 +38,49 @@
   <div class="content">
     <p>Тред из второго дня моей недели в <a href="https://twitter.com/jsunderhood">@jsunderhood</a>.</p>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Тред о кастомных элементах на TypeScript и тестировании.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326210692136005634?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="und" dir="ltr">Для начала о TypeScript. Прежде всего, кастомный элемент стоит добавить в интерфейс HTMLElementTagNameMap. Это сделает его тип доступным в методах querySelector и document.createElement.<a href="https://t.co/HSC06KuyTN">https://t.co/HSC06KuyTN</a> <a href="https://t.co/7DF1GApYUp">pic.twitter.com/7DF1GApYUp</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326211028196200449?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Если вы используете React, нужно также добавить определение кастомного элемента в специальный интерфейс JSX.IntrinsicElements. Это позволяет описать поддерживаемые свойства и их типы.<a href="https://t.co/oDhTj4HjgF">https://t.co/oDhTj4HjgF</a> <a href="https://t.co/JZZ99I6bhW">pic.twitter.com/JZZ99I6bhW</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326213874148921344?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Еще можно типизировать кастомные события, которые используются элементом, для вывода типа event.detail в addEventListener. На днях James Garbutt опубликовал статью о том, как это сделать.<a href="https://t.co/qXKyneIwDJ">https://t.co/qXKyneIwDJ</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326216325644029953?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Поскольку кастомные элементы используют нативные классы, общая логика в них обычно выделяется в миксины. По сути миксин — это функция, принимающая класс и возвращающая новый класс.<a href="https://t.co/J320ndJb67">https://t.co/J320ndJb67</a> <a href="https://t.co/w5HsDBOqOE">pic.twitter.com/w5HsDBOqOE</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326221652229828608?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Подробнее о том, как работают миксины в TypeScript, можно почитать в статье Николая Платонова. Кроме преимуществ, у этого паттерна есть недостатки и некоторые ограничения.<a href="https://t.co/5oWNou4m9i">https://t.co/5oWNou4m9i</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326224490305630208?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Перейдем к тестированию. Кастомные элементы можно тестировать с помощью Jest с тех пор, как была добавлена их поддержка в jsdom 16.2 благодаря усилиям Pierre-Marie Dartus из Salesforce.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326228446884802560?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Пример конфига Jest с использованием TypeScript для тестирования проекта на lit-element можно найти в темплейте Hoverboard от GDG.<a href="https://t.co/gtzSPr3hiT">https://t.co/gtzSPr3hiT</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326229319186780161?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">В Vaadin мы тестируем наши веб-компоненты в реальных браузерах. Это помогает обнаружить баги, которые воспроизводятся, например, только на iOS или появляются в свежей версии Chrome / Firefox.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326230505491148800?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Раньше в экосистеме Polymer был свой тест-раннер: web-component-tester. Необходимость в нем была обусловлена использованием HTML Imports, позже появилась и поддержка ES-модулей.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326231312567578624?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Сейчас мы переходим на Web Test Runner, который разрабатывает Lars den Bakker из ING. Он быстрый, поддерживает ES-модули, позволяет запускать тесты в Puppeteer, Playwright и не только.<a href="https://t.co/oRrJBBaDHx">https://t.co/oRrJBBaDHx</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326232528840249344?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Почему переходим не на Jest? Во-первых, нам часто приходится дебажить edge cases в конкретном браузере. Кроме того, насколько я понимаю, Jest из коробки не поддерживает ES-модули.<a href="https://t.co/dethZjL7dj">https://t.co/dethZjL7dj</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326234527375761408?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Также в Web Test Runner есть и экспериментальная поддержка тестирования скриншотами. До сих пор мы использовали Gemini, который уже не поддерживается и довольно медленный.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326235080600203268?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Для тестирования компонентов на TypeScript в Web Test Runner есть плагин на базе esbuild. Компиляция в esbuild занимает доли секунды и на длительность выполнения тестов почти не влияет.<a href="https://t.co/cCCv7HlMuR">https://t.co/cCCv7HlMuR</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326237015172665344?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Пример конфигурации Web Test Runner и собственно тесты для кастомных элементов можно найти в моих проектах vanilla-colorful и vanilla-hamburger, о которых я рассказал в предыдущем треде.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326238253872259072?ref_src=twsrc%5Etfw">November 10, 2020</a></blockquote>
+
 </div>
 
   </div>

@@ -38,36 +38,52 @@
   <div class="content">
     <p>Тред из четвёртого дня моей недели в <a href="https://twitter.com/jsunderhood">@jsunderhood</a>.</p>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Сегодня начнем с треда про элемент &lt;template&gt;. Раньше он считался частью веб-компонентов, хотя сейчас о нем вспоминают реже.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326788759829024776?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Содержимое &lt;template&gt; является инертным: элементы не попадают в DOM, скрипты не выполняются, стили не применяются. По сути это декларативный способ создания DocumentFragment.<a href="https://t.co/o20ldEuosu">https://t.co/o20ldEuosu</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326789447594221570?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Получить содержимое &lt;template&gt; можно с помощью свойства content, используя один из двух методов: content.cloneNode(true) или document.importNode. На практике разница обычно несущественна.<a href="https://t.co/vDann1gHsG">https://t.co/vDann1gHsG</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326790517003313152?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">На первый взгляд этот элемент прост, и появился он в браузерах намного раньше Custom Elements и Shadow DOM. Тем не менее, его внедрение потребовало изменений HTML-парсера.<a href="https://t.co/GfxKckMNe2">https://t.co/GfxKckMNe2</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326795038077149184?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Для IE11 есть полифилл, который имеет ограничения. Например, нельзя использовать &lt;template&gt; внутри элементов &lt;table&gt; и &lt;select&gt;: в обоих случаях IE удаляет незнакомый ему тег.<a href="https://t.co/8pHblGu9Qu">https://t.co/8pHblGu9Qu</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326796033465196544?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Темплейты в Polymer использовались с кастомным синтаксисом для data binding. Вместе с HTML Imports это позволяло писать в HTML вообще все. Про типизацию шаблонов тогда никто не думал.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326797207442481153?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Впрочем, создавать &lt;template&gt; можно и в JavaScript. Это полезно для ванильных кастомных элементов: по сравнению с использованием innerHTML темплейты быстрее (нет лишних затрат на парсинг).</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326798812338380800?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Именно этот способ использует библиотека lit-html от команды Polymer, синтаксис которой основан на tagged template literals. Подробнее о принципах ее работы можно почитать в ее wiki.<a href="https://t.co/Sga4pRHdAF">https://t.co/Sga4pRHdAF</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326803607489011714?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Замечу, что lit-html в этом плане не уникальна. Более того, Andrea Giammarchi утверждает, что в hyperHTML он реализовал этот подход раньше, а разработчики из Google позаимствовали его идею.<a href="https://t.co/R9Dukpxkff">https://t.co/R9Dukpxkff</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326804587869855744?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Теперь о перспективах &lt;template&gt;. Недостаток этого элемента в том, что он не предоставляет API для интерполяции значений. В качестве возможного решения предложен черновик Template instantiation.<a href="https://t.co/1vRXffReNB">https://t.co/1vRXffReNB</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326807150098866176?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Наряду с AOM, это один из примеров инициативы со стороны WebKit. Из моих предыдущих твитов могло сложиться впечатление, что все инновации двигает Chrome, но чаще это плод совместных усилий.</p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326807923515912194?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Развитием идеи Template instantiation является новый черновик DOM Parts за общим авторством разработчиков WebKit и Chrome. Это API на первый взгляд имеет много общего с устройством lit-html.<a href="https://t.co/PjCM12wKyk">https://t.co/PjCM12wKyk</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326809795098185728?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">В перспективе DOM Parts могут сделать манипуляции с DOM более эффективными и упростить написание библиотек вроде lit-html. Но пока эта идея в стадии обсуждения и к ней есть ряд вопросов.<a href="https://t.co/pYWu2YjVkM">https://t.co/pYWu2YjVkM</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326811496693817344?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Напоследок упомяну еще один черновик, предложенный после удаления HTML Imports. Он называется HTML modules и в теории придаст новую жизнь декларативному применению &lt;template&gt;.<a href="https://t.co/Qhxd4gRVIu">https://t.co/Qhxd4gRVIu</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326812219154305024?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Как и CSS-модули, которые я упоминал вчера, этот черновик долгое время был заблокирован, но теперь возобновление работы над ним стало возможным благодаря переходу Import Assertions на Stage 3.<a href="https://t.co/77oA8Zkn0i">https://t.co/77oA8Zkn0i</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326813014767636480?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="ru" dir="ltr">Возможно, в будущем &lt;template&gt; станет опорой для неких новых конструкций, меняющих наши представления об HTML. Но полезен он и сейчас, что подтверждает статистика Chrome Platform Status.<a href="https://t.co/H8jotaKIBj">https://t.co/H8jotaKIBj</a></p>&mdash; jsunderhood (@jsunderhood) <a href="https://twitter.com/jsunderhood/status/1326814781970505729?ref_src=twsrc%5Etfw">November 12, 2020</a></blockquote>
+
 </div>
 
   </div>

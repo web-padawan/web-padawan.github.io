@@ -38,34 +38,49 @@
   <div class="content">
     <p>Обзор измений в релизе Vaadin web components <a href="https://github.com/vaadin/web-components/releases/tag/v22.0.0">v22.0.0</a>.</p>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Today is the release day! Meet Vaadin web components 22.0, a new major release with a bunch of accessibility fixes that my team has been working on since July. As usual, it&#39;s time for me to share a short post mortem.<a href="https://t.co/TU0ZjduPLE">https://t.co/TU0ZjduPLE</a></p>&mdash; Serhii Kulykov 🇺🇦 (@serhiikulykov) <a href="https://twitter.com/serhiikulykov/status/1466132766639206405?ref_src=twsrc%5Etfw">December 1, 2021</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">In order to fix some accessibility issues, we had to do many breaking changes to the DOM structure and styling API of our field components. Check out the Upgrading Guide if you are using an older version.<a href="https://t.co/E2nw8DtYEx">https://t.co/E2nw8DtYEx</a></p>&mdash; Serhii Kulykov 🇺🇦 (@serhiikulykov) <a href="https://twitter.com/serhiikulykov/status/1466133443817918478?ref_src=twsrc%5Etfw">December 1, 2021</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Personally, I&#39;m especially proud of all the work we have done to make vaadin-combo-box accessible. Both the input field and dropdown items are now placed in light DOM to make ARIA ID references work.<a href="https://t.co/aAlX0lYVlZ">https://t.co/aAlX0lYVlZ</a></p>&mdash; Serhii Kulykov 🇺🇦 (@serhiikulykov) <a href="https://twitter.com/serhiikulykov/status/1466134048045215750?ref_src=twsrc%5Etfw">December 1, 2021</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">All of our input field web components (text-field, combo-box, date-picker etc) now share the same logic for handling slotted input and label elements. The implementation is inspired by Lion web components.<a href="https://t.co/toJX8vF1Xh">https://t.co/toJX8vF1Xh</a></p>&mdash; Serhii Kulykov 🇺🇦 (@serhiikulykov) <a href="https://twitter.com/serhiikulykov/status/1466135001137827843?ref_src=twsrc%5Etfw">December 1, 2021</a></blockquote>
+
 </div>
-<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">We also updated a few smaller web components like button, checkbox, radio-button and radio-group, to address the a11y issues that were reported long ago. Huge thanks to <a href="https://twitter.com/vursen?ref_src=twsrc%5Etfw">@vursen</a> for working on those.</p>&mdash; Serhii Kulykov 🇺🇦 (@serhiikulykov) <a href="https://twitter.com/serhiikulykov/status/1466135672935354371?ref_src=twsrc%5Etfw">December 1, 2021</a></blockquote>
+<div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">We also updated a few smaller web components like button, checkbox, radio-button and radio-group, to address the a11y issues that were reported long ago. Huge thanks to @vursen for working on those.</p>&mdash; Serhii Kulykov 🇺🇦 (@serhiikulykov) <a href="https://twitter.com/serhiikulykov/status/1466135672935354371?ref_src=twsrc%5Etfw">December 1, 2021</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">There are other notable changes in Vaadin 22 that are not related to a11y. For example, we removed the previously deprecated render() method to make future web components migration to Lit easier.<a href="https://t.co/bqhBCopiFV">https://t.co/bqhBCopiFV</a></p>&mdash; Serhii Kulykov 🇺🇦 (@serhiikulykov) <a href="https://twitter.com/serhiikulykov/status/1466136798346858502?ref_src=twsrc%5Etfw">December 1, 2021</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Another important thing: we have updated the npm package names to not repeat &quot;vaadin&quot; twice so you can write cleaner imports. The old packages are preserved for backwards compatibility in this release.<a href="https://t.co/KiXIeVXyOo">https://t.co/KiXIeVXyOo</a></p>&mdash; Serhii Kulykov 🇺🇦 (@serhiikulykov) <a href="https://twitter.com/serhiikulykov/status/1466137314082660356?ref_src=twsrc%5Etfw">December 1, 2021</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Related to the above: we updated the custom element classes to remove the redundant &quot;Element&quot; suffix. So, when using TypeScript, you can import Grid and not GridElement. It makes the code a bit more readable.<a href="https://t.co/xBeaxfUsUp">https://t.co/xBeaxfUsUp</a></p>&mdash; Serhii Kulykov 🇺🇦 (@serhiikulykov) <a href="https://twitter.com/serhiikulykov/status/1466138103836549122?ref_src=twsrc%5Etfw">December 1, 2021</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">There is a lot more in Vaadin 22 than what I&#39;ve shared so far. And I&#39;m so excited about every single feature! But the best thing is that the team has already started to work on Vaadin 23 (first alpha release is out).<a href="https://t.co/PnNGjlXYjK">https://t.co/PnNGjlXYjK</a></p>&mdash; Serhii Kulykov 🇺🇦 (@serhiikulykov) <a href="https://twitter.com/serhiikulykov/status/1466138986641039364?ref_src=twsrc%5Etfw">December 1, 2021</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Among other improvements, we are going to continue working on accessibility fixes in Vaadin 23. Check out the GitHub project board for the list of fixes shipped in Vaadin 22 and those planned for the next major.<a href="https://t.co/2MOtzwZ2lX">https://t.co/2MOtzwZ2lX</a></p>&mdash; Serhii Kulykov 🇺🇦 (@serhiikulykov) <a href="https://twitter.com/serhiikulykov/status/1466139362068996106?ref_src=twsrc%5Etfw">December 1, 2021</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Also, we keep working on gradually getting rid of some Polymer legacy. One small step is creating a local copy of the gestures module that can be later replaced with native events, or possibly reactive controllers.<a href="https://t.co/bEtsUrO45z">https://t.co/bEtsUrO45z</a></p>&mdash; Serhii Kulykov 🇺🇦 (@serhiikulykov) <a href="https://twitter.com/serhiikulykov/status/1466140346249797635?ref_src=twsrc%5Etfw">December 1, 2021</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Finally, one more change coming to Vaadin 23 (merged to master but not released yet) is LitElement support for vaadin-themable-mixin. This gets us even closer to upgrading some web components to Lit in the future.<a href="https://t.co/7Edsglxznm">https://t.co/7Edsglxznm</a></p>&mdash; Serhii Kulykov 🇺🇦 (@serhiikulykov) <a href="https://twitter.com/serhiikulykov/status/1466140893090562057?ref_src=twsrc%5Etfw">December 1, 2021</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Overall the work that the Vaadin design system has been doing this year is so impressive that I can&#39;t resist sharing it publicly every time we release a new major version. Thanks to my team and everyone involved!</p>&mdash; Serhii Kulykov 🇺🇦 (@serhiikulykov) <a href="https://twitter.com/serhiikulykov/status/1466141502145499138?ref_src=twsrc%5Etfw">December 1, 2021</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Also, I would like to use this occasion to say special thank you to <a href="https://twitter.com/Knoobielein?ref_src=twsrc%5Etfw">@Knoobielein</a> for the invaluable help with testing, feedback, and guidance with the accessibility work. It really means a lot to our team.<a href="https://t.co/HbLWxufeA5">https://t.co/HbLWxufeA5</a></p>&mdash; Serhii Kulykov 🇺🇦 (@serhiikulykov) <a href="https://twitter.com/serhiikulykov/status/1466142191244529681?ref_src=twsrc%5Etfw">December 1, 2021</a></blockquote>
+
 </div>
 <div class="eleventy-plugin-embed-twitter"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Stay tuned to learn more about Vaadin web components 23.0 when the time comes (and hopefully more good news about us moving to Lit). And of course, any feedback about the new release is highly appreciated.</p>&mdash; Serhii Kulykov 🇺🇦 (@serhiikulykov) <a href="https://twitter.com/serhiikulykov/status/1466143409454956554?ref_src=twsrc%5Etfw">December 1, 2021</a></blockquote>
+
 </div>
 
   </div>
