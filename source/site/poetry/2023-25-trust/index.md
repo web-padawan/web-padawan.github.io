@@ -1,6 +1,6 @@
 ---
 layout: poem
-tags: ['poetry', 'evening', 'recent']
+tags: ['poetry', 'recent']
 title: Вірь
 date: 2023-03-01
 ---

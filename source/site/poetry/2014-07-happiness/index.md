@@ -1,6 +1,6 @@
 ---
 layout: poem
-tags: ['poetry', 'evening']
+tags: ['poetry']
 title: Счастье
 date: 2014-06-14
 ---

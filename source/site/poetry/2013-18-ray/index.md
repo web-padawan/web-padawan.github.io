@@ -1,6 +1,6 @@
 ---
 layout: poem
-tags: ['poetry', 'evening']
+tags: ['poetry']
 title: Луч
 date: 2013-12-26
 ---

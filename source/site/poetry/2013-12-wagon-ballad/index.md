@@ -1,6 +1,6 @@
 ---
 layout: poem
-tags: ['poetry', 'evening']
+tags: ['poetry']
 title: Вагонная баллада
 date: 2013-06-01
 ---

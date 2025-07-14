@@ -1,6 +1,6 @@
 ---
 layout: poem
-tags: ['poetry', 'evening']
+tags: ['poetry']
 title: Новое
 date: 2021-09-12
 ---

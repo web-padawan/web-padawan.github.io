@@ -1,6 +1,6 @@
 ---
 layout: poem
-tags: ['poetry', 'evening', 'recent']
+tags: ['poetry', 'recent']
 title: Геометрія
 date: 2023-02-20
 ---

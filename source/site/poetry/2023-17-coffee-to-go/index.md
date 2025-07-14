@@ -1,6 +1,6 @@
 ---
 layout: poem
-tags: ['poetry', 'evening', 'recent']
+tags: ['poetry', 'recent']
 title: Coffee to go
 date: 2023-02-19
 ---

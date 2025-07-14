@@ -1,6 +1,6 @@
 ---
 layout: poem
-tags: ['poetry', 'evening', 'recent']
+tags: ['poetry', 'recent']
 title: Stack Overflow
 date: 2023-02-21
 ---
