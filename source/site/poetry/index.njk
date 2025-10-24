@@ -1,13 +1,13 @@
 ---json
 {
   "layout": "base",
-  "title": "Вірші"
+  "title": "Стихи"
 }
 ---
 <div class="content">
   <h1>{{ title }}</h1>
 
-  {% for year, posts in collections.recent | groupByYear %}
+  {% for year, posts in collections.poetry | groupByYear %}
   <section>
     <h2>{{ year }}</h2>
 

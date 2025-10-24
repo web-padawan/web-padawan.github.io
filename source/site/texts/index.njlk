@@ -1,7 +1,7 @@
 ---json
 {
   "layout": "base",
-  "title": "Тексти"
+  "title": "Тексты"
 }
 ---
 <div class="content">
