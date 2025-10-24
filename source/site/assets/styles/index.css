@@ -19,16 +19,12 @@
 
 /* Variables */
 :root {
-  --color-border: rgba(0, 0, 0, 0.1);
-  --color-primary: #005ea5;
-  --color-primary-light: #57a2db;
-  --color-secondary: #595959;
-  --color-red: #a00000;
-  --color-yellow: #ffbf47;
-  --color-link: var(--color-primary);
-  --color-link-underline: rgba(152, 184, 200, 0.2);
-  --color-link-hover: var(--color-red);
-  --color-link-underline-hover: rgba(160, 48, 0, 0.2);
+  --bg-dark: #0a0a0a;
+  --color-border: #f3f5f7;
+  --color-secondary: #a2b4cb;
+  --color-link: #57a2db;
+  --color-link-hover: #95c6ff;
+  --color-text: #eaf0f8;
   --site-width: 60em;
   --readable-line-width: 32em;
   --list-item-spacing: 0.5rem;
@@ -42,6 +38,8 @@ html {
     'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.125rem;
   line-height: 1.4;
+  background-color: var(--bg-dark);
+  color: var(--color-text)
 }
 
 *,
@@ -88,11 +86,15 @@ blockquote::before {
   line-height: 1;
   position: absolute;
   top: -0.125rem;
-  opacity: 0.2;
+  opacity: 0.5;
 }
 
 blockquote p:last-of-type {
   margin-bottom: 0.5rem;
+}
+
+blockquote footer {
+  opacity: 0.75;
 }
 
 blockquote,
@@ -167,14 +169,12 @@ li:not(:last-child) {
 
 /* Links */
 a {
-  border-bottom: thin solid var(--color-link-underline);
   color: var(--color-link);
   text-decoration: none;
 }
 
 a:active,
 a:hover {
-  border-bottom-color: var(--color-link-underline-hover);
   color: var(--color-link-hover);
 }
 
