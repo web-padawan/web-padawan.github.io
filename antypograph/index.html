@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Антипограф · Serhii Kulykov</title>
+    <meta name="description" content="">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Антипограф">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="/assets/images/intro/1080.jpg" />
+
+    <link rel="icon" type="image/png" href="/assets/images/favicon-96x96.png">
+    <link rel="stylesheet" href="/assets/styles/index.css">
+  </head>
+
+  <body>
+    <div class="page">
+      <header class="header ">
+        <div class="header__title">
+          <a class="header__link" href="/">Serhii Kulykov</a>
+        </div>
+      </header>
+
+      <main class="page__content">
+        <div class="content">
+  <h1>Антипограф</h1>
+
+  <section>
+    <textarea></textarea>
+    <div>
+      <button>Заменить</button>
+    </div>
+    <div class="note">Текст скопирован</div>
+  </section>
+
+</div>
+
+<script type="module">
+const text = document.querySelector('textarea');
+
+document.querySelector('button').addEventListener('click', () => {
+  text.value = text.value.replaceAll(/[«|»|“|”|„]/gu, '"').replaceAll('—', '-');
+  navigator.clipboard.writeText(text.value);
+
+  const note = document.querySelector('.note');
+  note.style.display = 'block';
+  setTimeout(() => {
+    note.style.display = 'none';
+  }, 3000);
+});
+</script>
+
+      </main>
+
+      <footer class="footer">
+        <ul class="social">
+          <li class="social__item"><a rel="noopener noreferrer" href="https://facebook.com/iamkulykov">Facebook</a></li>
+          <li class="social__item"><a rel="noopener noreferrer" href="https://instagram.com/iamkulykov">Instagram</a></li>
+          <li class="social__item"><a rel="noopener noreferrer" href="https://twitter.com/serhiikulykov">Twitter</a></li>
+          <li class="social__item"><a rel="noopener noreferrer" href="https://www.linkedin.com/in/iamkulykov/">LinkedIn</a></li>
+        </ul>
+
+        <p>This website doesn't track you and doesn't collect any data.</p>
+      </footer>
+    </div>
+  </body>
+
+</html>
