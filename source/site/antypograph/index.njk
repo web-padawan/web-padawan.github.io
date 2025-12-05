@@ -1,0 +1,33 @@
+---json
+{
+  "layout": "base",
+  "title": "Антипограф"
+}
+---
+<div class="content">
+  <h1>{{ title }}</h1>
+
+  <section>
+    <textarea></textarea>
+    <div>
+      <button>Заменить</button>
+    </div>
+    <div class="note">Текст скопирован</div>
+  </section>
+
+</div>
+
+<script type="module">
+const text = document.querySelector('textarea');
+
+document.querySelector('button').addEventListener('click', () => {
+  text.value = text.value.replaceAll(/[«|»|“|”|„]/gu, '"').replaceAll('—', '-');
+  navigator.clipboard.writeText(text.value);
+
+  const note = document.querySelector('.note');
+  note.style.display = 'block';
+  setTimeout(() => {
+    note.style.display = 'none';
+  }, 3000);
+});
+</script>
