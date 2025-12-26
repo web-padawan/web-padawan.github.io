@@ -1,7 +1,7 @@
 ---
 layout: poem
 tags: ['poetry']
-title: Стансы
+title: Рифмы
 date: 2022-01-10
 ---
 
