@@ -2,6 +2,7 @@
 layout: poem
 tags: ['poetry', 'recent']
 title: Рикошет
+lang: uk
 date: 2023-01-29
 ---
 

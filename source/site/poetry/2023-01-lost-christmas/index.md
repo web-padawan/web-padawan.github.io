@@ -2,6 +2,7 @@
 layout: poem
 tags: ['poetry', 'recent']
 title: Загублене Різдво
+lang: uk
 date: 2023-01-06
 ---
 

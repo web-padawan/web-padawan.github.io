@@ -2,6 +2,7 @@
 layout: poem
 tags: ['poetry', 'recent']
 title: Жадан. Відгук
+lang: uk
 date: 2023-02-19
 ---
 

@@ -2,6 +2,7 @@
 layout: poem
 tags: archive
 title: Кола на воді
+lang: uk
 year: 2007
 ---
 

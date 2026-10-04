@@ -2,6 +2,7 @@
 layout: poem
 tags: ['poetry', 'recent']
 title: Жовта кухня
+lang: uk
 date: 2023-02-11
 ---
 

@@ -2,6 +2,7 @@
 layout: poem
 tags: ['poetry', 'recent']
 title: Дивна історія
+lang: uk
 date: 2023-01-23
 ---
 

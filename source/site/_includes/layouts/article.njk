@@ -4,7 +4,7 @@ layout: base
 <article class="article">
   <header class="article__header">
     <time class="article__time" datetime="{{ date | dateToIsoString }}">
-      {% formatDate date %}
+      {% formatDate date, lang %}
     </time>
 
     <h1>{{ title }}</h1>

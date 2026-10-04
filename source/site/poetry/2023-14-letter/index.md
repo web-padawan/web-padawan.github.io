@@ -2,6 +2,7 @@
 layout: poem
 tags: ['poetry', 'recent']
 title: Лист (самопереклад)
+lang: uk
 date: 2023-02-14
 ---
 

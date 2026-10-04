@@ -2,6 +2,7 @@
 layout: poem
 tags: archive
 title: Колись
+lang: uk
 year: 2007
 ---
 

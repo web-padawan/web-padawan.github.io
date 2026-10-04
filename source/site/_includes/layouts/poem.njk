@@ -13,7 +13,7 @@ layout: base
   <footer class="article__footer">
     {%- if date %}
     <time class="article__time" datetime="{{ date | dateToIsoString }}">
-      {% formatDate date %}
+      {% formatDate date, lang %}
     </time>
     {% endif -%}
     {%- if year %}

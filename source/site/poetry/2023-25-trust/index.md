@@ -2,6 +2,7 @@
 layout: poem
 tags: ['poetry', 'recent']
 title: Вірь
+lang: uk
 date: 2023-03-01
 ---
 
