@@ -24,6 +24,18 @@
         <div class="header__title">
           <a class="header__link" href="/">Serhii Kulykov</a>
         </div>
+
+        <nav class="nav" aria-label="Main">
+          <ul class="nav__list">
+            {%- for item in [
+              { url: '/', text: 'Blog' },
+              { url: '/about/', text: 'About' },
+              { url: '/poetry/', text: 'Poetry' }
+            ] %}
+            <li class="nav__item"><a class="nav__link" href="{{ item.url }}"{% if page.url === item.url %} aria-current="page"{% endif %}>{{ item.text }}</a></li>
+            {%- endfor %}
+          </ul>
+        </nav>
       </header>
 
       <main class="page__content">

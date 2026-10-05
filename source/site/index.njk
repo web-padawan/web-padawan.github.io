@@ -1,61 +1,45 @@
 ---json
 {
   "layout": "base",
-  "title": "Home"
+  "title": "Blog",
+  "description": "Serhii Kulykov writes about web components, accessibility and design systems."
 }
 ---
-<div class="page-home">
+<div class="content">
   <h1 class="visuallyhidden">Serhii Kulykov</h1>
 
-  <div class="page-home__main content">
-    <section>
-      <h2 class="visuallyhidden">About</h2>
+  <p>
+    Hi there! I'm Serhii, a software engineer at <a href="https://vaadin.com">Vaadin</a>.
+    I write about web components, accessibility and design systems.
+    Read more <a href="/about/">about me</a>.
+  </p>
 
-      <p>
-        <img
-          src="/assets/images/intro/400.jpg"
-          alt="Personal photo"
-          height="450"
-          width="400"
-        >
-      </p>
+  <section>
+    <h2>Blog</h2>
 
-      <p>
-        Hi there! I'm Serhii. Welcome to my personal website.
-      </p>
-    </section>
+    <table class="dated-table">
+      <tbody>
+        {%- for post in collections.blog | reverse %}
+        <tr>
+          <td>
+            <time datetime="{{ post.date | dateToIsoString }}">{% formatDate post.date, lang %}</time>
+          </td>
+          <td>
+            <a href="{{ post.url }}">{{ post.data.title }}</a>
+          </td>
+        </tr>
+        {%- endfor %}
+      </tbody>
+    </table>
+  </section>
 
-    <section>
-      <h2>Frontend</h2>
+  <section>
+    <h2>Elsewhere</h2>
 
-      <p>
-        I've been working in the IT since my last year at the university.
-        Over the last couple of years, I've been working as a senior software engineer at <a href="https://vaadin.com">Vaadin</a>.
-        Currently, I'm one of the maintainers of Vaadin web components library.
-      </p>
-      <p>
-        My primary areas of interests are Web Components, accessibility and design systems.
-        Also, I enjoy working on <a rel="noopener noreferrer" href="https://github.com/web-padawan">open source projects</a> in my spare time.
-        Sometimes I like to <a href="/work/">spread the word</a> about my team's achievements.
-      </p>
-    </section>
-
-    <section>
-      <h2>Poetry</h2>
-
-      <p>
-        Poetry has been one of my hobbies since my childhood.
-        I enjoy reading poetry and learning it by heart.
-        Every now and then I compose poems myself.
-        I write both in Russian, which is my mother tongue, and in Ukrainian.
-      </p>
-      <p>
-        When I was a student, I attended the literature studio «Вуглик» in the Dnipro Polytechnic library.
-        Since then I won the Grand Prix at two poetry festivals: «ТА-НЕ-НА-ДО Фест» (Dnipro, 2010) and «Ан Т-Р-Акт» (Kherson, 2014).
-      </p>
-      <p>
-        This website contains a <a href="/poetry/">selection of my poems</a>.
-      </p>
-    </section>
-  </div>
+    <ul>
+      <li><a href="/poetry/" lang="ru">Стихи</a> (poetry)</li>
+      <li><a href="/texts/" lang="ru">Тексты</a> (texts)</li>
+      <li><a href="/work/">Frontend</a> (talks and threads)</li>
+    </ul>
+  </section>
 </div>

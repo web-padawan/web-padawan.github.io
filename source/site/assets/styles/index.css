@@ -217,6 +217,25 @@ a:hover {
   color: inherit;
 }
 
+/* Navigation */
+.nav__list,
+.nav__item {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__item {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.nav__link[aria-current='page'] {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
 /* Content */
 article,
 section {
