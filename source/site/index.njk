@@ -29,6 +29,16 @@
           </td>
         </tr>
         {%- endfor %}
+        {%- for post in devto %}
+        <tr>
+          <td>
+            <time datetime="{{ post.date | dateToIsoString }}">{% formatDate post.date, lang %}</time>
+          </td>
+          <td>
+            <a href="{{ post.url }}">{{ post.title }}</a> (dev.to)
+          </td>
+        </tr>
+        {%- endfor %}
       </tbody>
     </table>
   </section>
