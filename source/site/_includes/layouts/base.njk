@@ -9,10 +9,16 @@
     <title>{{ title }}{% if title %} · {% endif %}Serhii Kulykov</title>
     <meta name="description" content="{{ description }}">
 
-    <meta property="og:type" content="website">
+    <link rel="canonical" href="{{ siteUrl }}{{ page.url }}">
+
+    <meta property="og:type" content="{{ ogType or 'website' }}">
+    <meta property="og:url" content="{{ siteUrl }}{{ page.url }}">
     <meta property="og:title" content="{{ title }}">
     <meta property="og:description" content="{{ description }}">
-    <meta property="og:image" content="/assets/images/intro/1080.jpg" />
+    <meta property="og:image" content="{{ siteUrl }}{{ cover or '/assets/images/intro/1080.jpg' }}" />
+    {%- if cover %}
+    <meta name="twitter:card" content="summary_large_image">
+    {%- endif %}
 
     <link rel="icon" type="image/png" href="/assets/images/favicon-96x96.png">
     <link rel="stylesheet" href="/assets/styles/index.css">

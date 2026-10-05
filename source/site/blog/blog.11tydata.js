@@ -8,6 +8,7 @@ module.exports = {
   layout: 'article',
   tags: ['blog'],
   lang: 'en',
+  ogType: 'article',
   eleventyComputed: {
     permalink: (data) => (isHiddenDraft(data) ? false : data.permalink),
     eleventyExcludeFromCollections: (data) => isHiddenDraft(data) || data.eleventyExcludeFromCollections,

@@ -26,6 +26,7 @@ module.exports = (config) => {
   });
 
   config.addGlobalData('lang', DEFAULT_LANG);
+  config.addGlobalData('siteUrl', 'https://iamkulykov.com');
 
   config.addFilter('sortByYear', sortByYear);
 
