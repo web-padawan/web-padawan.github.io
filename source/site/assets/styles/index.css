@@ -249,6 +249,7 @@ section {
 
 .article__header {
   margin-bottom: 1rem;
+  max-width: 60ch;
 }
 
 .article__time {
