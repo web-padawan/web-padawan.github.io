@@ -3,6 +3,7 @@ const embedTwitter = require('eleventy-plugin-embed-twitter');
 const { feedPlugin } = require('@11ty/eleventy-plugin-rss');
 const { addNunjucksFilters } = require('./eleventy/nunjucks-filters');
 const { addNunjucksShortcodes } = require('./eleventy/nunjucks-shortcodes');
+const { addLiquidTags } = require('./eleventy/liquid-tags');
 const { DEFAULT_LANG } = require('./eleventy/lang');
 
 const LAYOUTS = ['base', 'article', 'poem'];
@@ -56,6 +57,7 @@ module.exports = (config) => {
 
   addNunjucksFilters(config);
   addNunjucksShortcodes(config);
+  addLiquidTags(config);
 
   return {
     dir: {

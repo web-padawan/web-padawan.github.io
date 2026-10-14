@@ -367,6 +367,15 @@ button:hover {
   margin: 5px 0 10px;
 }
 
+/* Embeds */
+.codepen {
+  border: 0;
+  height: 400px;
+  margin-bottom: 0.5rem;
+  max-width: 100%;
+  width: var(--readable-line-width);
+}
+
 /* Code */
 code,
 kbd,
