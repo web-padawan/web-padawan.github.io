@@ -136,20 +136,8 @@ h1 {
   font-size: 2rem;
 }
 
-@media (min-width: 40rem) {
-  h1 {
-    font-size: 2.25rem;
-  }
-}
-
 h2 {
   font-size: 1.5rem;
-}
-
-@media (min-width: 40rem) {
-  h2 {
-    font-size: 1.75rem;
-  }
 }
 
 h1:not(.visuallyhidden) + p,
@@ -162,20 +150,19 @@ h3 {
 }
 
 /* Lists */
-ol,
-ul {
+:where(ol, ul) {
   margin: 0 0 1rem;
   max-width: var(--readable-line-width);
   padding: 0;
   padding-left: 1.5rem;
 }
 
-li ol,
-li ul {
+:where(li ol),
+:where(li ul) {
   margin-top: var(--list-item-spacing);
 }
 
-li:not(:last-child) {
+:where(li):not(:last-child) {
   margin-bottom: var(--list-item-spacing);
 }
 
@@ -192,11 +179,7 @@ a:hover {
 
 /* Header */
 .header {
-  margin: 1rem 0 1.5rem;
-}
-
-.header_home {
-  margin-bottom: 0.5rem;
+  margin: 1rem 0;
 }
 
 .header__title {
