@@ -9,7 +9,7 @@
     "start": "eleventy --serve"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.6",
+    "@11ty/eleventy": "^3.1.7",
     "@11ty/eleventy-plugin-rss": "^3.1.0",
     "eleventy-plugin-embed-twitter": "^1.4.4",
     "markdown-it": "^14.3.1",
